@@ -1,72 +1,61 @@
-# Little Atlas — Cloudflare Pages
+# Deployment
 
-## Production
+## Addresses and ownership
 
-- Live URL: **https://little-atlas-9da.pages.dev/**
-- Cloudflare project: `little-atlas`
-- Production branch: `main` (direct upload; no Git provider)
-- Release: `1.0.0`
-- Verified deployment: https://bf72b20a.little-atlas-9da.pages.dev
-- Initial preview: https://release-check.little-atlas-9da.pages.dev
+- **Canonical production:** https://littleatlas.pages.dev/
+- **Cloudflare Pages project:** `littleatlas`, production branch `main`, direct uploads.
+- **Source:** https://github.com/yashness/little-atlas
+- **Previous URL:** https://little-atlas-9da.pages.dev/ remains on the verified 1.0 baseline for existing bookmarks. It is not the current deploy target.
+- Browser-local progress belongs to its origin; it does not automatically transfer between domains. Version upgrades on the same domain preserve the existing progress format.
 
-The domain suffix was assigned by Cloudflare when creating the project. Only this new project was modified.
-
-## Reproduce
+## Release workflow
 
 ```sh
+npm ci
 npm run check
+npm run test:unit
+ATLAS_CDP=http://127.0.0.1:9223 npm test  # omit ATLAS_CDP for normal Playwright
 npm run build
-ATLAS_CDP=http://127.0.0.1:9223 npm test
-npm run deploy
-node scripts/verify-deploy.cjs https://little-atlas-9da.pages.dev
-ATLAS_URL=https://little-atlas-9da.pages.dev \
+wrangler pages deploy dist --project-name littleatlas --branch release-check
+
+# Verify the preview before promoting the identical code.
+ATLAS_URL=https://release-check.littleatlas.pages.dev \
   ATLAS_CDP=http://127.0.0.1:9223 npm test
+npm run verify:deploy -- https://release-check.littleatlas.pages.dev
+
+# Merge tested work to main, tag the canonical package version, then publish.
+npm run deploy
+ATLAS_URL=https://littleatlas.pages.dev \
+  ATLAS_CDP=http://127.0.0.1:9223 npm test
+npm run verify:deploy -- https://littleatlas.pages.dev
 ```
 
-Wrangler must be installed and authenticated. Node 24+ is recommended for the development-only Portless dependency. The uploaded site itself has no Node, Python, Portless, database, server-side functions, or runtime package dependencies.
+GitHub CI independently checks types, formatting, unit/data rules, build boundaries, and browser journeys. It does **not** auto-publish unverified commits. Wrangler must be authenticated locally.
 
-## Release contents
+## What ships
 
-508 allowlisted files, 87.4 MiB. Cloudflare consumes `_headers` as configuration, leaving 507 public assets:
+Only the allowlisted `dist/` output: compiled JS/CSS, HTML, original-proportion flags, local fonts, map/profile content, active narration, licenses, security headers, and a custom 404. No secrets, source caches, tests, development tools, or unrelated poster files.
 
-- HTML, CSS, app code, fonts, map/country data, and licenses
-- 197 flags
-- 287 recorded narration clips, loaded only on demand
-- Custom 404 (prevents SPA fallback from disguising missing/private paths)
-- Content Security Policy, frame blocking, MIME sniffing protection, permissions policy, and separate page/asset cache policies
+Release 1.1: **197 entries, 627 audio clips, 844 public assets** plus `_headers`. Audio is loaded on demand; the whole audio library is not downloaded when opening the page. Complete-file HTTP 200 audio responses are valid; the verifier checks their content hash and browser tests check actual playback.
 
-Excluded: `.env.local`, package/config files, `node_modules`, tests, screenshots, local server scripts, generation cache, unrelated poster source files.
+## Verification record
 
-## Verification
+- 1.0 clean-URL baseline: `9b39692d`, source tag `v1.0.0` / commit `d5ba037`; 19 browser tests passed.
+- 1.1 local: strict types/formatting, 13 unit/data tests, 19 browser tests; 627 MP3s validated with no invalid files.
+- 1.1 preview: https://ac8a035b.littleatlas.pages.dev / branch alias `release-v1-1`; all 19 browser tests and all 844 asset checks passed.
+- Current live verification is recorded in the release entry below after production promotion.
 
-- Local pre-deploy suite: **19 passed**.
-- Preview URL suite: **19 passed**.
-- Final production URL suite: **19 passed (56.1 seconds)**.
-- All 507 public assets returned HTTP 200.
-- Deployed HTML, JS, CSS, country data, and audio manifest hashes match the inspected local build.
-- Private/development paths return 404.
-- Audio MIME type and full MP3 content verified; actual playback, stop, replay, and close tested in the production browser.
-- All 197 lessons completed flag → region → stamp; duplicate stamps rejected.
-- Mobile/tablet/desktop widths 375/768/1440 checked; screenshots captured from production.
+Detailed local proof is in ignored `evidence/`; CI results remain visible on GitHub. Canonical version lives in `package.json`.
 
-Evidence: `evidence/build.json`, `evidence/deployed-assets.json`, `evidence/production-tests.log`, `evidence/live-desktop.png`, `evidence/live-mobile.png`.
+## Rollback
 
-## Deployment notes
-
-The first HTTP check expected byte-range audio delivery (206), but Cloudflare returned complete audio files (200), which is valid HTTP behavior and worked in browser playback tests. The verifier now accepts either a valid partial response or a complete MP3 matching the release hash; it does not silently accept arbitrary data.
-
-An overlapping cache-header rule was corrected during release verification. Cloudflare briefly served old headers while the deployment propagated; the final verifier confirms one unambiguous max-age policy. No browser gameplay/audio failure occurred.
-
-This checkout is not a Git repository, so no commit or release tag was fabricated. `package.json` is the canonical version source.
-
-## Recovery
-
-The verified release snapshot is `/tmp/little-atlas-1.0.0-static.tar.gz` on this machine. To restore those exact static assets while that snapshot is available:
+Cloudflare retains the baseline deployment as a dashboard rollback target. A source-based rollback does not require changing the working checkout:
 
 ```sh
 restore=$(mktemp -d /tmp/little-atlas-restore.XXXXXX)
-tar -xzf /tmp/little-atlas-1.0.0-static.tar.gz -C "$restore"
-wrangler pages deploy "$restore" --project-name little-atlas --branch main
+git archive v1.0.0 | tar -x -C "$restore"
+(cd "$restore" && npm ci && npm run build && \
+  wrangler pages deploy dist --project-name littleatlas --branch main)
 ```
 
-For later deployments, Cloudflare Pages also retains the verified deployment above as a rollback target in the dashboard. The initial release had no earlier production version to roll back to.
+Do not delete either browser profile, reset progress, or redirect the old origin as part of a routine deployment.

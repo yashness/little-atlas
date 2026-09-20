@@ -19,6 +19,16 @@
 - Existing recorded audio must match displayed geographic claims; regenerate affected clips. No browser-TTS fallback.
 
 ## Work mode and release
-Serial work: no worktrees or other agent delegation. The public repository is https://github.com/yashness/little-atlas; commit d5ba037 preserves the working 1.0 release. Develop the typed foundations and feature upgrade on `feat/learning-connections`, then verify and merge to main without a PR. Existing dev URL: http://little-atlas.localhost:1355. Existing production: https://little-atlas-9da.pages.dev/.
+Serial work: no worktrees or other agent delegation. The public repository is https://github.com/yashness/little-atlas; commit d5ba037 preserves the working 1.0 release. Develop the typed foundations and feature upgrade on `feat/learning-connections`, then verify and merge to main without a PR. Existing dev URL: http://little-atlas.localhost:1355. Canonical production: https://littleatlas.pages.dev/. The previous suffixed URL remains available for existing bookmarks.
 
-Preserve version 1.0.0 and existing local progress. Release only after local and preview validation; then verify production and capture desktop/mobile proof. Existing production deployment bf72b20a is the rollback baseline.
+Version 1.0.0 is preserved in Git tag `v1.0.0`; its verified clean-URL deployment is `9b39692d`. Version 1.1 retains the existing progress format. Release only after local and preview validation, then verify production and capture desktop/mobile proof.
+
+## Status
+- Complete: ring-first source organization, strict types, runtime import/cycle checks, source validation, formatting, and CI.
+- Complete: all 197 source-attributed profiles, multi-region semantics, reviewed visual data, border exceptions, and clock rules.
+- Complete: shared learning paths, ordered journeys, six configurable games, larger text, region banners, and source-story/context views.
+- Complete: 627 verified local narration contracts; superseded code/data globals and 56 old clips retired.
+- Local verification: 13 unit/data invariants and 19 browser journeys pass, including every country and all game types.
+- Complete: atomic UI migration committed/pushed as `3f51a5a`; GitHub CI passes.
+- Complete: Pages preview `ac8a035b` passes all 19 browser journeys and verification of all 844 public assets.
+- Remaining release gate: merge/tag, publish production to the clean URL, and record live evidence.

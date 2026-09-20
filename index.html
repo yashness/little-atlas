@@ -9,9 +9,6 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="assets/world-data.js" defer></script>
-  <script src="assets/country-data.js" defer></script>
-  <script src="assets/audio-manifest.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -19,9 +16,9 @@
   <header class="site-header">
     <a class="brand" href="#explore" aria-label="Little Atlas home"><span class="brand-mark" aria-hidden="true">✦<span>◒</span></span><span>little<span class="brand-atlas">atlas</span><span class="brand-dot">.</span></span></a>
     <nav aria-label="Main navigation">
-      <a href="#explore" data-page="explore" class="nav-link"><span data-icon="compass"></span>Let’s explore</a>
-      <a href="#games" data-page="games" class="nav-link"><span data-icon="game"></span>Play games</a>
-      <a href="#passport" data-page="passport" class="nav-link"><span data-icon="passport"></span>My passport <span class="nav-count" id="stamp-count">0</span></a>
+      <a href="#world" data-page="explore" class="nav-link"><span data-icon="compass"></span>Explore</a>
+      <a href="#games" data-page="games" class="nav-link"><span data-icon="game"></span>Games</a>
+      <a href="#passport" data-page="passport" class="nav-link"><span data-icon="passport"></span>Passport <span class="nav-count" id="stamp-count">0</span></a>
     </nav>
     <div class="header-tools"><button id="sound" class="sound-button" aria-pressed="false" aria-label="Turn spoken guidance on"><span data-icon="sound"></span><span id="sound-label">Sound off</span></button><div class="star-count" aria-label="Stars earned"><span aria-hidden="true">★</span> <span id="star-count">0</span></div></div>
   </header>

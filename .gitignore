@@ -1,6 +1,9 @@
 node_modules/
 dist/
+/app.js
+/styles.css
 .wrangler/
+.cache/
 .env*
 test-results/
 evidence/

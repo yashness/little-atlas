@@ -1,18 +1,31 @@
 {
   "name": "little-atlas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "A gentle first adventure into country flags and geography.",
   "scripts": {
-    "dev": "PORTLESS_PORT=1355 PORTLESS_HTTPS=0 portless little-atlas python3 serve.py",
-    "dev:app": "python3 serve.py",
-    "check": "node --check app.js && node --check scripts/build.cjs",
-    "build": "node scripts/build.cjs",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name little-atlas --branch main",
-    "test": "playwright test"
+    "dev": "npm run compile && PORTLESS_PORT=1355 PORTLESS_HTTPS=0 portless little-atlas python3 scripts/dev/serve.py",
+    "dev:app": "npm run compile && python3 scripts/dev/serve.py",
+    "compile": "node scripts/build/compile.cjs",
+    "check": "npm run typecheck && npm run format:check",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write src scripts/build scripts/audio tests",
+    "format:check": "prettier --check src scripts/build scripts/audio tests",
+    "test:unit": "esbuild tests/unit/atlas.test.ts --bundle --platform=node --format=esm --outfile=.cache/atlas.test.mjs && node --test .cache/atlas.test.mjs",
+    "data:fetch": "python3 scripts/data/fetch.py",
+    "data:build": "python3 scripts/data/build.py",
+    "audio:generate": "esbuild scripts/audio/generate.ts --bundle --platform=node --format=cjs --outfile=.cache/generate-narration.cjs && node .cache/generate-narration.cjs",
+    "build": "npm run compile && node scripts/build/static.cjs",
+    "verify:deploy": "node scripts/build/verify.cjs",
+    "deploy": "npm run check && npm run test:unit && npm run build && wrangler pages deploy dist --project-name littleatlas --branch main",
+    "test": "npm run compile && playwright test"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",
-    "portless": "0.15.6"
+    "@types/node": "26.6.2",
+    "esbuild": "0.28.2",
+    "portless": "0.15.6",
+    "prettier": "3.6.2",
+    "typescript": "7.0.2"
   }
 }
