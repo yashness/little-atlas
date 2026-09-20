@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffaf0">
+  <meta name="description" content="Little Atlas: a playful first adventure into flags, shapes, countries, and our wonderful world. Made for little explorers and their grown-ups.">
+  <title>Little Atlas · Small flags. Big adventures.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/world-data.js" defer></script>
+  <script src="assets/country-data.js" defer></script>
+  <script src="assets/audio-manifest.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to adventure</a>
+  <header class="site-header">
+    <a class="brand" href="#explore" aria-label="Little Atlas home"><span class="brand-mark" aria-hidden="true">✦<span>◒</span></span><span>little<span class="brand-atlas">atlas</span><span class="brand-dot">.</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#explore" data-page="explore" class="nav-link"><span data-icon="compass"></span>Let’s explore</a>
+      <a href="#games" data-page="games" class="nav-link"><span data-icon="game"></span>Play games</a>
+      <a href="#passport" data-page="passport" class="nav-link"><span data-icon="passport"></span>My passport <span class="nav-count" id="stamp-count">0</span></a>
+    </nav>
+    <div class="header-tools"><button id="sound" class="sound-button" aria-pressed="false" aria-label="Turn spoken guidance on"><span data-icon="sound"></span><span id="sound-label">Sound off</span></button><div class="star-count" aria-label="Stars earned"><span aria-hidden="true">★</span> <span id="star-count">0</span></div></div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer><a class="brand footer-brand" href="#explore">littleatlas<span class="brand-dot">.</span></a><span>A little curiosity. A whole world of wonder.</span><button id="grownups">For grown-ups <span aria-hidden="true">↗</span></button></footer>
+  <dialog id="adventure" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+</body>
+</html>

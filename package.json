@@ -1,0 +1,18 @@
+{
+  "name": "little-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A gentle first adventure into country flags and geography.",
+  "scripts": {
+    "dev": "PORTLESS_PORT=1355 PORTLESS_HTTPS=0 portless little-atlas python3 serve.py",
+    "dev:app": "python3 serve.py",
+    "check": "node --check app.js && node --check scripts/build.cjs",
+    "build": "node scripts/build.cjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name little-atlas --branch main",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "portless": "0.15.6"
+  }
+}

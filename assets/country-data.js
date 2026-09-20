@@ -1,0 +1,3844 @@
+/* Extended country metadata: mledoze/countries (ODbL); visual clues authored for Little Atlas. */
+const EXTRA_COUNTRIES = [
+  {
+    "c": "af",
+    "id": "AFG",
+    "n": "Afghanistan",
+    "r": "Asia",
+    "xy": [
+      65,
+      33
+    ],
+    "scope": "member",
+    "geo": "Afghanistan is in Southern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "text",
+    "colors": [
+      "white",
+      "black"
+    ],
+    "title": "Black writing on white.",
+    "memory": "Look for black Arabic calligraphy on a plain white flag.",
+    "hint": "Look for black Arabic calligraphy on a plain white flag.",
+    "other": "sa"
+  },
+  {
+    "c": "al",
+    "id": "ALB",
+    "n": "Albania",
+    "r": "Europe",
+    "xy": [
+      20,
+      41
+    ],
+    "scope": "member",
+    "geo": "Albania is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "animal",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "title": "An eagle with two heads!",
+    "memory": "Find the black two-headed eagle on a red background.",
+    "hint": "Find the black two-headed eagle on a red background.",
+    "other": "cn"
+  },
+  {
+    "c": "dz",
+    "id": "DZA",
+    "n": "Algeria",
+    "r": "Africa",
+    "xy": [
+      3,
+      28
+    ],
+    "scope": "member",
+    "geo": "Algeria is in Northern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "crescent",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "title": "A red moon between green and white.",
+    "memory": "Green on the left, white on the right, with a red crescent and star in the middle.",
+    "hint": "Green on the left, white on the right, with a red crescent and star in the middle.",
+    "other": "pk"
+  },
+  {
+    "c": "ad",
+    "id": "AND",
+    "n": "Andorra",
+    "r": "Europe",
+    "xy": [
+      1.5,
+      42.5
+    ],
+    "scope": "member",
+    "geo": "Andorra is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "title": "Three stripes with a tiny shield.",
+    "memory": "Blue, yellow, red standing up, with a coat of arms in the yellow stripe.",
+    "hint": "Blue, yellow, red standing up, with a coat of arms in the yellow stripe.",
+    "other": "ro"
+  },
+  {
+    "c": "ao",
+    "id": "AGO",
+    "n": "Angola",
+    "r": "Africa",
+    "xy": [
+      18.5,
+      -12.5
+    ],
+    "scope": "member",
+    "geo": "Angola is in Middle Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "emblem",
+    "colors": [
+      "red",
+      "black",
+      "yellow"
+    ],
+    "title": "A golden tool in the middle.",
+    "memory": "Red on top, black below. A yellow gear, machete, and star sit in the middle.",
+    "hint": "Red on top, black below. A yellow gear, machete, and star sit in the middle.",
+    "other": "id"
+  },
+  {
+    "c": "ag",
+    "id": "ATG",
+    "n": "Antigua and Barbuda",
+    "r": "North America",
+    "xy": [
+      -61.8,
+      17.05
+    ],
+    "scope": "member",
+    "geo": "Antigua and Barbuda is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "sun",
+    "colors": [
+      "red",
+      "black",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "title": "A sunrise inside a big V.",
+    "memory": "Red sides frame a V with a yellow sun rising above blue and white.",
+    "hint": "Red sides frame a V with a yellow sun rising above blue and white.",
+    "other": "ar"
+  },
+  {
+    "c": "am",
+    "id": "ARM",
+    "n": "Armenia",
+    "r": "Asia",
+    "xy": [
+      45,
+      40
+    ],
+    "scope": "member",
+    "geo": "Armenia is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "orange"
+    ],
+    "title": "A sunset stack of three colors.",
+    "memory": "Red on top, blue in the middle, orange at the bottom.",
+    "hint": "Red on top, blue in the middle, orange at the bottom.",
+    "other": "ru"
+  },
+  {
+    "c": "at",
+    "id": "AUT",
+    "n": "Austria",
+    "r": "Europe",
+    "xy": [
+      13.33333333,
+      47.33333333
+    ],
+    "scope": "member",
+    "geo": "Austria is in Central Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A white path between two reds.",
+    "memory": "Three lying-down stripes: red, white, red. No symbol in the middle.",
+    "hint": "Three lying-down stripes: red, white, red. No symbol in the middle.",
+    "other": "lv"
+  },
+  {
+    "c": "az",
+    "id": "AZE",
+    "n": "Azerbaijan",
+    "r": "Asia",
+    "xy": [
+      47.5,
+      40.5
+    ],
+    "scope": "member",
+    "geo": "Azerbaijan is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "white"
+    ],
+    "title": "A little moon on the middle stripe.",
+    "memory": "Blue, red, green from top to bottom, with a white crescent and star on red.",
+    "hint": "Blue, red, green from top to bottom, with a white crescent and star on red.",
+    "other": "uz"
+  },
+  {
+    "c": "bs",
+    "id": "BHS",
+    "n": "Bahamas",
+    "r": "North America",
+    "xy": [
+      -76,
+      24.25
+    ],
+    "scope": "member",
+    "geo": "Bahamas is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "blue",
+      "yellow",
+      "black"
+    ],
+    "title": "A black triangle points to sunshine.",
+    "memory": "A black triangle points right into blue, yellow, and blue horizontal stripes.",
+    "hint": "A black triangle points right into blue, yellow, and blue horizontal stripes.",
+    "other": "lc"
+  },
+  {
+    "c": "bh",
+    "id": "BHR",
+    "n": "Bahrain",
+    "r": "Asia",
+    "xy": [
+      50.55,
+      26
+    ],
+    "scope": "member",
+    "geo": "Bahrain is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "serrated",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "Five white teeth bite into red.",
+    "memory": "Find white on the left, with five points along its edge against red.",
+    "hint": "Find white on the left, with five points along its edge against red.",
+    "other": "qa"
+  },
+  {
+    "c": "bb",
+    "id": "BRB",
+    "n": "Barbados",
+    "r": "North America",
+    "xy": [
+      -59.53333333,
+      13.16666666
+    ],
+    "scope": "member",
+    "geo": "Barbados is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "black"
+    ],
+    "title": "A little black fork in the sunshine.",
+    "memory": "Three standing stripes: blue, yellow, blue. A black trident sits in the yellow stripe.",
+    "hint": "Three standing stripes: blue, yellow, blue. A black trident sits in the yellow stripe.",
+    "other": "se"
+  },
+  {
+    "c": "by",
+    "id": "BLR",
+    "n": "Belarus",
+    "r": "Europe",
+    "xy": [
+      28,
+      53
+    ],
+    "scope": "member",
+    "geo": "Belarus is in Eastern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "pattern",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "title": "A little woven ribbon.",
+    "memory": "A red-and-white decorative pattern at the left, beside a wide red band above green.",
+    "hint": "A red-and-white decorative pattern at the left, beside a wide red band above green.",
+    "other": "lt"
+  },
+  {
+    "c": "be",
+    "id": "BEL",
+    "n": "Belgium",
+    "r": "Europe",
+    "xy": [
+      4,
+      50.83333333
+    ],
+    "scope": "member",
+    "geo": "Belgium is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "black",
+      "yellow",
+      "red"
+    ],
+    "title": "Black, yellow, red stand tall.",
+    "memory": "Three standing stripes. Black is on the left, yellow in the middle, red on the right.",
+    "hint": "Three standing stripes. Black is on the left, yellow in the middle, red on the right.",
+    "other": "de"
+  },
+  {
+    "c": "bz",
+    "id": "BLZ",
+    "n": "Belize",
+    "r": "North America",
+    "xy": [
+      -88.75,
+      17.25
+    ],
+    "scope": "member",
+    "geo": "Belize is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "emblem",
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "white"
+    ],
+    "title": "Two people inside a leafy circle.",
+    "memory": "Look for two people in a white circle on blue, with thin red bands at the top and bottom.",
+    "hint": "Look for two people in a white circle on blue, with thin red bands at the top and bottom.",
+    "other": "ht"
+  },
+  {
+    "c": "bj",
+    "id": "BEN",
+    "n": "Benin",
+    "r": "Africa",
+    "xy": [
+      2.25,
+      9.5
+    ],
+    "scope": "member",
+    "geo": "Benin is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "title": "A green door and two bright windows.",
+    "memory": "Green stands on the left. Yellow sits above red on the right.",
+    "hint": "Green stands on the left. Yellow sits above red on the right.",
+    "other": "mg"
+  },
+  {
+    "c": "bt",
+    "id": "BTN",
+    "n": "Bhutan",
+    "r": "Asia",
+    "xy": [
+      90.5,
+      27.5
+    ],
+    "scope": "member",
+    "geo": "Bhutan is in Southern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "animal",
+    "colors": [
+      "yellow",
+      "orange",
+      "white"
+    ],
+    "title": "A white dragon on a diagonal!",
+    "memory": "Find the white dragon stretching across yellow and orange triangles.",
+    "hint": "Find the white dragon stretching across yellow and orange triangles.",
+    "other": "lk"
+  },
+  {
+    "c": "bo",
+    "id": "BOL",
+    "n": "Bolivia",
+    "r": "South America",
+    "xy": [
+      -65,
+      -17
+    ],
+    "scope": "member",
+    "geo": "Bolivia is in South America. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "yellow",
+      "green"
+    ],
+    "title": "Red, yellow, green make a stack.",
+    "memory": "Red above yellow above green. The state flag also has a coat of arms in the middle.",
+    "hint": "Red above yellow above green. The state flag also has a coat of arms in the middle.",
+    "other": "et"
+  },
+  {
+    "c": "ba",
+    "id": "BIH",
+    "n": "Bosnia and Herzegovina",
+    "r": "Europe",
+    "xy": [
+      18,
+      44
+    ],
+    "scope": "member",
+    "geo": "Bosnia and Herzegovina is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "title": "A triangle with a trail of stars.",
+    "memory": "A yellow right triangle on blue, with white stars following its sloping edge.",
+    "hint": "A yellow right triangle on blue, with white stars following its sloping edge.",
+    "other": "br"
+  },
+  {
+    "c": "bw",
+    "id": "BWA",
+    "n": "Botswana",
+    "r": "Africa",
+    "xy": [
+      24,
+      -22
+    ],
+    "scope": "member",
+    "geo": "Botswana is in Southern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "light blue",
+      "black",
+      "white"
+    ],
+    "title": "A black road across a blue sky.",
+    "memory": "Light blue above and below a black stripe with thin white edges.",
+    "hint": "Light blue above and below a black stripe with thin white edges.",
+    "other": "ee"
+  },
+  {
+    "c": "bn",
+    "id": "BRN",
+    "n": "Brunei",
+    "r": "Asia",
+    "xy": [
+      114.66666666,
+      4.5
+    ],
+    "scope": "member",
+    "geo": "Brunei is in South-Eastern Asia. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "yellow",
+      "white",
+      "black",
+      "red"
+    ],
+    "title": "Two sloping ribbons on yellow.",
+    "memory": "White and black diagonal bands cross yellow, with a red emblem in the center.",
+    "hint": "White and black diagonal bands cross yellow, with a red emblem in the center.",
+    "other": "bt"
+  },
+  {
+    "c": "bg",
+    "id": "BGR",
+    "n": "Bulgaria",
+    "r": "Europe",
+    "xy": [
+      25,
+      43
+    ],
+    "scope": "member",
+    "geo": "Bulgaria is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "white",
+      "green",
+      "red"
+    ],
+    "title": "White, green, red lie down.",
+    "memory": "Three horizontal stripes: white on top, green in the middle, red below.",
+    "hint": "Three horizontal stripes: white on top, green in the middle, red below.",
+    "other": "hu"
+  },
+  {
+    "c": "bf",
+    "id": "BFA",
+    "n": "Burkina Faso",
+    "r": "Africa",
+    "xy": [
+      -2,
+      13
+    ],
+    "scope": "member",
+    "geo": "Burkina Faso is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "title": "A yellow star joins two colors.",
+    "memory": "Red above green, with one yellow star in the middle.",
+    "hint": "Red above green, with one yellow star in the middle.",
+    "other": "gh"
+  },
+  {
+    "c": "bi",
+    "id": "BDI",
+    "n": "Burundi",
+    "r": "Africa",
+    "xy": [
+      30,
+      -3.5
+    ],
+    "scope": "member",
+    "geo": "Burundi is in Eastern Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "title": "Three red stars in a white circle.",
+    "memory": "Find a white diagonal cross, red and green triangles, and three stars in the center.",
+    "hint": "Find a white diagonal cross, red and green triangles, and three stars in the center.",
+    "other": "jm"
+  },
+  {
+    "c": "cv",
+    "id": "CPV",
+    "n": "Cabo Verde",
+    "r": "Africa",
+    "xy": [
+      -24,
+      16
+    ],
+    "scope": "member",
+    "geo": "Cabo Verde is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "blue",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "title": "Ten stars make a little ring.",
+    "memory": "A circle of yellow stars sits on blue, crossing thin white-red-white stripes near the bottom.",
+    "hint": "A circle of yellow stars sits on blue, crossing thin white-red-white stripes near the bottom.",
+    "other": "fm"
+  },
+  {
+    "c": "kh",
+    "id": "KHM",
+    "n": "Cambodia",
+    "r": "Asia",
+    "xy": [
+      105,
+      13
+    ],
+    "scope": "member",
+    "geo": "Cambodia is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "title": "A white temple on a red path.",
+    "memory": "A white picture of Angkor Wat sits on a wide red band, between two blue bands.",
+    "hint": "A white picture of Angkor Wat sits on a wide red band, between two blue bands.",
+    "other": "la"
+  },
+  {
+    "c": "cm",
+    "id": "CMR",
+    "n": "Cameroon",
+    "r": "Africa",
+    "xy": [
+      12,
+      6
+    ],
+    "scope": "member",
+    "geo": "Cameroon is in Middle Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "green",
+      "red",
+      "yellow"
+    ],
+    "title": "A yellow star on a red middle.",
+    "memory": "Green, red, yellow standing up, with a yellow star in the red stripe.",
+    "hint": "Green, red, yellow standing up, with a yellow star in the red stripe.",
+    "other": "sn"
+  },
+  {
+    "c": "cf",
+    "id": "CAF",
+    "n": "Central African Republic",
+    "r": "Africa",
+    "xy": [
+      21,
+      7
+    ],
+    "scope": "member",
+    "geo": "Central African Republic is in Middle Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "yellow",
+      "red"
+    ],
+    "title": "One red stripe crosses four bands.",
+    "memory": "Four horizontal bands crossed by one red vertical stripe, with a yellow star at the top left.",
+    "hint": "Four horizontal bands crossed by one red vertical stripe, with a yellow star at the top left.",
+    "other": "mu"
+  },
+  {
+    "c": "td",
+    "id": "TCD",
+    "n": "Chad",
+    "r": "Africa",
+    "xy": [
+      19,
+      15
+    ],
+    "scope": "member",
+    "geo": "Chad is in Middle Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "title": "Deep blue, yellow, red stand tall.",
+    "memory": "Three standing stripes: dark blue, yellow, red. Very similar to Romania, with a darker blue.",
+    "hint": "Three standing stripes: dark blue, yellow, red. Very similar to Romania, with a darker blue.",
+    "other": "ad"
+  },
+  {
+    "c": "cl",
+    "id": "CHL",
+    "n": "Chile",
+    "r": "South America",
+    "xy": [
+      -71,
+      -30
+    ],
+    "scope": "member",
+    "geo": "Chile is in South America. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "One star in a blue corner.",
+    "memory": "A blue square with one white star at the top left, white beside it, and red below.",
+    "hint": "A blue square with one white star at the top left, white beside it, and red below.",
+    "other": "us"
+  },
+  {
+    "c": "co",
+    "id": "COL",
+    "n": "Colombia",
+    "r": "South America",
+    "xy": [
+      -72,
+      4
+    ],
+    "scope": "member",
+    "geo": "Colombia is in South America. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "title": "A double helping of yellow.",
+    "memory": "Yellow covers the top half. Blue and red each have a smaller stripe below. No central symbol.",
+    "hint": "Yellow covers the top half. Blue and red each have a smaller stripe below. No central symbol.",
+    "other": "ec"
+  },
+  {
+    "c": "km",
+    "id": "COM",
+    "n": "Comoros",
+    "r": "Africa",
+    "xy": [
+      44.25,
+      -12.16666666
+    ],
+    "scope": "member",
+    "geo": "Comoros is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "yellow",
+      "white",
+      "red",
+      "blue",
+      "green"
+    ],
+    "title": "Four stripes meet a moon.",
+    "memory": "Yellow, white, red, blue bands meet a green triangle holding a white crescent and four stars.",
+    "hint": "Yellow, white, red, blue bands meet a green triangle holding a white crescent and four stars.",
+    "other": "dj"
+  },
+  {
+    "c": "cr",
+    "id": "CRI",
+    "n": "Costa Rica",
+    "r": "North America",
+    "xy": [
+      -84,
+      10
+    ],
+    "scope": "member",
+    "geo": "Costa Rica is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "title": "A wide red road in the middle.",
+    "memory": "Blue, white, a wide red band, white, blue. The red middle stripe is the widest.",
+    "hint": "Blue, white, a wide red band, white, blue. The red middle stripe is the widest.",
+    "other": "th"
+  },
+  {
+    "c": "hr",
+    "id": "HRV",
+    "n": "Croatia",
+    "r": "Europe",
+    "xy": [
+      15.5,
+      45.16666666
+    ],
+    "scope": "member",
+    "geo": "Croatia is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "A little checkerboard shield.",
+    "memory": "Red, white, blue horizontal stripes, with a red-and-white checkerboard shield in the center.",
+    "hint": "Red, white, blue horizontal stripes, with a red-and-white checkerboard shield in the center.",
+    "other": "rs"
+  },
+  {
+    "c": "cu",
+    "id": "CUB",
+    "n": "Cuba",
+    "r": "North America",
+    "xy": [
+      -80,
+      21.5
+    ],
+    "scope": "member",
+    "geo": "Cuba is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "title": "A red triangle with one white star.",
+    "memory": "Five blue-and-white horizontal stripes meet a red triangle holding one white star.",
+    "hint": "Five blue-and-white horizontal stripes meet a red triangle holding one white star.",
+    "other": "cl"
+  },
+  {
+    "c": "cy",
+    "id": "CYP",
+    "n": "Cyprus",
+    "r": "Europe",
+    "xy": [
+      33,
+      35
+    ],
+    "scope": "member",
+    "geo": "Cyprus is an island in the eastern Mediterranean Sea, south of Türkiye. Here we group it with Europe; geographic conventions vary.",
+    "shape": "map",
+    "colors": [
+      "white",
+      "orange",
+      "green"
+    ],
+    "title": "A little island drawn on its flag.",
+    "memory": "A copper-colored island shape sits on white, above two green olive branches.",
+    "hint": "A copper-colored island shape sits on white, above two green olive branches.",
+    "other": "xk"
+  },
+  {
+    "c": "cz",
+    "id": "CZE",
+    "n": "Czechia",
+    "r": "Europe",
+    "xy": [
+      15.5,
+      49.75
+    ],
+    "scope": "member",
+    "geo": "Czechia is in Central Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "title": "A blue arrow between white and red.",
+    "memory": "A blue triangle points in from the left, between a white top half and a red bottom half.",
+    "hint": "A blue triangle points in from the left, between a white top half and a red bottom half.",
+    "other": "pl"
+  },
+  {
+    "c": "ci",
+    "id": "CIV",
+    "n": "Côte d’Ivoire",
+    "r": "Africa",
+    "xy": [
+      -5,
+      8
+    ],
+    "scope": "member",
+    "geo": "Côte d’Ivoire is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "orange",
+      "white",
+      "green"
+    ],
+    "title": "Ireland’s colors walk backward.",
+    "memory": "Orange, white, green standing up. Ireland starts with green; this flag starts with orange.",
+    "hint": "Orange, white, green standing up. Ireland starts with green; this flag starts with orange.",
+    "other": "ie"
+  },
+  {
+    "c": "cd",
+    "id": "COD",
+    "n": "DR Congo",
+    "r": "Africa",
+    "xy": [
+      25,
+      0
+    ],
+    "scope": "member",
+    "geo": "DR Congo is in Middle Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "title": "A red road through a blue sky.",
+    "memory": "A red diagonal band with yellow edges crosses blue. A yellow star sits at the top left.",
+    "hint": "A red diagonal band with yellow edges crosses blue. A yellow star sits at the top left.",
+    "other": "tz"
+  },
+  {
+    "c": "dk",
+    "id": "DNK",
+    "n": "Denmark",
+    "r": "Europe",
+    "xy": [
+      10,
+      56
+    ],
+    "scope": "member",
+    "geo": "Denmark is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A white cross on a red blanket.",
+    "memory": "The white cross reaches every edge and sits closer to the left. Unlike Switzerland, this flag is a rectangle.",
+    "hint": "The white cross reaches every edge and sits closer to the left. Unlike Switzerland, this flag is a rectangle.",
+    "other": "ch"
+  },
+  {
+    "c": "dj",
+    "id": "DJI",
+    "n": "Djibouti",
+    "r": "Africa",
+    "xy": [
+      43,
+      11.5
+    ],
+    "scope": "member",
+    "geo": "Djibouti is in Eastern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "light blue",
+      "green",
+      "white",
+      "red"
+    ],
+    "title": "A red star on a white triangle.",
+    "memory": "Light blue above green, with a white triangle and a red star at the left.",
+    "hint": "Light blue above green, with a white triangle and a red star at the left.",
+    "other": "so"
+  },
+  {
+    "c": "dm",
+    "id": "DMA",
+    "n": "Dominica",
+    "r": "North America",
+    "xy": [
+      -61.33333333,
+      15.41666666
+    ],
+    "scope": "member",
+    "geo": "Dominica is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "green",
+      "yellow",
+      "black",
+      "white",
+      "red",
+      "purple"
+    ],
+    "title": "A parrot in a circle of stars!",
+    "memory": "A parrot sits in a red circle on a striped cross, against a green background.",
+    "hint": "A parrot sits in a red circle on a striped cross, against a green background.",
+    "other": "ug"
+  },
+  {
+    "c": "do",
+    "id": "DOM",
+    "n": "Dominican Republic",
+    "r": "North America",
+    "xy": [
+      -70.66666666,
+      19
+    ],
+    "scope": "member",
+    "geo": "Dominican Republic is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "title": "A white cross makes four windows.",
+    "memory": "A wide white cross separates blue and red corners. A coat of arms sits at its center.",
+    "hint": "A wide white cross separates blue and red corners. A coat of arms sits at its center.",
+    "other": "ht"
+  },
+  {
+    "c": "ec",
+    "id": "ECU",
+    "n": "Ecuador",
+    "r": "South America",
+    "xy": [
+      -77.5,
+      -2
+    ],
+    "scope": "member",
+    "geo": "Ecuador is in South America. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "title": "A yellow sky with a tiny eagle.",
+    "memory": "Yellow covers the top half above blue and red stripes. A coat of arms sits in the middle.",
+    "hint": "Yellow covers the top half above blue and red stripes. A coat of arms sits in the middle.",
+    "other": "co"
+  },
+  {
+    "c": "eg",
+    "id": "EGY",
+    "n": "Egypt",
+    "r": "Africa",
+    "xy": [
+      30,
+      27
+    ],
+    "scope": "member",
+    "geo": "Egypt is mainly in northeastern Africa. Its Sinai Peninsula reaches into Asia.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "yellow"
+    ],
+    "title": "A golden eagle on three stripes.",
+    "memory": "Red, white, black from top to bottom, with a golden eagle in the white stripe.",
+    "hint": "Red, white, black from top to bottom, with a golden eagle in the white stripe.",
+    "other": "ye"
+  },
+  {
+    "c": "sv",
+    "id": "SLV",
+    "n": "El Salvador",
+    "r": "North America",
+    "xy": [
+      -88.91666666,
+      13.83333333
+    ],
+    "scope": "member",
+    "geo": "El Salvador is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "title": "A little coat of arms between blues.",
+    "memory": "Blue, white, blue horizontal stripes, with a coat of arms and words around it in the middle.",
+    "hint": "Blue, white, blue horizontal stripes, with a coat of arms and words around it in the middle.",
+    "other": "hn"
+  },
+  {
+    "c": "gq",
+    "id": "GNQ",
+    "n": "Equatorial Guinea",
+    "r": "Africa",
+    "xy": [
+      10,
+      2
+    ],
+    "scope": "member",
+    "geo": "Equatorial Guinea is in Middle Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "blue"
+    ],
+    "title": "A tiny tree between three stripes.",
+    "memory": "Green, white, red bands, a blue triangle at the left, and a tree in a shield in the middle.",
+    "hint": "Green, white, red bands, a blue triangle at the left, and a tree in a shield in the middle.",
+    "other": "sd"
+  },
+  {
+    "c": "er",
+    "id": "ERI",
+    "n": "Eritrea",
+    "r": "Africa",
+    "xy": [
+      39,
+      15
+    ],
+    "scope": "member",
+    "geo": "Eritrea is in Eastern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "red",
+      "green",
+      "blue",
+      "yellow"
+    ],
+    "title": "A long red triangle with golden leaves.",
+    "memory": "A red triangle reaches across green and blue, carrying a yellow olive wreath.",
+    "hint": "A red triangle reaches across green and blue, carrying a yellow olive wreath.",
+    "other": "gy"
+  },
+  {
+    "c": "ee",
+    "id": "EST",
+    "n": "Estonia",
+    "r": "Europe",
+    "xy": [
+      26,
+      59
+    ],
+    "scope": "member",
+    "geo": "Estonia is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "black",
+      "white"
+    ],
+    "title": "Blue sky, dark trees, white snow.",
+    "memory": "Three horizontal stripes: blue at the top, black in the middle, white at the bottom.",
+    "hint": "Three horizontal stripes: blue at the top, black in the middle, white at the bottom.",
+    "other": "bw"
+  },
+  {
+    "c": "sz",
+    "id": "SWZ",
+    "n": "Eswatini",
+    "r": "Africa",
+    "xy": [
+      31.5,
+      -26.5
+    ],
+    "scope": "member",
+    "geo": "Eswatini is in Southern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "yellow",
+      "red",
+      "black",
+      "white"
+    ],
+    "title": "A shield in the middle of a red path.",
+    "memory": "A black-and-white shield and spears on red, with thin yellow stripes and blue outer bands.",
+    "hint": "A black-and-white shield and spears on red, with thin yellow stripes and blue outer bands.",
+    "other": "ke"
+  },
+  {
+    "c": "et",
+    "id": "ETH",
+    "n": "Ethiopia",
+    "r": "Africa",
+    "xy": [
+      38,
+      8
+    ],
+    "scope": "member",
+    "geo": "Ethiopia is in Eastern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "blue"
+    ],
+    "title": "A blue circle with a golden star.",
+    "memory": "Green, yellow, red horizontal stripes, with a yellow star inside a blue circle.",
+    "hint": "Green, yellow, red horizontal stripes, with a yellow star inside a blue circle.",
+    "other": "bo"
+  },
+  {
+    "c": "fj",
+    "id": "FJI",
+    "n": "Fiji",
+    "r": "Oceania",
+    "xy": [
+      175,
+      -18
+    ],
+    "scope": "member",
+    "geo": "Fiji is in Melanesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "light blue",
+      "red",
+      "white"
+    ],
+    "title": "A pale-blue sky with a shield.",
+    "memory": "A little Union Jack in the top left and a shield on the right, all on light blue.",
+    "hint": "A little Union Jack in the top left and a shield on the right, all on light blue.",
+    "other": "au"
+  },
+  {
+    "c": "fi",
+    "id": "FIN",
+    "n": "Finland",
+    "r": "Europe",
+    "xy": [
+      26,
+      64
+    ],
+    "scope": "member",
+    "geo": "Finland is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "white",
+      "blue"
+    ],
+    "title": "A blue cross on a snowy blanket.",
+    "memory": "A blue cross stretches across white, shifted toward the left.",
+    "hint": "A blue cross stretches across white, shifted toward the left.",
+    "other": "se"
+  },
+  {
+    "c": "ga",
+    "id": "GAB",
+    "n": "Gabon",
+    "r": "Africa",
+    "xy": [
+      11.75,
+      -1
+    ],
+    "scope": "member",
+    "geo": "Gabon is in Middle Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "yellow",
+      "blue"
+    ],
+    "title": "Green, yellow, blue lie down.",
+    "memory": "Three horizontal stripes: green on top, yellow in the middle, blue at the bottom.",
+    "hint": "Three horizontal stripes: green on top, yellow in the middle, blue at the bottom.",
+    "other": "rw"
+  },
+  {
+    "c": "gm",
+    "id": "GMB",
+    "n": "Gambia",
+    "r": "Africa",
+    "xy": [
+      -16.56666666,
+      13.46666666
+    ],
+    "scope": "member",
+    "geo": "Gambia is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "green",
+      "white"
+    ],
+    "title": "Three colors with little white gaps.",
+    "memory": "Red, blue, green horizontal bands, with thin white stripes around the blue.",
+    "hint": "Red, blue, green horizontal bands, with thin white stripes around the blue.",
+    "other": "ga"
+  },
+  {
+    "c": "ge",
+    "id": "GEO",
+    "n": "Georgia",
+    "r": "Asia",
+    "xy": [
+      43.5,
+      42
+    ],
+    "scope": "member",
+    "geo": "Georgia is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "title": "One big cross and four little ones.",
+    "memory": "Five red crosses on white: one large central cross and one small cross in each corner.",
+    "hint": "Five red crosses on white: one large central cross and one small cross in each corner.",
+    "other": "ch"
+  },
+  {
+    "c": "de",
+    "id": "DEU",
+    "n": "Germany",
+    "r": "Europe",
+    "xy": [
+      9,
+      51
+    ],
+    "scope": "member",
+    "geo": "Germany is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "black",
+      "red",
+      "yellow"
+    ],
+    "title": "Black, red, gold lie down.",
+    "memory": "Black on top, red in the middle, golden yellow at the bottom. Three horizontal stripes.",
+    "hint": "Black on top, red in the middle, golden yellow at the bottom. Three horizontal stripes.",
+    "other": "be"
+  },
+  {
+    "c": "gh",
+    "id": "GHA",
+    "n": "Ghana",
+    "r": "Africa",
+    "xy": [
+      -2,
+      8
+    ],
+    "scope": "member",
+    "geo": "Ghana is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "yellow",
+      "green",
+      "black"
+    ],
+    "title": "A black star in a yellow middle.",
+    "memory": "Red, yellow, green horizontal stripes, with one black star in the middle.",
+    "hint": "Red, yellow, green horizontal stripes, with one black star in the middle.",
+    "other": "bo"
+  },
+  {
+    "c": "gr",
+    "id": "GRC",
+    "n": "Greece",
+    "r": "Europe",
+    "xy": [
+      22,
+      39
+    ],
+    "scope": "member",
+    "geo": "Greece is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "title": "A little cross and nine stripes.",
+    "memory": "Blue and white stripes, with a white cross inside a blue square at the top left.",
+    "hint": "Blue and white stripes, with a white cross inside a blue square at the top left.",
+    "other": "fi"
+  },
+  {
+    "c": "gd",
+    "id": "GRD",
+    "n": "Grenada",
+    "r": "North America",
+    "xy": [
+      -61.66666666,
+      12.11666666
+    ],
+    "scope": "member",
+    "geo": "Grenada is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "border",
+    "colors": [
+      "red",
+      "yellow",
+      "green"
+    ],
+    "title": "A red frame full of stars.",
+    "memory": "A red border surrounds green and yellow triangles. A red circle and yellow star sit in the middle.",
+    "hint": "A red border surrounds green and yellow triangles. A red circle and yellow star sit in the middle.",
+    "other": "cm"
+  },
+  {
+    "c": "gt",
+    "id": "GTM",
+    "n": "Guatemala",
+    "r": "North America",
+    "xy": [
+      -90.25,
+      15.5
+    ],
+    "scope": "member",
+    "geo": "Guatemala is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "light blue",
+      "white",
+      "green"
+    ],
+    "title": "Blue sides hug a little green bird.",
+    "memory": "Light blue, white, light blue standing up, with a coat of arms and a quetzal bird in the middle.",
+    "hint": "Light blue, white, light blue standing up, with a coat of arms and a quetzal bird in the middle.",
+    "other": "hn"
+  },
+  {
+    "c": "gn",
+    "id": "GIN",
+    "n": "Guinea",
+    "r": "Africa",
+    "xy": [
+      -10,
+      11
+    ],
+    "scope": "member",
+    "geo": "Guinea is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "red",
+      "yellow",
+      "green"
+    ],
+    "title": "Mali’s colors turn around.",
+    "memory": "Red, yellow, green standing up. Mali starts with green; Guinea starts with red.",
+    "hint": "Red, yellow, green standing up. Mali starts with green; Guinea starts with red.",
+    "other": "ml"
+  },
+  {
+    "c": "gw",
+    "id": "GNB",
+    "n": "Guinea-Bissau",
+    "r": "Africa",
+    "xy": [
+      -15,
+      12
+    ],
+    "scope": "member",
+    "geo": "Guinea-Bissau is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "red",
+      "yellow",
+      "green",
+      "black"
+    ],
+    "title": "A black star behind a red door.",
+    "memory": "A red vertical stripe with a black star sits beside yellow above green.",
+    "hint": "A red vertical stripe with a black star sits beside yellow above green.",
+    "other": "bj"
+  },
+  {
+    "c": "gy",
+    "id": "GUY",
+    "n": "Guyana",
+    "r": "South America",
+    "xy": [
+      -59,
+      5
+    ],
+    "scope": "member",
+    "geo": "Guyana is in South America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "white",
+      "black"
+    ],
+    "title": "Two arrowheads point across green.",
+    "memory": "A yellow arrowhead outlined in white holds a smaller red triangle outlined in black, on green.",
+    "hint": "A yellow arrowhead outlined in white holds a smaller red triangle outlined in black, on green.",
+    "other": "er"
+  },
+  {
+    "c": "ht",
+    "id": "HTI",
+    "n": "Haiti",
+    "r": "North America",
+    "xy": [
+      -72.41666666,
+      19
+    ],
+    "scope": "member",
+    "geo": "Haiti is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green"
+    ],
+    "title": "A tiny picture between blue and red.",
+    "memory": "Blue on top, red below, and a coat of arms inside a white rectangle in the middle.",
+    "hint": "Blue on top, red below, and a coat of arms inside a white rectangle in the middle.",
+    "other": "li"
+  },
+  {
+    "c": "hn",
+    "id": "HND",
+    "n": "Honduras",
+    "r": "North America",
+    "xy": [
+      -86.5,
+      15
+    ],
+    "scope": "member",
+    "geo": "Honduras is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "light blue",
+      "white"
+    ],
+    "title": "Five stars between blue skies.",
+    "memory": "Blue, white, blue horizontal stripes, with five blue stars in the middle.",
+    "hint": "Blue, white, blue horizontal stripes, with five blue stars in the middle.",
+    "other": "sv"
+  },
+  {
+    "c": "hu",
+    "id": "HUN",
+    "n": "Hungary",
+    "r": "Europe",
+    "xy": [
+      20,
+      47
+    ],
+    "scope": "member",
+    "geo": "Hungary is in Central Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "green"
+    ],
+    "title": "Red, white, green lie down.",
+    "memory": "Three horizontal stripes: red on top, white in the middle, green below.",
+    "hint": "Three horizontal stripes: red on top, white in the middle, green below.",
+    "other": "bg"
+  },
+  {
+    "c": "is",
+    "id": "ISL",
+    "n": "Iceland",
+    "r": "Europe",
+    "xy": [
+      -18,
+      65
+    ],
+    "scope": "member",
+    "geo": "Iceland is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "title": "A red cross wearing a white coat.",
+    "memory": "A red cross with white edges on blue. Norway uses a blue cross on red instead.",
+    "hint": "A red cross with white edges on blue. Norway uses a blue cross on red instead.",
+    "other": "no"
+  },
+  {
+    "c": "ir",
+    "id": "IRN",
+    "n": "Iran",
+    "r": "Asia",
+    "xy": [
+      53,
+      32
+    ],
+    "scope": "member",
+    "geo": "Iran is in Southern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "title": "A red emblem between green and red.",
+    "memory": "Green, white, red bands with a red emblem in the middle and small writing along the white stripe’s edges.",
+    "hint": "Green, white, red bands with a red emblem in the middle and small writing along the white stripe’s edges.",
+    "other": "it"
+  },
+  {
+    "c": "iq",
+    "id": "IRQ",
+    "n": "Iraq",
+    "r": "Asia",
+    "xy": [
+      44,
+      33
+    ],
+    "scope": "member",
+    "geo": "Iraq is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "green"
+    ],
+    "title": "Green writing in the middle.",
+    "memory": "Red, white, black horizontal stripes, with green Arabic writing across the white band.",
+    "hint": "Red, white, black horizontal stripes, with green Arabic writing across the white band.",
+    "other": "eg"
+  },
+  {
+    "c": "il",
+    "id": "ISR",
+    "n": "Israel",
+    "r": "Asia",
+    "xy": [
+      35.13,
+      31.47
+    ],
+    "scope": "member",
+    "geo": "Israel is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "white",
+      "blue"
+    ],
+    "title": "A blue star with six points.",
+    "memory": "A blue six-pointed star on white, between two blue horizontal stripes.",
+    "hint": "A blue six-pointed star on white, between two blue horizontal stripes.",
+    "other": "so"
+  },
+  {
+    "c": "jm",
+    "id": "JAM",
+    "n": "Jamaica",
+    "r": "North America",
+    "xy": [
+      -77.5,
+      18.25
+    ],
+    "scope": "member",
+    "geo": "Jamaica is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "green",
+      "black",
+      "yellow"
+    ],
+    "title": "A golden X makes four triangles.",
+    "memory": "A yellow diagonal cross divides green triangles above and below from black triangles at the sides.",
+    "hint": "A yellow diagonal cross divides green triangles above and below from black triangles at the sides.",
+    "other": "bi"
+  },
+  {
+    "c": "jo",
+    "id": "JOR",
+    "n": "Jordan",
+    "r": "Asia",
+    "xy": [
+      36,
+      31
+    ],
+    "scope": "member",
+    "geo": "Jordan is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "black",
+      "white",
+      "green",
+      "red"
+    ],
+    "title": "A little white star in a red triangle.",
+    "memory": "Black, white, green horizontal stripes meet a red triangle with a white seven-pointed star.",
+    "hint": "Black, white, green horizontal stripes meet a red triangle with a white seven-pointed star.",
+    "other": "ps"
+  },
+  {
+    "c": "kz",
+    "id": "KAZ",
+    "n": "Kazakhstan",
+    "r": "Asia",
+    "xy": [
+      68,
+      48
+    ],
+    "scope": "member",
+    "geo": "Kazakhstan is mainly in Central Asia. A small part west of the Ural River is in Europe.",
+    "shape": "sun",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "title": "A golden sun with an eagle below.",
+    "memory": "A yellow sun and eagle on blue, with a yellow decorative stripe down the left edge.",
+    "hint": "A yellow sun and eagle on blue, with a yellow decorative stripe down the left edge.",
+    "other": "kg"
+  },
+  {
+    "c": "ki",
+    "id": "KIR",
+    "n": "Kiribati",
+    "r": "Oceania",
+    "xy": [
+      173,
+      1.41666666
+    ],
+    "scope": "member",
+    "geo": "Kiribati is a country of islands spread across the central Pacific Ocean, in Oceania. Its islands lie on both sides of the equator.",
+    "shape": "sun",
+    "colors": [
+      "red",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "title": "A bird flies above a rising sun.",
+    "memory": "A golden bird and sun on red sit above blue-and-white ocean waves.",
+    "hint": "A golden bird and sun on red sit above blue-and-white ocean waves.",
+    "other": "ag"
+  },
+  {
+    "c": "xk",
+    "id": "KOS",
+    "n": "Kosovo",
+    "r": "Europe",
+    "xy": [
+      21.166667,
+      42.666667
+    ],
+    "scope": "additional",
+    "geo": "Kosovo is in southeastern Europe, in the Balkan Peninsula. It is an additional atlas entry, not a UN member or observer state.",
+    "shape": "map",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "title": "A golden map under six stars.",
+    "memory": "A yellow country outline sits on blue, below six white stars in an arc.",
+    "hint": "A yellow country outline sits on blue, below six white stars in an arc.",
+    "other": "cy"
+  },
+  {
+    "c": "kw",
+    "id": "KWT",
+    "n": "Kuwait",
+    "r": "Asia",
+    "xy": [
+      45.75,
+      29.5
+    ],
+    "scope": "member",
+    "geo": "Kuwait is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "black"
+    ],
+    "title": "A black doorway beside three stripes.",
+    "memory": "Green, white, red horizontal bands, with a black trapezoid on the left.",
+    "hint": "Green, white, red horizontal bands, with a black trapezoid on the left.",
+    "other": "ae"
+  },
+  {
+    "c": "kg",
+    "id": "KGZ",
+    "n": "Kyrgyzstan",
+    "r": "Asia",
+    "xy": [
+      75,
+      41
+    ],
+    "scope": "member",
+    "geo": "Kyrgyzstan is in Central Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "sun",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "title": "A yellow sun with a little roof inside.",
+    "memory": "A yellow sun sits on red. Inside the sun, crossing lines picture the top of a yurt.",
+    "hint": "A yellow sun sits on red. Inside the sun, crossing lines picture the top of a yurt.",
+    "other": "kz"
+  },
+  {
+    "c": "la",
+    "id": "LAO",
+    "n": "Laos",
+    "r": "Asia",
+    "xy": [
+      105,
+      18
+    ],
+    "scope": "member",
+    "geo": "Laos is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "A white moon on a blue night.",
+    "memory": "A white disc in a wide blue band, between two red bands.",
+    "hint": "A white disc in a wide blue band, between two red bands.",
+    "other": "jp"
+  },
+  {
+    "c": "lv",
+    "id": "LVA",
+    "n": "Latvia",
+    "r": "Europe",
+    "xy": [
+      25,
+      57
+    ],
+    "scope": "member",
+    "geo": "Latvia is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "title": "A thin white path through dark red.",
+    "memory": "Two dark-red bands surround a narrower white stripe. Austria’s bands are equal in width.",
+    "hint": "Two dark-red bands surround a narrower white stripe. Austria’s bands are equal in width.",
+    "other": "at"
+  },
+  {
+    "c": "lb",
+    "id": "LBN",
+    "n": "Lebanon",
+    "r": "Asia",
+    "xy": [
+      35.83333333,
+      33.83333333
+    ],
+    "scope": "member",
+    "geo": "Lebanon is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "tree",
+    "colors": [
+      "red",
+      "white",
+      "green"
+    ],
+    "title": "A green cedar standing tall.",
+    "memory": "A green cedar tree sits on a wide white stripe, between red bands.",
+    "hint": "A green cedar tree sits on a wide white stripe, between red bands.",
+    "other": "ca"
+  },
+  {
+    "c": "ls",
+    "id": "LSO",
+    "n": "Lesotho",
+    "r": "Africa",
+    "xy": [
+      28.5,
+      -29.5
+    ],
+    "scope": "member",
+    "geo": "Lesotho is in Southern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "black"
+    ],
+    "title": "A black hat between sky and grass.",
+    "memory": "Blue, white, green horizontal bands, with a black Basotho hat in the white band.",
+    "hint": "Blue, white, green horizontal bands, with a black Basotho hat in the white band.",
+    "other": "bw"
+  },
+  {
+    "c": "lr",
+    "id": "LBR",
+    "n": "Liberia",
+    "r": "Africa",
+    "xy": [
+      -9.5,
+      6.5
+    ],
+    "scope": "member",
+    "geo": "Liberia is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "One star above eleven stripes.",
+    "memory": "Red and white horizontal stripes, with one white star in a blue square at the top left.",
+    "hint": "Red and white horizontal stripes, with one white star in a blue square at the top left.",
+    "other": "us"
+  },
+  {
+    "c": "ly",
+    "id": "LBY",
+    "n": "Libya",
+    "r": "Africa",
+    "xy": [
+      17,
+      25
+    ],
+    "scope": "member",
+    "geo": "Libya is in Northern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "black",
+      "green",
+      "white"
+    ],
+    "title": "A moon in a wide black night.",
+    "memory": "Red, a wide black middle, and green horizontal bands, with a white crescent and star.",
+    "hint": "Red, a wide black middle, and green horizontal bands, with a white crescent and star.",
+    "other": "az"
+  },
+  {
+    "c": "li",
+    "id": "LIE",
+    "n": "Liechtenstein",
+    "r": "Europe",
+    "xy": [
+      9.53333333,
+      47.26666666
+    ],
+    "scope": "member",
+    "geo": "Liechtenstein is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "title": "A little golden crown.",
+    "memory": "Blue above red, with a yellow crown near the top left.",
+    "hint": "Blue above red, with a yellow crown near the top left.",
+    "other": "ht"
+  },
+  {
+    "c": "lt",
+    "id": "LTU",
+    "n": "Lithuania",
+    "r": "Europe",
+    "xy": [
+      24,
+      56
+    ],
+    "scope": "member",
+    "geo": "Lithuania is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "yellow",
+      "green",
+      "red"
+    ],
+    "title": "Yellow, green, red lie down.",
+    "memory": "Three horizontal stripes: yellow on top, green in the middle, red at the bottom.",
+    "hint": "Three horizontal stripes: yellow on top, green in the middle, red at the bottom.",
+    "other": "bo"
+  },
+  {
+    "c": "lu",
+    "id": "LUX",
+    "n": "Luxembourg",
+    "r": "Europe",
+    "xy": [
+      6.16666666,
+      49.75
+    ],
+    "scope": "member",
+    "geo": "Luxembourg is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "light blue"
+    ],
+    "title": "A pale-blue stripe at the bottom.",
+    "memory": "Red, white, light blue horizontal stripes. Its blue is lighter than the Netherlands’ blue.",
+    "hint": "Red, white, light blue horizontal stripes. Its blue is lighter than the Netherlands’ blue.",
+    "other": "nl"
+  },
+  {
+    "c": "mg",
+    "id": "MDG",
+    "n": "Madagascar",
+    "r": "Africa",
+    "xy": [
+      47,
+      -20
+    ],
+    "scope": "member",
+    "geo": "Madagascar is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "white",
+      "red",
+      "green"
+    ],
+    "title": "A white door beside red and green.",
+    "memory": "White stands on the left. Red sits above green on the right.",
+    "hint": "White stands on the left. Red sits above green on the right.",
+    "other": "bj"
+  },
+  {
+    "c": "mw",
+    "id": "MWI",
+    "n": "Malawi",
+    "r": "Africa",
+    "xy": [
+      34,
+      -13.5
+    ],
+    "scope": "member",
+    "geo": "Malawi is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "black",
+      "red",
+      "green"
+    ],
+    "title": "A red sunrise in a dark sky.",
+    "memory": "Black, red, green horizontal bands, with a red rising sun in the top black band.",
+    "hint": "Black, red, green horizontal bands, with a red rising sun in the top black band.",
+    "other": "gh"
+  },
+  {
+    "c": "my",
+    "id": "MYS",
+    "n": "Malaysia",
+    "r": "Asia",
+    "xy": [
+      112.5,
+      2.5
+    ],
+    "scope": "member",
+    "geo": "Malaysia is in South-Eastern Asia. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "title": "A moon and star above many stripes.",
+    "memory": "Red and white stripes, with a yellow crescent and many-pointed star in the blue top-left corner.",
+    "hint": "Red and white stripes, with a yellow crescent and many-pointed star in the blue top-left corner.",
+    "other": "us"
+  },
+  {
+    "c": "mv",
+    "id": "MDV",
+    "n": "Maldives",
+    "r": "Asia",
+    "xy": [
+      73,
+      3.25
+    ],
+    "scope": "member",
+    "geo": "Maldives is in Southern Asia. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "border",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "title": "A white moon in a green window.",
+    "memory": "A green rectangle with a white crescent sits inside a wide red border.",
+    "hint": "A green rectangle with a white crescent sits inside a wide red border.",
+    "other": "pk"
+  },
+  {
+    "c": "ml",
+    "id": "MLI",
+    "n": "Mali",
+    "r": "Africa",
+    "xy": [
+      -4,
+      17
+    ],
+    "scope": "member",
+    "geo": "Mali is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "title": "Green, yellow, red stand tall.",
+    "memory": "Three standing stripes: green on the left, yellow in the middle, red on the right. No star.",
+    "hint": "Three standing stripes: green on the left, yellow in the middle, red on the right. No star.",
+    "other": "gn"
+  },
+  {
+    "c": "mt",
+    "id": "MLT",
+    "n": "Malta",
+    "r": "Europe",
+    "xy": [
+      14.58333333,
+      35.83333333
+    ],
+    "scope": "member",
+    "geo": "Malta is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "title": "A tiny cross in a white corner.",
+    "memory": "White on the left, red on the right, with a small George Cross at the top left.",
+    "hint": "White on the left, red on the right, with a small George Cross at the top left.",
+    "other": "pl"
+  },
+  {
+    "c": "mh",
+    "id": "MHL",
+    "n": "Marshall Islands",
+    "r": "Oceania",
+    "xy": [
+      168,
+      9
+    ],
+    "scope": "member",
+    "geo": "Marshall Islands is in Micronesia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "blue",
+      "orange",
+      "white"
+    ],
+    "title": "Two bright rays cross a blue sky.",
+    "memory": "Orange and white diagonal rays widen toward the top right. A white star sits at the top left.",
+    "hint": "Orange and white diagonal rays widen toward the top right. A white star sits at the top left.",
+    "other": "na"
+  },
+  {
+    "c": "mr",
+    "id": "MRT",
+    "n": "Mauritania",
+    "r": "Africa",
+    "xy": [
+      -12,
+      20
+    ],
+    "scope": "member",
+    "geo": "Mauritania is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "title": "A golden moon smiles upward.",
+    "memory": "A yellow crescent and star on green, with red stripes at the top and bottom.",
+    "hint": "A yellow crescent and star on green, with red stripes at the top and bottom.",
+    "other": "pk"
+  },
+  {
+    "c": "mu",
+    "id": "MUS",
+    "n": "Mauritius",
+    "r": "Africa",
+    "xy": [
+      57.55,
+      -20.28333333
+    ],
+    "scope": "member",
+    "geo": "Mauritius is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "yellow",
+      "green"
+    ],
+    "title": "Four colors make a rainbow stack.",
+    "memory": "Four horizontal stripes: red, blue, yellow, green from top to bottom.",
+    "hint": "Four horizontal stripes: red, blue, yellow, green from top to bottom.",
+    "other": "cf"
+  },
+  {
+    "c": "fm",
+    "id": "FSM",
+    "n": "Micronesia",
+    "r": "Oceania",
+    "xy": [
+      158.25,
+      6.91666666
+    ],
+    "scope": "member",
+    "geo": "Micronesia is in Micronesia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "light blue",
+      "white"
+    ],
+    "title": "Four little stars make a diamond.",
+    "memory": "Four white stars form a diamond on a plain light-blue background.",
+    "hint": "Four white stars form a diamond on a plain light-blue background.",
+    "other": "so"
+  },
+  {
+    "c": "md",
+    "id": "MDA",
+    "n": "Moldova",
+    "r": "Europe",
+    "xy": [
+      29,
+      47
+    ],
+    "scope": "member",
+    "geo": "Moldova is in Eastern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "title": "An eagle on the middle stripe.",
+    "memory": "Blue, yellow, red standing up, with a coat of arms in the yellow band.",
+    "hint": "Blue, yellow, red standing up, with a coat of arms in the yellow band.",
+    "other": "ro"
+  },
+  {
+    "c": "mc",
+    "id": "MCO",
+    "n": "Monaco",
+    "r": "Europe",
+    "xy": [
+      7.4,
+      43.73333333
+    ],
+    "scope": "member",
+    "geo": "Monaco is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "Two stripes in a shorter rectangle.",
+    "memory": "Red on top, white below, just like Indonesia. Monaco’s flag is less wide for its height.",
+    "hint": "Red on top, white below, just like Indonesia. Monaco’s flag is less wide for its height.",
+    "other": "pl"
+  },
+  {
+    "c": "mn",
+    "id": "MNG",
+    "n": "Mongolia",
+    "r": "Asia",
+    "xy": [
+      105,
+      46
+    ],
+    "scope": "member",
+    "geo": "Mongolia is in Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "red",
+      "blue",
+      "yellow"
+    ],
+    "title": "A golden symbol on a red stripe.",
+    "memory": "Red, blue, red standing up, with a yellow Soyombo symbol on the left red stripe.",
+    "hint": "Red, blue, red standing up, with a yellow Soyombo symbol on the left red stripe.",
+    "other": "kz"
+  },
+  {
+    "c": "me",
+    "id": "MNE",
+    "n": "Montenegro",
+    "r": "Europe",
+    "xy": [
+      19.3,
+      42.5
+    ],
+    "scope": "member",
+    "geo": "Montenegro is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "border",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "title": "An eagle in a golden frame.",
+    "memory": "A golden border around red, with a golden double-headed eagle in the center.",
+    "hint": "A golden border around red, with a golden double-headed eagle in the center.",
+    "other": "al"
+  },
+  {
+    "c": "ma",
+    "id": "MAR",
+    "n": "Morocco",
+    "r": "Africa",
+    "xy": [
+      -5,
+      32
+    ],
+    "scope": "member",
+    "geo": "Morocco is in Northern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "red",
+      "green"
+    ],
+    "title": "A green star drawn on red.",
+    "memory": "One green five-pointed outlined star on a red background.",
+    "hint": "One green five-pointed outlined star on a red background.",
+    "other": "cn"
+  },
+  {
+    "c": "mz",
+    "id": "MOZ",
+    "n": "Mozambique",
+    "r": "Africa",
+    "xy": [
+      35,
+      -18.25
+    ],
+    "scope": "member",
+    "geo": "Mozambique is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "green",
+      "black",
+      "yellow",
+      "white",
+      "red"
+    ],
+    "title": "A star with a book and tools.",
+    "memory": "Green, black, yellow bands with thin white gaps. A red triangle holds a yellow star and an emblem.",
+    "hint": "Green, black, yellow bands with thin white gaps. A red triangle holds a yellow star and an emblem.",
+    "other": "zw"
+  },
+  {
+    "c": "mm",
+    "id": "MMR",
+    "n": "Myanmar",
+    "r": "Asia",
+    "xy": [
+      98,
+      22
+    ],
+    "scope": "member",
+    "geo": "Myanmar is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "yellow",
+      "green",
+      "red",
+      "white"
+    ],
+    "title": "One big white star.",
+    "memory": "Yellow, green, red horizontal bands, with a large white star in the middle.",
+    "hint": "Yellow, green, red horizontal bands, with a large white star in the middle.",
+    "other": "gh"
+  },
+  {
+    "c": "na",
+    "id": "NAM",
+    "n": "Namibia",
+    "r": "Africa",
+    "xy": [
+      17,
+      -22
+    ],
+    "scope": "member",
+    "geo": "Namibia is in Southern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "white",
+      "yellow"
+    ],
+    "title": "A sun beside a bright red road.",
+    "memory": "A red diagonal band with white edges separates blue with a yellow sun from green.",
+    "hint": "A red diagonal band with white edges separates blue with a yellow sun from green.",
+    "other": "cd"
+  },
+  {
+    "c": "nr",
+    "id": "NRU",
+    "n": "Nauru",
+    "r": "Oceania",
+    "xy": [
+      166.91666666,
+      -0.53333333
+    ],
+    "scope": "member",
+    "geo": "Nauru is in Micronesia. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "title": "A white star below a yellow line.",
+    "memory": "One thin yellow line crosses a dark-blue flag. A white many-pointed star sits below it on the left.",
+    "hint": "One thin yellow line crosses a dark-blue flag. A white many-pointed star sits below it on the left.",
+    "other": "fm"
+  },
+  {
+    "c": "nl",
+    "id": "NLD",
+    "n": "Netherlands",
+    "r": "Europe",
+    "xy": [
+      5.75,
+      52.5
+    ],
+    "scope": "member",
+    "geo": "Netherlands is in Western Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "Red, white, blue lie down.",
+    "memory": "Three horizontal stripes: red on top, white in the middle, dark blue at the bottom.",
+    "hint": "Three horizontal stripes: red on top, white in the middle, dark blue at the bottom.",
+    "other": "ru"
+  },
+  {
+    "c": "ni",
+    "id": "NIC",
+    "n": "Nicaragua",
+    "r": "North America",
+    "xy": [
+      -85,
+      13
+    ],
+    "scope": "member",
+    "geo": "Nicaragua is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "title": "A tiny rainbow inside a triangle.",
+    "memory": "Blue, white, blue horizontal stripes, with a triangular coat of arms in the middle.",
+    "hint": "Blue, white, blue horizontal stripes, with a triangular coat of arms in the middle.",
+    "other": "hn"
+  },
+  {
+    "c": "ne",
+    "id": "NER",
+    "n": "Niger",
+    "r": "Africa",
+    "xy": [
+      8,
+      16
+    ],
+    "scope": "member",
+    "geo": "Niger is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "orange",
+      "white",
+      "green"
+    ],
+    "title": "An orange sun between three stripes.",
+    "memory": "Orange, white, green horizontal bands, with an orange circle in the middle.",
+    "hint": "Orange, white, green horizontal bands, with an orange circle in the middle.",
+    "other": "in"
+  },
+  {
+    "c": "kp",
+    "id": "PRK",
+    "n": "North Korea",
+    "r": "Asia",
+    "xy": [
+      127,
+      40
+    ],
+    "scope": "member",
+    "geo": "North Korea is in Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "A red star inside a white circle.",
+    "memory": "A wide red band with thin white edges between blue bands. A white circle with a red star sits to the left.",
+    "hint": "A wide red band with thin white edges between blue bands. A white circle with a red star sits to the left.",
+    "other": "la"
+  },
+  {
+    "c": "mk",
+    "id": "MKD",
+    "n": "North Macedonia",
+    "r": "Europe",
+    "xy": [
+      22,
+      41.83333333
+    ],
+    "scope": "member",
+    "geo": "North Macedonia is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "sun",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "title": "A sun that reaches every edge.",
+    "memory": "A yellow sun in the center sends eight broad rays across a red flag.",
+    "hint": "A yellow sun in the center sends eight broad rays across a red flag.",
+    "other": "kg"
+  },
+  {
+    "c": "no",
+    "id": "NOR",
+    "n": "Norway",
+    "r": "Europe",
+    "xy": [
+      10,
+      62
+    ],
+    "scope": "member",
+    "geo": "Norway is in Northern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "cross",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "A blue cross in a white coat.",
+    "memory": "A blue cross with white edges on red. Iceland swaps the red and blue.",
+    "hint": "A blue cross with white edges on red. Iceland swaps the red and blue.",
+    "other": "is"
+  },
+  {
+    "c": "om",
+    "id": "OMN",
+    "n": "Oman",
+    "r": "Asia",
+    "xy": [
+      57,
+      21
+    ],
+    "scope": "member",
+    "geo": "Oman is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "white",
+      "red",
+      "green"
+    ],
+    "title": "A red door with a tiny emblem.",
+    "memory": "A red vertical stripe at the left, beside white, red, and green bands. A white emblem sits at the top left.",
+    "hint": "A red vertical stripe at the left, beside white, red, and green bands. A white emblem sits at the top left.",
+    "other": "ae"
+  },
+  {
+    "c": "pk",
+    "id": "PAK",
+    "n": "Pakistan",
+    "r": "Asia",
+    "xy": [
+      70,
+      30
+    ],
+    "scope": "member",
+    "geo": "Pakistan is in Southern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "crescent",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "title": "A white moon on a green night.",
+    "memory": "A white vertical stripe at the left, beside a green field with a white crescent and star.",
+    "hint": "A white vertical stripe at the left, beside a green field with a white crescent and star.",
+    "other": "dz"
+  },
+  {
+    "c": "pw",
+    "id": "PLW",
+    "n": "Palau",
+    "r": "Oceania",
+    "xy": [
+      134.5,
+      7.5
+    ],
+    "scope": "member",
+    "geo": "Palau is in Micronesia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "circle",
+    "colors": [
+      "light blue",
+      "yellow"
+    ],
+    "title": "A golden moon in a blue sky.",
+    "memory": "A yellow disc sits slightly left of center on a light-blue background.",
+    "hint": "A yellow disc sits slightly left of center on a light-blue background.",
+    "other": "bd"
+  },
+  {
+    "c": "ps",
+    "id": "PSX",
+    "n": "Palestine",
+    "r": "Asia",
+    "xy": [
+      35.2,
+      31.9
+    ],
+    "scope": "observer",
+    "geo": "Palestine is in Western Asia, on the eastern side of the Mediterranean region. Its territories include the West Bank and Gaza.",
+    "shape": "triangle",
+    "colors": [
+      "black",
+      "white",
+      "green",
+      "red"
+    ],
+    "title": "A plain red triangle points right.",
+    "memory": "Black, white, green horizontal stripes meet a red triangle. Unlike Jordan, it has no star.",
+    "hint": "Black, white, green horizontal stripes meet a red triangle. Unlike Jordan, it has no star.",
+    "other": "jo"
+  },
+  {
+    "c": "pa",
+    "id": "PAN",
+    "n": "Panama",
+    "r": "North America",
+    "xy": [
+      -80,
+      9
+    ],
+    "scope": "member",
+    "geo": "Panama is in Central America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "quartered",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "title": "Four boxes and two stars.",
+    "memory": "Four quarters: white with a blue star, red, blue, and white with a red star.",
+    "hint": "Four quarters: white with a blue star, red, blue, and white with a red star.",
+    "other": "do"
+  },
+  {
+    "c": "pg",
+    "id": "PNG",
+    "n": "Papua New Guinea",
+    "r": "Oceania",
+    "xy": [
+      147,
+      -6
+    ],
+    "scope": "member",
+    "geo": "Papua New Guinea is in Melanesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "red",
+      "black",
+      "yellow",
+      "white"
+    ],
+    "title": "A golden bird and five white stars.",
+    "memory": "A diagonal split: a golden bird on the red upper half, white stars on the black lower half.",
+    "hint": "A diagonal split: a golden bird on the red upper half, white stars on the black lower half.",
+    "other": "sb"
+  },
+  {
+    "c": "py",
+    "id": "PRY",
+    "n": "Paraguay",
+    "r": "South America",
+    "xy": [
+      -58,
+      -23
+    ],
+    "scope": "member",
+    "geo": "Paraguay is in South America. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "Three stripes with a little seal.",
+    "memory": "Red, white, blue horizontal bands with a seal in the middle. The seal is different on the back!",
+    "hint": "Red, white, blue horizontal bands with a seal in the middle. The seal is different on the back!",
+    "other": "nl"
+  },
+  {
+    "c": "pe",
+    "id": "PER",
+    "n": "Peru",
+    "r": "South America",
+    "xy": [
+      -76,
+      -10
+    ],
+    "scope": "member",
+    "geo": "Peru is in South America. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A white path between red doors.",
+    "memory": "Three standing stripes: red, white, red. This plain version has no emblem.",
+    "hint": "Three standing stripes: red, white, red. This plain version has no emblem.",
+    "other": "ca"
+  },
+  {
+    "c": "ph",
+    "id": "PHL",
+    "n": "Philippines",
+    "r": "Asia",
+    "xy": [
+      122,
+      13
+    ],
+    "scope": "member",
+    "geo": "Philippines is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "title": "A golden sun and three little stars.",
+    "memory": "Blue above red, with a white triangle holding a golden sun and three stars.",
+    "hint": "Blue above red, with a white triangle holding a golden sun and three stars.",
+    "other": "cu"
+  },
+  {
+    "c": "pt",
+    "id": "PRT",
+    "n": "Portugal",
+    "r": "Europe",
+    "xy": [
+      -8,
+      39.5
+    ],
+    "scope": "member",
+    "geo": "Portugal is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "green",
+      "red",
+      "yellow"
+    ],
+    "title": "A shield on a golden globe.",
+    "memory": "Green on the left and a wider red field on the right, with an emblem across their meeting line.",
+    "hint": "Green on the left and a wider red field on the right, with an emblem across their meeting line.",
+    "other": "bd"
+  },
+  {
+    "c": "qa",
+    "id": "QAT",
+    "n": "Qatar",
+    "r": "Asia",
+    "xy": [
+      51.25,
+      25.5
+    ],
+    "scope": "member",
+    "geo": "Qatar is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "serrated",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "title": "Nine white teeth meet dark red.",
+    "memory": "White on the left, with nine points against a maroon field. The flag is very long and narrow.",
+    "hint": "White on the left, with nine points against a maroon field. The flag is very long and narrow.",
+    "other": "bh"
+  },
+  {
+    "c": "cg",
+    "id": "COG",
+    "n": "Republic of the Congo",
+    "r": "Africa",
+    "xy": [
+      15,
+      -1
+    ],
+    "scope": "member",
+    "geo": "Republic of the Congo is in Middle Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "title": "A yellow slide between green and red.",
+    "memory": "A broad yellow diagonal band separates green at the top left from red at the bottom right.",
+    "hint": "A broad yellow diagonal band separates green at the top left from red at the bottom right.",
+    "other": "cd"
+  },
+  {
+    "c": "ro",
+    "id": "ROU",
+    "n": "Romania",
+    "r": "Europe",
+    "xy": [
+      25,
+      46
+    ],
+    "scope": "member",
+    "geo": "Romania is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "title": "Blue, yellow, red stand tall.",
+    "memory": "Three standing stripes: blue on the left, yellow in the middle, red on the right.",
+    "hint": "Three standing stripes: blue on the left, yellow in the middle, red on the right.",
+    "other": "md"
+  },
+  {
+    "c": "ru",
+    "id": "RUS",
+    "n": "Russia",
+    "r": "Europe",
+    "xy": [
+      100,
+      60
+    ],
+    "scope": "member",
+    "geo": "Russia stretches across eastern Europe and northern Asia. Its capital, Moscow, is in Europe. Its map pin sits in its broad Asian territory.",
+    "shape": "horizontal",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "title": "White, blue, red lie down.",
+    "memory": "White on top, blue in the middle, red at the bottom. The order differs from the Netherlands.",
+    "hint": "White on top, blue in the middle, red at the bottom. The order differs from the Netherlands.",
+    "other": "nl"
+  },
+  {
+    "c": "rw",
+    "id": "RWA",
+    "n": "Rwanda",
+    "r": "Africa",
+    "xy": [
+      30,
+      -2
+    ],
+    "scope": "member",
+    "geo": "Rwanda is in Eastern Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "light blue",
+      "yellow",
+      "green"
+    ],
+    "title": "A little sun in a big blue sky.",
+    "memory": "A wide light-blue top band with a yellow sun, above narrower yellow and green bands.",
+    "hint": "A wide light-blue top band with a yellow sun, above narrower yellow and green bands.",
+    "other": "ga"
+  },
+  {
+    "c": "kn",
+    "id": "KNA",
+    "n": "Saint Kitts and Nevis",
+    "r": "North America",
+    "xy": [
+      -62.75,
+      17.33333333
+    ],
+    "scope": "member",
+    "geo": "Saint Kitts and Nevis is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "green",
+      "red",
+      "black",
+      "white",
+      "yellow"
+    ],
+    "title": "Two stars riding a black road.",
+    "memory": "A black diagonal band with yellow edges holds two white stars, between green and red.",
+    "hint": "A black diagonal band with yellow edges holds two white stars, between green and red.",
+    "other": "tz"
+  },
+  {
+    "c": "lc",
+    "id": "LCA",
+    "n": "Saint Lucia",
+    "r": "North America",
+    "xy": [
+      -60.96666666,
+      13.88333333
+    ],
+    "scope": "member",
+    "geo": "Saint Lucia is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "light blue",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "title": "Two pointy mountain shapes.",
+    "memory": "A yellow triangle overlaps a tall black triangle edged in white, all on light blue.",
+    "hint": "A yellow triangle overlaps a tall black triangle edged in white, all on light blue.",
+    "other": "np"
+  },
+  {
+    "c": "vc",
+    "id": "VCT",
+    "n": "Saint Vincent and the Grenadines",
+    "r": "North America",
+    "xy": [
+      -61.2,
+      13.25
+    ],
+    "scope": "member",
+    "geo": "Saint Vincent and the Grenadines is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "blue",
+      "yellow",
+      "green"
+    ],
+    "title": "Three green diamonds make a V.",
+    "memory": "Blue, a wide yellow middle, and green standing up. Three green diamonds form a V on yellow.",
+    "hint": "Blue, a wide yellow middle, and green standing up. Three green diamonds form a V on yellow.",
+    "other": "br"
+  },
+  {
+    "c": "ws",
+    "id": "WSM",
+    "n": "Samoa",
+    "r": "Oceania",
+    "xy": [
+      -172.33333333,
+      -13.58333333
+    ],
+    "scope": "member",
+    "geo": "Samoa is in Polynesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "Five stars in a little blue window.",
+    "memory": "A red flag with a blue square at the top left containing five white stars.",
+    "hint": "A red flag with a blue square at the top left containing five white stars.",
+    "other": "tw"
+  },
+  {
+    "c": "sm",
+    "id": "SMR",
+    "n": "San Marino",
+    "r": "Europe",
+    "xy": [
+      12.41666666,
+      43.76666666
+    ],
+    "scope": "member",
+    "geo": "San Marino is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "white",
+      "light blue"
+    ],
+    "title": "Three little towers on a shield.",
+    "memory": "White above light blue, with a coat of arms showing three towers in the center.",
+    "hint": "White above light blue, with a coat of arms showing three towers in the center.",
+    "other": "ht"
+  },
+  {
+    "c": "sa",
+    "id": "SAU",
+    "n": "Saudi Arabia",
+    "r": "Asia",
+    "xy": [
+      45,
+      25
+    ],
+    "scope": "member",
+    "geo": "Saudi Arabia is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "text",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "title": "White writing above a sword.",
+    "memory": "White Arabic calligraphy and a white sword on a green background.",
+    "hint": "White Arabic calligraphy and a white sword on a green background.",
+    "other": "af"
+  },
+  {
+    "c": "sn",
+    "id": "SEN",
+    "n": "Senegal",
+    "r": "Africa",
+    "xy": [
+      -14,
+      14
+    ],
+    "scope": "member",
+    "geo": "Senegal is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "vertical",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "title": "A green star in the yellow middle.",
+    "memory": "Green, yellow, red standing up, with a green star in the middle stripe.",
+    "hint": "Green, yellow, red standing up, with a green star in the middle stripe.",
+    "other": "ml"
+  },
+  {
+    "c": "rs",
+    "id": "SRB",
+    "n": "Serbia",
+    "r": "Europe",
+    "xy": [
+      21,
+      44
+    ],
+    "scope": "member",
+    "geo": "Serbia is in Southeast Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "A crowned eagle beside three stripes.",
+    "memory": "Red, blue, white horizontal stripes, with a crowned coat of arms toward the left.",
+    "hint": "Red, blue, white horizontal stripes, with a crowned coat of arms toward the left.",
+    "other": "hr"
+  },
+  {
+    "c": "sc",
+    "id": "SYC",
+    "n": "Seychelles",
+    "r": "Africa",
+    "xy": [
+      55.66666666,
+      -4.58333333
+    ],
+    "scope": "member",
+    "geo": "Seychelles is in Eastern Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "blue",
+      "yellow",
+      "red",
+      "white",
+      "green"
+    ],
+    "title": "Five colors fan out like sunbeams.",
+    "memory": "Blue, yellow, red, white, green rays spread out from the bottom-left corner.",
+    "hint": "Blue, yellow, red, white, green rays spread out from the bottom-left corner.",
+    "other": "mu"
+  },
+  {
+    "c": "sl",
+    "id": "SLE",
+    "n": "Sierra Leone",
+    "r": "Africa",
+    "xy": [
+      -11.5,
+      8.5
+    ],
+    "scope": "member",
+    "geo": "Sierra Leone is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "white",
+      "blue"
+    ],
+    "title": "Green, white, blue lie down.",
+    "memory": "Three horizontal stripes: green on top, white in the middle, blue below.",
+    "hint": "Three horizontal stripes: green on top, white in the middle, blue below.",
+    "other": "ga"
+  },
+  {
+    "c": "sg",
+    "id": "SGP",
+    "n": "Singapore",
+    "r": "Asia",
+    "xy": [
+      103.8,
+      1.36666666
+    ],
+    "scope": "member",
+    "geo": "Singapore is in South-Eastern Asia. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A moon with five tiny stars.",
+    "memory": "Red above white, with a white crescent and five white stars in the upper-left red band.",
+    "hint": "Red above white, with a white crescent and five white stars in the upper-left red band.",
+    "other": "id"
+  },
+  {
+    "c": "sk",
+    "id": "SVK",
+    "n": "Slovakia",
+    "r": "Europe",
+    "xy": [
+      19.5,
+      48.66666666
+    ],
+    "scope": "member",
+    "geo": "Slovakia is in Central Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "title": "A double cross on three hills.",
+    "memory": "White, blue, red bands with a red shield on the left, showing a white double cross above blue hills.",
+    "hint": "White, blue, red bands with a red shield on the left, showing a white double cross above blue hills.",
+    "other": "si"
+  },
+  {
+    "c": "si",
+    "id": "SVN",
+    "n": "Slovenia",
+    "r": "Europe",
+    "xy": [
+      14.81666666,
+      46.11666666
+    ],
+    "scope": "member",
+    "geo": "Slovenia is in Central Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "title": "Three mountain peaks on a little shield.",
+    "memory": "White, blue, red bands with a small shield at the top left showing a white mountain and three stars.",
+    "hint": "White, blue, red bands with a small shield at the top left showing a white mountain and three stars.",
+    "other": "sk"
+  },
+  {
+    "c": "sb",
+    "id": "SLB",
+    "n": "Solomon Islands",
+    "r": "Oceania",
+    "xy": [
+      159,
+      -8
+    ],
+    "scope": "member",
+    "geo": "Solomon Islands is in Melanesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "blue",
+      "green",
+      "yellow",
+      "white"
+    ],
+    "title": "A yellow path and five white stars.",
+    "memory": "A thin yellow diagonal separates blue above from green below. Five white stars sit on blue.",
+    "hint": "A thin yellow diagonal separates blue above from green below. Five white stars sit on blue.",
+    "other": "pg"
+  },
+  {
+    "c": "so",
+    "id": "SOM",
+    "n": "Somalia",
+    "r": "Africa",
+    "xy": [
+      49,
+      10
+    ],
+    "scope": "member",
+    "geo": "Somalia is in Eastern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "light blue",
+      "white"
+    ],
+    "title": "One white star in a blue sky.",
+    "memory": "A single white five-pointed star in the center of a light-blue flag.",
+    "hint": "A single white five-pointed star in the center of a light-blue flag.",
+    "other": "fm"
+  },
+  {
+    "c": "kr",
+    "id": "KOR",
+    "n": "South Korea",
+    "r": "Asia",
+    "xy": [
+      127.5,
+      37
+    ],
+    "scope": "member",
+    "geo": "South Korea is in Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "circle",
+    "colors": [
+      "white",
+      "red",
+      "blue",
+      "black"
+    ],
+    "title": "A red-and-blue swirl.",
+    "memory": "A red-and-blue circle sits on white, with four groups of black bars around it.",
+    "hint": "A red-and-blue circle sits on white, with four groups of black bars around it.",
+    "other": "jp"
+  },
+  {
+    "c": "ss",
+    "id": "SDS",
+    "n": "South Sudan",
+    "r": "Africa",
+    "xy": [
+      30,
+      7
+    ],
+    "scope": "member",
+    "geo": "South Sudan is in Middle Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "title": "A yellow star in a blue triangle.",
+    "memory": "Black, red, green bands with thin white gaps meet a blue triangle holding a yellow star.",
+    "hint": "Black, red, green bands with thin white gaps meet a blue triangle holding a yellow star.",
+    "other": "sd"
+  },
+  {
+    "c": "es",
+    "id": "ESP",
+    "n": "Spain",
+    "r": "Europe",
+    "xy": [
+      -4,
+      40
+    ],
+    "scope": "member",
+    "geo": "Spain is in Southern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "title": "A wide yellow middle with a shield.",
+    "memory": "Red above and below a wide yellow stripe. A coat of arms sits toward the left.",
+    "hint": "Red above and below a wide yellow stripe. A coat of arms sits toward the left.",
+    "other": "at"
+  },
+  {
+    "c": "lk",
+    "id": "LKA",
+    "n": "Sri Lanka",
+    "r": "Asia",
+    "xy": [
+      81,
+      7
+    ],
+    "scope": "member",
+    "geo": "Sri Lanka is in Southern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "animal",
+    "colors": [
+      "yellow",
+      "red",
+      "green",
+      "orange"
+    ],
+    "title": "A golden lion holding a sword.",
+    "memory": "A golden lion on a dark-red panel, beside green and orange stripes, all within a yellow border.",
+    "hint": "A golden lion on a dark-red panel, beside green and orange stripes, all within a yellow border.",
+    "other": "bt"
+  },
+  {
+    "c": "sd",
+    "id": "SDN",
+    "n": "Sudan",
+    "r": "Africa",
+    "xy": [
+      30,
+      15
+    ],
+    "scope": "member",
+    "geo": "Sudan is in Northern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "green"
+    ],
+    "title": "A green triangle beside three stripes.",
+    "memory": "A green triangle points into red, white, and black horizontal bands.",
+    "hint": "A green triangle points into red, white, and black horizontal bands.",
+    "other": "ps"
+  },
+  {
+    "c": "sr",
+    "id": "SUR",
+    "n": "Suriname",
+    "r": "South America",
+    "xy": [
+      -56,
+      4
+    ],
+    "scope": "member",
+    "geo": "Suriname is in South America. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "title": "A golden star on a wide red path.",
+    "memory": "Green, white, a wide red middle, white, green, with one yellow star in the center.",
+    "hint": "Green, white, a wide red middle, white, green, with one yellow star in the center.",
+    "other": "gh"
+  },
+  {
+    "c": "sy",
+    "id": "SYR",
+    "n": "Syria",
+    "r": "Asia",
+    "xy": [
+      38,
+      35
+    ],
+    "scope": "member",
+    "geo": "Syria is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "white",
+      "black",
+      "red"
+    ],
+    "title": "Three red stars across the middle.",
+    "memory": "Green on top, white in the middle, black below, with three red stars on white.",
+    "hint": "Green on top, white in the middle, black below, with three red stars on white.",
+    "other": "eg"
+  },
+  {
+    "c": "st",
+    "id": "STP",
+    "n": "São Tomé and Príncipe",
+    "r": "Africa",
+    "xy": [
+      7,
+      1
+    ],
+    "scope": "member",
+    "geo": "São Tomé and Príncipe is in Middle Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "black"
+    ],
+    "title": "Two black stars share a stripe.",
+    "memory": "Green, yellow, green horizontal bands, with two black stars on yellow and a red triangle at the left.",
+    "hint": "Green, yellow, green horizontal bands, with two black stars on yellow and a red triangle at the left.",
+    "other": "gh"
+  },
+  {
+    "c": "tw",
+    "id": "TWN",
+    "n": "Taiwan",
+    "r": "Asia",
+    "xy": [
+      121,
+      23.5
+    ],
+    "scope": "additional",
+    "geo": "Taiwan is an island in eastern Asia, off the southeastern coast of China. It is an additional atlas entry, not a UN member or observer state.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "title": "A white sun in a blue corner.",
+    "memory": "A red field with a blue top-left rectangle containing a white sun.",
+    "hint": "A red field with a blue top-left rectangle containing a white sun.",
+    "other": "cn"
+  },
+  {
+    "c": "tj",
+    "id": "TJK",
+    "n": "Tajikistan",
+    "r": "Asia",
+    "xy": [
+      71,
+      39
+    ],
+    "scope": "member",
+    "geo": "Tajikistan is in Central Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "title": "A little crown with seven stars.",
+    "memory": "Red, a wide white middle, and green, with a yellow crown and seven stars on white.",
+    "hint": "Red, a wide white middle, and green, with a yellow crown and seven stars on white.",
+    "other": "hu"
+  },
+  {
+    "c": "tz",
+    "id": "TZA",
+    "n": "Tanzania",
+    "r": "Africa",
+    "xy": [
+      35,
+      -6
+    ],
+    "scope": "member",
+    "geo": "Tanzania is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "green",
+      "blue",
+      "black",
+      "yellow"
+    ],
+    "title": "A black road between grass and sea.",
+    "memory": "A black diagonal band with yellow edges separates green at the top left from blue at the bottom right.",
+    "hint": "A black diagonal band with yellow edges separates green at the top left from blue at the bottom right.",
+    "other": "na"
+  },
+  {
+    "c": "th",
+    "id": "THA",
+    "n": "Thailand",
+    "r": "Asia",
+    "xy": [
+      100,
+      15
+    ],
+    "scope": "member",
+    "geo": "Thailand is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "title": "A wide blue road in the middle.",
+    "memory": "Red, white, a wide blue middle, white, red. Costa Rica has a wide red middle instead.",
+    "hint": "Red, white, a wide blue middle, white, red. Costa Rica has a wide red middle instead.",
+    "other": "cr"
+  },
+  {
+    "c": "tl",
+    "id": "TLS",
+    "n": "Timor-Leste",
+    "r": "Asia",
+    "xy": [
+      125.91666666,
+      -8.83333333
+    ],
+    "scope": "member",
+    "geo": "Timor-Leste is in South-Eastern Asia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "triangle",
+    "colors": [
+      "red",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "title": "A white star in a black arrowhead.",
+    "memory": "A black triangle with a white star overlaps a larger yellow triangle, all on red.",
+    "hint": "A black triangle with a white star overlaps a larger yellow triangle, all on red.",
+    "other": "gy"
+  },
+  {
+    "c": "tg",
+    "id": "TGO",
+    "n": "Togo",
+    "r": "Africa",
+    "xy": [
+      1.16666666,
+      8
+    ],
+    "scope": "member",
+    "geo": "Togo is in Western Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "title": "One white star beside five stripes.",
+    "memory": "Five green-and-yellow horizontal stripes, with a white star in a red square at the top left.",
+    "hint": "Five green-and-yellow horizontal stripes, with a white star in a red square at the top left.",
+    "other": "lr"
+  },
+  {
+    "c": "to",
+    "id": "TON",
+    "n": "Tonga",
+    "r": "Oceania",
+    "xy": [
+      -175,
+      -20
+    ],
+    "scope": "member",
+    "geo": "Tonga is in Polynesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A little red cross in a white corner.",
+    "memory": "A red flag with a white rectangle at the top left containing a red cross.",
+    "hint": "A red flag with a white rectangle at the top left containing a red cross.",
+    "other": "ch"
+  },
+  {
+    "c": "tt",
+    "id": "TTO",
+    "n": "Trinidad and Tobago",
+    "r": "North America",
+    "xy": [
+      -61,
+      11
+    ],
+    "scope": "member",
+    "geo": "Trinidad and Tobago is in Caribbean. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "diagonal",
+    "colors": [
+      "red",
+      "black",
+      "white"
+    ],
+    "title": "A black slide across red.",
+    "memory": "A black diagonal stripe with thin white edges runs from the top left to bottom right on red.",
+    "hint": "A black diagonal stripe with thin white edges runs from the top left to bottom right on red.",
+    "other": "cd"
+  },
+  {
+    "c": "tn",
+    "id": "TUN",
+    "n": "Tunisia",
+    "r": "Africa",
+    "xy": [
+      9,
+      34
+    ],
+    "scope": "member",
+    "geo": "Tunisia is in Northern Africa. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "crescent",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "title": "A red moon inside a white circle.",
+    "memory": "A white circle on red holds a red crescent and star.",
+    "hint": "A white circle on red holds a red crescent and star.",
+    "other": "tr"
+  },
+  {
+    "c": "tm",
+    "id": "TKM",
+    "n": "Turkmenistan",
+    "r": "Asia",
+    "xy": [
+      60,
+      40
+    ],
+    "scope": "member",
+    "geo": "Turkmenistan is in Central Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "pattern",
+    "colors": [
+      "green",
+      "red",
+      "white"
+    ],
+    "title": "A carpet ribbon beside a moon.",
+    "memory": "A red decorative carpet stripe runs down green, beside a white crescent and five stars.",
+    "hint": "A red decorative carpet stripe runs down green, beside a white crescent and five stars.",
+    "other": "pk"
+  },
+  {
+    "c": "tv",
+    "id": "TUV",
+    "n": "Tuvalu",
+    "r": "Oceania",
+    "xy": [
+      178,
+      -8
+    ],
+    "scope": "member",
+    "geo": "Tuvalu is in Polynesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "light blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "title": "Nine stars scattered on a blue sea.",
+    "memory": "A Union Jack at the top left of a light-blue flag, with nine yellow stars on the right.",
+    "hint": "A Union Jack at the top left of a light-blue flag, with nine yellow stars on the right.",
+    "other": "fj"
+  },
+  {
+    "c": "ug",
+    "id": "UGA",
+    "n": "Uganda",
+    "r": "Africa",
+    "xy": [
+      32,
+      1
+    ],
+    "scope": "member",
+    "geo": "Uganda is in Eastern Africa. Its map pin is near the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "black",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "title": "A crane in a circle.",
+    "memory": "Six horizontal stripes repeating black, yellow, red, with a crested crane in a white circle.",
+    "hint": "Six horizontal stripes repeating black, yellow, red, with a crested crane in a white circle.",
+    "other": "ke"
+  },
+  {
+    "c": "ua",
+    "id": "UKR",
+    "n": "Ukraine",
+    "r": "Europe",
+    "xy": [
+      32,
+      49
+    ],
+    "scope": "member",
+    "geo": "Ukraine is in Eastern Europe. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "title": "A blue sky over golden fields.",
+    "memory": "Two horizontal bands: blue above yellow. Imagine sky above a field of wheat.",
+    "hint": "Two horizontal bands: blue above yellow. Imagine sky above a field of wheat.",
+    "other": "pl"
+  },
+  {
+    "c": "ae",
+    "id": "ARE",
+    "n": "United Arab Emirates",
+    "r": "Asia",
+    "xy": [
+      54,
+      24
+    ],
+    "scope": "member",
+    "geo": "United Arab Emirates is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "red",
+      "green",
+      "white",
+      "black"
+    ],
+    "title": "A red door beside three stripes.",
+    "memory": "Find a red stripe on the left, beside green, white, and black horizontal bands.",
+    "hint": "Find a red stripe on the left, beside green, white, and black horizontal bands.",
+    "other": "jo"
+  },
+  {
+    "c": "uy",
+    "id": "URY",
+    "n": "Uruguay",
+    "r": "South America",
+    "xy": [
+      -56,
+      -33
+    ],
+    "scope": "member",
+    "geo": "Uruguay is in South America. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "canton",
+    "colors": [
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "title": "A little sun beside nine stripes.",
+    "memory": "Nine white-and-blue horizontal stripes, with a golden sun in a white square at the top left.",
+    "hint": "Nine white-and-blue horizontal stripes, with a golden sun in a white square at the top left.",
+    "other": "ar"
+  },
+  {
+    "c": "uz",
+    "id": "UZB",
+    "n": "Uzbekistan",
+    "r": "Asia",
+    "xy": [
+      64,
+      41
+    ],
+    "scope": "member",
+    "geo": "Uzbekistan is in Central Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "red"
+    ],
+    "title": "A moon and twelve little stars.",
+    "memory": "Blue, white, green horizontal bands divided by thin red lines. A white crescent and stars sit on blue.",
+    "hint": "Blue, white, green horizontal bands divided by thin red lines. A white crescent and stars sit on blue.",
+    "other": "az"
+  },
+  {
+    "c": "vu",
+    "id": "VUT",
+    "n": "Vanuatu",
+    "r": "Oceania",
+    "xy": [
+      167,
+      -16
+    ],
+    "scope": "member",
+    "geo": "Vanuatu is in Melanesia. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "y",
+    "colors": [
+      "red",
+      "green",
+      "black",
+      "yellow"
+    ],
+    "title": "A yellow Y splits red and green.",
+    "memory": "A yellow Y with black edges separates red above from green below. A black triangle holds a yellow emblem.",
+    "hint": "A yellow Y with black edges separates red above from green below. A black triangle holds a yellow emblem.",
+    "other": "za"
+  },
+  {
+    "c": "va",
+    "id": "VAT",
+    "n": "Vatican City",
+    "r": "Europe",
+    "xy": [
+      12.45,
+      41.9
+    ],
+    "scope": "observer",
+    "geo": "Vatican City is a tiny country inside Rome, Italy, in southern Europe. The Holy See is a UN observer state.",
+    "shape": "vertical",
+    "colors": [
+      "yellow",
+      "white"
+    ],
+    "title": "Two keys beside a golden stripe.",
+    "memory": "A square flag: yellow on the left and white on the right, with crossed keys and a papal tiara.",
+    "hint": "A square flag: yellow on the left and white on the right, with crossed keys and a papal tiara.",
+    "other": "ch"
+  },
+  {
+    "c": "ve",
+    "id": "VEN",
+    "n": "Venezuela",
+    "r": "South America",
+    "xy": [
+      -66,
+      8
+    ],
+    "scope": "member",
+    "geo": "Venezuela is in South America. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "yellow",
+      "blue",
+      "red",
+      "white"
+    ],
+    "title": "Eight white stars make a rainbow.",
+    "memory": "Yellow, blue, red horizontal stripes, with eight white stars in an arc on the blue band.",
+    "hint": "Yellow, blue, red horizontal stripes, with eight white stars in an arc on the blue band.",
+    "other": "co"
+  },
+  {
+    "c": "vn",
+    "id": "VNM",
+    "n": "Vietnam",
+    "r": "Asia",
+    "xy": [
+      107.83333333,
+      16.16666666
+    ],
+    "scope": "member",
+    "geo": "Vietnam is in South-Eastern Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stars",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "title": "One big yellow star.",
+    "memory": "A single yellow five-pointed star in the middle of a red background.",
+    "hint": "A single yellow five-pointed star in the middle of a red background.",
+    "other": "cn"
+  },
+  {
+    "c": "ye",
+    "id": "YEM",
+    "n": "Yemen",
+    "r": "Asia",
+    "xy": [
+      48,
+      15
+    ],
+    "scope": "member",
+    "geo": "Yemen is in Western Asia. Its map pin is north of the equator, the imaginary line around Earth’s middle.",
+    "shape": "horizontal",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "title": "Three plain stripes. No picture!",
+    "memory": "Red, white, black from top to bottom, with no emblem or writing.",
+    "hint": "Red, white, black from top to bottom, with no emblem or writing.",
+    "other": "eg"
+  },
+  {
+    "c": "zm",
+    "id": "ZMB",
+    "n": "Zambia",
+    "r": "Africa",
+    "xy": [
+      30,
+      -15
+    ],
+    "scope": "member",
+    "geo": "Zambia is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "animal",
+    "colors": [
+      "green",
+      "red",
+      "black",
+      "orange"
+    ],
+    "title": "An eagle above three little stripes.",
+    "memory": "A green field, with an orange eagle above red, black, and orange vertical stripes at the lower right.",
+    "hint": "A green field, with an orange eagle above red, black, and orange vertical stripes at the lower right.",
+    "other": "zw"
+  },
+  {
+    "c": "zw",
+    "id": "ZWE",
+    "n": "Zimbabwe",
+    "r": "Africa",
+    "xy": [
+      30,
+      -20
+    ],
+    "scope": "member",
+    "geo": "Zimbabwe is in Eastern Africa. Its map pin is south of the equator, the imaginary line around Earth’s middle.",
+    "shape": "stripes",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "black",
+      "white"
+    ],
+    "title": "A golden bird inside a white arrowhead.",
+    "memory": "Seven horizontal stripes meet a white triangle with a red star and a golden Zimbabwe bird.",
+    "hint": "Seven horizontal stripes meet a white triangle with a red star and a golden Zimbabwe bird.",
+    "other": "mz"
+  }
+];

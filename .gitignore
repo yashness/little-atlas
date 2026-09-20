@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.wrangler/
+.env*
+test-results/
+evidence/
+posters/
+data/sources/
+assets/audio/generation.json
+.DS_Store
+__pycache__/
