@@ -17,3 +17,14 @@ jobs:
       - run: npm run check
       - run: npm run test:unit
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Browser journeys against the compiled static app
+        env:
+          ATLAS_URL: http://127.0.0.1:8080
+        run: |
+          python3 scripts/dev/serve.py > /tmp/little-atlas.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            curl --fail --silent "$ATLAS_URL" >/dev/null && break
+            sleep 1
+          done
+          npm test

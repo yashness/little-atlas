@@ -44,6 +44,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Tokyo"
@@ -65,8 +66,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -132,6 +133,7 @@
       "ar",
       "bo",
       "co",
+      "fr",
       "gy",
       "pe",
       "py",
@@ -139,7 +141,8 @@
       "uy",
       "ve"
     ],
-    "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
+    "uncertainBorderCodes": [],
+    "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different. The border with France is through French Guiana, an integral part of France in South America.",
     "timeZones": [
       "America/Noronha",
       "America/Belem",
@@ -175,8 +178,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -242,6 +245,7 @@
     "borderCodes": [
       "us"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/St_Johns",
@@ -285,8 +289,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -348,14 +352,19 @@
     "borderCodes": [
       "ad",
       "be",
+      "br",
       "ch",
       "de",
       "es",
       "it",
       "lu",
-      "mc"
+      "mc",
+      "sr"
     ],
-    "borderNote": "France also includes French Guiana in South America, so its full land-border list includes Brazil and Suriname. The continent badge describes metropolitan France.",
+    "uncertainBorderCodes": [
+      "nl"
+    ],
+    "borderNote": "This list includes metropolitan France and French Guiana, which borders Brazil and Suriname. The Kingdom of the Netherlands’ Caribbean connection is scope-dependent and is never a wrong quiz answer. The continent badge describes metropolitan France.",
     "timeZones": [
       "Europe/Paris"
     ],
@@ -376,8 +385,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -453,6 +462,9 @@
       "np",
       "pk"
     ],
+    "uncertainBorderCodes": [
+      "af"
+    ],
     "borderNote": "Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line.",
     "timeZones": [
       "Asia/Kolkata"
@@ -474,8 +486,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -536,6 +548,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Australia/Lord_Howe",
@@ -568,8 +581,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -640,6 +653,7 @@
       "tz",
       "ug"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Nairobi"
@@ -661,8 +675,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -770,6 +784,7 @@
       "sz",
       "zw"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Johannesburg"
@@ -791,8 +806,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -854,6 +869,9 @@
     "borderCodes": [
       "ie"
     ],
+    "uncertainBorderCodes": [
+      "es"
+    ],
     "borderNote": "The list uses the United Kingdom itself, not every British Overseas Territory. Ireland is its land neighbor.",
     "timeZones": [
       "Europe/London"
@@ -875,8 +893,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -943,6 +961,7 @@
       "sm",
       "va"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Rome"
@@ -964,8 +983,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1027,6 +1046,7 @@
       "fi",
       "no"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Stockholm"
@@ -1048,8 +1068,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1126,6 +1146,7 @@
       "it",
       "li"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Zurich"
@@ -1147,8 +1168,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1210,6 +1231,7 @@
       "in",
       "mm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Dhaka"
@@ -1231,8 +1253,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1296,6 +1318,7 @@
       "ne",
       "td"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Lagos"
@@ -1317,8 +1340,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1382,6 +1405,7 @@
       "ca",
       "mx"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "The list includes Alaska’s border with Canada. Water crossings and maritime boundaries do not count as land borders.",
     "timeZones": [
       "America/New_York",
@@ -1431,8 +1455,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1497,6 +1521,7 @@
       "gt",
       "us"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Mexico_City",
@@ -1529,8 +1554,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1601,6 +1626,7 @@
       "py",
       "uy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Argentina/Buenos_Aires",
@@ -1633,8 +1659,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1708,6 +1734,7 @@
       "tj",
       "vn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line.",
     "timeZones": [
       "Asia/Shanghai",
@@ -1730,8 +1757,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1800,6 +1827,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Auckland",
@@ -1822,8 +1850,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1888,6 +1916,7 @@
       "cn",
       "in"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Kathmandu"
@@ -1909,8 +1938,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -1980,6 +2009,7 @@
       "ir",
       "sy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Istanbul"
@@ -2001,8 +2031,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2066,6 +2096,7 @@
       "pg",
       "tl"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Jakarta",
@@ -2090,8 +2121,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2158,6 +2189,7 @@
       "sk",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Warsaw"
@@ -2179,8 +2211,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2246,6 +2278,7 @@
     "borderCodes": [
       "gb"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Dublin"
@@ -2267,8 +2300,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2342,6 +2375,9 @@
       "tm",
       "uz"
     ],
+    "uncertainBorderCodes": [
+      "in"
+    ],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Kabul"
@@ -2368,8 +2404,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2433,6 +2469,7 @@
       "mk",
       "xk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Tirane"
@@ -2454,8 +2491,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2524,6 +2561,7 @@
       "ne",
       "tn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Algiers"
@@ -2545,8 +2583,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2609,6 +2647,7 @@
       "es",
       "fr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Andorra"
@@ -2630,8 +2669,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2696,6 +2735,7 @@
       "na",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Luanda"
@@ -2717,8 +2757,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2780,6 +2820,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Antigua"
@@ -2801,8 +2842,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2867,6 +2908,7 @@
       "ir",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Yerevan"
@@ -2888,8 +2930,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -2957,6 +2999,7 @@
       "si",
       "sk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Vienna"
@@ -2978,8 +3021,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3053,6 +3096,7 @@
       "ru",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Baku"
@@ -3074,8 +3118,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3135,6 +3179,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Nassau"
@@ -3156,8 +3201,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3214,6 +3259,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Bahrain"
@@ -3235,8 +3281,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3296,6 +3342,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Barbados"
@@ -3317,8 +3364,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3386,6 +3433,7 @@
       "ru",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Minsk"
@@ -3407,8 +3455,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3481,6 +3529,7 @@
       "lu",
       "nl"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Brussels"
@@ -3502,8 +3551,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3576,6 +3625,7 @@
       "gt",
       "mx"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Belize"
@@ -3597,8 +3647,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3661,6 +3711,7 @@
       "ng",
       "tg"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Porto-Novo"
@@ -3682,8 +3733,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3746,6 +3797,7 @@
       "cn",
       "in"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Thimphu"
@@ -3767,8 +3819,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3846,6 +3898,7 @@
       "pe",
       "py"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/La_Paz"
@@ -3867,8 +3920,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -3941,6 +3994,7 @@
       "me",
       "rs"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Sarajevo"
@@ -3962,8 +4016,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4032,6 +4086,7 @@
       "zm",
       "zw"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Gaborone"
@@ -4053,8 +4108,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4115,6 +4170,7 @@
     "borderCodes": [
       "my"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Brunei"
@@ -4136,8 +4192,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4203,6 +4259,7 @@
       "rs",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Sofia"
@@ -4224,8 +4281,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4292,6 +4349,7 @@
       "ne",
       "tg"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Ouagadougou"
@@ -4313,8 +4371,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4383,6 +4441,7 @@
       "rw",
       "tz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Bujumbura"
@@ -4404,8 +4463,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4467,6 +4526,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Atlantic/Cape_Verde"
@@ -4488,8 +4548,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4553,6 +4613,7 @@
       "th",
       "vn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Phnom_Penh"
@@ -4574,8 +4635,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4647,6 +4708,7 @@
       "ng",
       "td"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Douala"
@@ -4668,8 +4730,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4742,6 +4804,7 @@
       "ss",
       "td"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Bangui"
@@ -4763,8 +4826,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4835,6 +4898,7 @@
       "ng",
       "sd"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Ndjamena"
@@ -4856,8 +4920,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -4921,6 +4985,7 @@
       "bo",
       "pe"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Santiago",
@@ -4945,8 +5010,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5012,6 +5077,7 @@
       "pe",
       "ve"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Bogota"
@@ -5033,8 +5099,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5106,6 +5172,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Indian/Comoro"
@@ -5127,8 +5194,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5191,6 +5258,7 @@
       "ni",
       "pa"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Costa_Rica"
@@ -5212,8 +5280,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5277,6 +5345,7 @@
       "rs",
       "si"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Zagreb"
@@ -5298,8 +5367,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5361,6 +5430,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Havana"
@@ -5382,8 +5452,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5448,6 +5518,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Nicosia",
@@ -5470,8 +5541,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5540,6 +5611,7 @@
       "pl",
       "sk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Prague"
@@ -5561,8 +5633,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5628,6 +5700,7 @@
       "lr",
       "ml"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Abidjan"
@@ -5649,8 +5722,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5736,6 +5809,7 @@
       "ug",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Kinshasa",
@@ -5758,8 +5832,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5820,6 +5894,7 @@
     "borderCodes": [
       "de"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Copenhagen"
@@ -5841,8 +5916,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -5912,6 +5987,7 @@
       "et",
       "so"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Djibouti"
@@ -5933,8 +6009,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6000,6 +6076,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Dominica"
@@ -6021,8 +6098,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6084,6 +6161,7 @@
     "borderCodes": [
       "ht"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Santo_Domingo"
@@ -6105,8 +6183,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6169,6 +6247,7 @@
       "co",
       "pe"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Guayaquil",
@@ -6191,8 +6270,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6259,6 +6338,7 @@
       "ps",
       "sd"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Cairo"
@@ -6280,8 +6360,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6343,6 +6423,7 @@
       "gt",
       "hn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/El_Salvador"
@@ -6364,8 +6445,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6437,6 +6518,7 @@
       "cm",
       "ga"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Malabo"
@@ -6458,8 +6540,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6532,6 +6614,7 @@
       "et",
       "sd"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Asmara"
@@ -6553,8 +6636,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6617,6 +6700,7 @@
       "lv",
       "ru"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Tallinn"
@@ -6638,8 +6722,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6708,6 +6792,7 @@
       "mz",
       "za"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Mbabane"
@@ -6729,8 +6814,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6800,6 +6885,7 @@
       "so",
       "ss"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Addis_Ababa"
@@ -6821,8 +6907,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6890,6 +6976,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Fiji"
@@ -6911,8 +6998,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -6979,6 +7066,7 @@
       "ru",
       "se"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Helsinki"
@@ -7000,8 +7088,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7065,6 +7153,7 @@
       "cm",
       "gq"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Libreville"
@@ -7086,8 +7175,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7150,6 +7239,7 @@
     "borderCodes": [
       "sn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Banjul"
@@ -7171,8 +7261,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7237,6 +7327,7 @@
       "ru",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Tbilisi"
@@ -7258,8 +7349,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7329,6 +7420,7 @@
       "nl",
       "pl"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Berlin",
@@ -7351,8 +7443,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7418,6 +7510,7 @@
       "ci",
       "tg"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Accra"
@@ -7439,8 +7532,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7504,6 +7597,7 @@
       "mk",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Athens"
@@ -7525,8 +7619,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7586,6 +7680,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Grenada"
@@ -7607,8 +7702,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7671,6 +7766,7 @@
       "mx",
       "sv"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Guatemala"
@@ -7692,8 +7788,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7760,6 +7856,7 @@
       "sl",
       "sn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Conakry"
@@ -7781,8 +7878,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7850,6 +7947,7 @@
       "gn",
       "sn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Bissau"
@@ -7871,8 +7969,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -7938,6 +8036,7 @@
       "sr",
       "ve"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Guyana"
@@ -7959,8 +8058,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8027,6 +8126,7 @@
     "borderCodes": [
       "do"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Port-au-Prince"
@@ -8048,8 +8148,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8113,6 +8213,7 @@
       "ni",
       "sv"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Tegucigalpa"
@@ -8134,8 +8235,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8203,6 +8304,7 @@
       "sk",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Budapest"
@@ -8224,8 +8326,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8285,6 +8387,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Atlantic/Reykjavik"
@@ -8306,8 +8409,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8376,6 +8479,7 @@
       "tm",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Tehran"
@@ -8397,8 +8501,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8475,6 +8579,7 @@
       "sy",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Baghdad"
@@ -8496,8 +8601,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8566,6 +8671,7 @@
       "ps",
       "sy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Some boundaries and territorial claims are disputed. These connections are geographic adjacency, not a political endorsement.",
     "timeZones": [
       "Asia/Jerusalem"
@@ -8587,8 +8693,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8650,6 +8756,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Jamaica"
@@ -8671,8 +8778,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8740,6 +8847,7 @@
       "sa",
       "sy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Amman"
@@ -8761,8 +8869,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8833,6 +8941,7 @@
       "tm",
       "uz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Almaty",
@@ -8860,8 +8969,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -8927,6 +9036,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Tarawa",
@@ -8950,8 +9060,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9020,6 +9130,7 @@
       "mk",
       "rs"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Kosovo’s recognition is disputed. The atlas lists geographic neighbors without taking a position on recognition.",
     "timeZones": [
       "Europe/Belgrade"
@@ -9041,8 +9152,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9104,6 +9215,7 @@
       "iq",
       "sa"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Kuwait"
@@ -9125,8 +9237,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9194,6 +9306,7 @@
       "tj",
       "uz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Bishkek"
@@ -9215,8 +9328,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9283,6 +9396,7 @@
       "th",
       "vn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Vientiane"
@@ -9304,8 +9418,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9369,6 +9483,7 @@
       "lt",
       "ru"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Riga"
@@ -9390,8 +9505,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9458,6 +9573,7 @@
       "il",
       "sy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Beirut"
@@ -9479,8 +9595,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9547,6 +9663,7 @@
     "borderCodes": [
       "za"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Maseru"
@@ -9568,8 +9685,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9634,6 +9751,7 @@
       "gn",
       "sl"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Monrovia"
@@ -9655,8 +9773,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9726,6 +9844,7 @@
       "td",
       "tn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Tripoli"
@@ -9747,8 +9866,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9811,6 +9930,7 @@
       "at",
       "ch"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Vaduz"
@@ -9832,8 +9952,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9898,6 +10018,7 @@
       "pl",
       "ru"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Vilnius"
@@ -9919,8 +10040,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -9992,6 +10113,7 @@
       "de",
       "fr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Luxembourg"
@@ -10013,8 +10135,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10076,6 +10198,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Indian/Antananarivo"
@@ -10097,8 +10220,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10167,6 +10290,7 @@
       "tz",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Blantyre"
@@ -10188,8 +10312,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10260,6 +10384,7 @@
       "id",
       "th"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Kuala_Lumpur",
@@ -10282,8 +10407,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10343,6 +10468,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Indian/Maldives"
@@ -10364,8 +10490,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10433,6 +10559,7 @@
       "ne",
       "sn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Bamako"
@@ -10454,8 +10581,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10519,6 +10646,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Malta"
@@ -10540,8 +10668,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10603,6 +10731,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Majuro",
@@ -10625,8 +10754,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10692,6 +10821,7 @@
       "ml",
       "sn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Nouakchott"
@@ -10713,8 +10843,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10783,6 +10913,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Indian/Mauritius"
@@ -10804,8 +10935,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10864,6 +10995,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Chuuk",
@@ -10887,8 +11019,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -10951,6 +11083,7 @@
       "ro",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Chisinau"
@@ -10972,8 +11105,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11034,6 +11167,7 @@
     "borderCodes": [
       "fr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Monaco"
@@ -11055,8 +11189,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11119,6 +11253,7 @@
       "cn",
       "ru"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Ulaanbaatar",
@@ -11141,8 +11276,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11205,6 +11340,7 @@
       "rs",
       "xk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Podgorica"
@@ -11226,8 +11362,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11293,6 +11429,7 @@
       "dz",
       "es"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Casablanca"
@@ -11314,8 +11451,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11386,6 +11523,7 @@
       "zm",
       "zw"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Maputo"
@@ -11407,8 +11545,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11475,6 +11613,7 @@
       "la",
       "th"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Yangon"
@@ -11496,8 +11635,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11596,6 +11735,7 @@
       "za",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Windhoek"
@@ -11617,8 +11757,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11682,6 +11822,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Nauru"
@@ -11703,8 +11844,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11767,7 +11908,10 @@
       "be",
       "de"
     ],
-    "borderNote": "The source includes the Kingdom’s border with France on the Caribbean island of Saint Martin.",
+    "uncertainBorderCodes": [
+      "fr"
+    ],
+    "borderNote": "The displayed list is for the Netherlands: Belgium and Germany. The wider Kingdom also includes Caribbean countries; its Saint Martin connection with France is scope-dependent and is never used as a wrong quiz answer.",
     "timeZones": [
       "Europe/Amsterdam"
     ],
@@ -11788,8 +11932,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11851,6 +11995,7 @@
       "cr",
       "hn"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Managua"
@@ -11872,8 +12017,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -11941,6 +12086,7 @@
       "ng",
       "td"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Niamey"
@@ -11962,8 +12108,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12028,6 +12174,7 @@
       "kr",
       "ru"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Pyongyang"
@@ -12049,8 +12196,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12115,6 +12262,7 @@
       "rs",
       "xk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Skopje"
@@ -12136,8 +12284,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12209,6 +12357,7 @@
       "ru",
       "se"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Oslo"
@@ -12230,8 +12379,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12293,6 +12442,7 @@
       "sa",
       "ye"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Muscat"
@@ -12314,8 +12464,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12384,6 +12534,7 @@
       "in",
       "ir"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Karachi"
@@ -12405,8 +12556,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12469,6 +12620,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Palau"
@@ -12490,8 +12642,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12556,6 +12708,7 @@
       "il",
       "jo"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Borders and territorial status are disputed. Connections here describe the source’s geographic adjacency, not a political endorsement.",
     "timeZones": [
       "Asia/Gaza",
@@ -12575,8 +12728,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12639,6 +12792,7 @@
       "co",
       "cr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Panama"
@@ -12660,8 +12814,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12733,6 +12887,7 @@
     "borderCodes": [
       "id"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Port_Moresby",
@@ -12755,8 +12910,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12824,6 +12979,7 @@
       "bo",
       "br"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Asuncion"
@@ -12845,8 +13001,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -12919,6 +13075,7 @@
       "co",
       "ec"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Lima"
@@ -12940,8 +13097,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13008,6 +13165,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Manila"
@@ -13029,8 +13187,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13092,6 +13250,7 @@
     "borderCodes": [
       "es"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Lisbon",
@@ -13115,8 +13274,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13175,6 +13334,7 @@
     "borderCodes": [
       "sa"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Qatar"
@@ -13196,8 +13356,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13269,6 +13429,7 @@
       "cm",
       "ga"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Brazzaville"
@@ -13290,8 +13451,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13357,6 +13518,7 @@
       "rs",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Bucharest"
@@ -13378,8 +13540,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13455,6 +13617,7 @@
       "pl",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Kaliningrad",
@@ -13501,8 +13664,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13576,6 +13739,7 @@
       "tz",
       "ug"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Kigali"
@@ -13597,8 +13761,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13660,6 +13824,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/St_Kitts"
@@ -13673,8 +13838,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13733,6 +13898,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/St_Lucia"
@@ -13754,8 +13920,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13815,6 +13981,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/St_Vincent"
@@ -13836,8 +14003,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13901,6 +14068,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Apia"
@@ -13922,8 +14090,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -13984,6 +14152,7 @@
     "borderCodes": [
       "it"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/San_Marino"
@@ -14005,8 +14174,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14073,6 +14242,7 @@
       "qa",
       "ye"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Riyadh"
@@ -14094,8 +14264,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14162,6 +14332,7 @@
       "ml",
       "mr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Dakar"
@@ -14183,8 +14354,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14251,6 +14422,7 @@
       "ro",
       "xk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Belgrade"
@@ -14272,8 +14444,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14341,6 +14513,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Indian/Mahe"
@@ -14362,8 +14535,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14426,6 +14599,7 @@
       "gn",
       "lr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Freetown"
@@ -14447,8 +14621,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14521,6 +14695,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Singapore"
@@ -14542,8 +14717,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14607,6 +14782,7 @@
       "pl",
       "ua"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Bratislava"
@@ -14628,8 +14804,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14692,6 +14868,7 @@
       "hu",
       "it"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Ljubljana"
@@ -14713,8 +14890,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14775,6 +14952,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Guadalcanal"
@@ -14796,8 +14974,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14864,6 +15042,7 @@
       "et",
       "ke"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Mogadishu"
@@ -14885,8 +15064,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -14949,6 +15128,7 @@
     "borderCodes": [
       "kp"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Seoul"
@@ -14970,8 +15150,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15043,6 +15223,7 @@
       "sd",
       "ug"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Juba"
@@ -15064,8 +15245,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15127,6 +15308,9 @@
       "ma",
       "pt"
     ],
+    "uncertainBorderCodes": [
+      "gb"
+    ],
     "borderNote": "Spain also has land borders in North Africa through Ceuta and Melilla.",
     "timeZones": [
       "Europe/Madrid",
@@ -15150,8 +15334,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15216,6 +15400,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different. An inconsistent one-sided source link was excluded pending review.",
     "timeZones": [
       "Asia/Colombo"
@@ -15237,8 +15422,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15311,6 +15496,7 @@
       "ss",
       "td"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Khartoum"
@@ -15332,8 +15518,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15396,9 +15582,11 @@
     ],
     "borderCodes": [
       "br",
+      "fr",
       "gy"
     ],
-    "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
+    "uncertainBorderCodes": [],
+    "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different. The border with France is through French Guiana, an integral part of France in South America.",
     "timeZones": [
       "America/Paramaribo"
     ],
@@ -15419,8 +15607,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15488,6 +15676,7 @@
       "lb",
       "tr"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Damascus"
@@ -15509,8 +15698,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15573,6 +15762,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Sao_Tome"
@@ -15594,8 +15784,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15655,6 +15845,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Taipei"
@@ -15676,8 +15867,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15748,6 +15939,7 @@
       "kg",
       "uz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Dushanbe"
@@ -15769,8 +15961,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15842,6 +16034,7 @@
       "ug",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Dar_es_Salaam"
@@ -15863,8 +16056,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -15929,6 +16122,7 @@
       "mm",
       "my"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Bangkok"
@@ -15950,8 +16144,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16019,6 +16213,7 @@
     "borderCodes": [
       "id"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Dili"
@@ -16040,8 +16235,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16107,6 +16302,7 @@
       "bj",
       "gh"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Lome"
@@ -16128,8 +16324,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16190,6 +16386,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Tongatapu"
@@ -16211,8 +16408,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16270,6 +16467,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Port_of_Spain"
@@ -16291,8 +16489,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16356,6 +16554,7 @@
       "dz",
       "ly"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Tunis"
@@ -16377,8 +16576,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16448,6 +16647,7 @@
       "kz",
       "uz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Ashgabat"
@@ -16469,8 +16669,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16536,6 +16736,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Funafuti"
@@ -16557,8 +16758,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16631,6 +16832,7 @@
       "ss",
       "tz"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Kampala"
@@ -16652,8 +16854,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16720,6 +16922,7 @@
       "ru",
       "sk"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Simferopol",
@@ -16742,8 +16945,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16805,6 +17008,7 @@
       "om",
       "sa"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Dubai"
@@ -16826,8 +17030,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16891,6 +17095,7 @@
       "ar",
       "br"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Montevideo"
@@ -16912,8 +17117,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -16986,6 +17191,7 @@
       "tj",
       "tm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Samarkand",
@@ -17008,8 +17214,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17078,6 +17284,7 @@
       }
     ],
     "borderCodes": [],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Pacific/Efate"
@@ -17099,8 +17306,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17165,6 +17372,7 @@
     "borderCodes": [
       "it"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Europe/Vatican"
@@ -17186,8 +17394,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17253,6 +17461,7 @@
       "co",
       "gy"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "America/Caracas"
@@ -17274,8 +17483,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17338,6 +17547,7 @@
       "kh",
       "la"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Ho_Chi_Minh"
@@ -17359,8 +17569,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17423,6 +17633,7 @@
       "om",
       "sa"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Asia/Aden"
@@ -17444,8 +17655,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17515,6 +17726,7 @@
       "tz",
       "zw"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Lusaka"
@@ -17536,8 +17748,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",
@@ -17663,6 +17875,7 @@
       "za",
       "zm"
     ],
+    "uncertainBorderCodes": [],
     "borderNote": "Land-border connections follow the cited country dataset; sea neighbors are different.",
     "timeZones": [
       "Africa/Harare"
@@ -17684,8 +17897,8 @@
       },
       {
         "label": "mledoze country metadata",
-        "url": "https://github.com/mledoze/countries",
-        "snapshot": "2026-09-20"
+        "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+        "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
       },
       {
         "label": "IANA Time Zone Database",

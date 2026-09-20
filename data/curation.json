@@ -35,17 +35,19 @@
     "14":"my"
   },
   "borderNotes": {
-    "fr":"France also includes French Guiana in South America, so its full land-border list includes Brazil and Suriname. The continent badge describes metropolitan France.",
+    "fr":"This list includes metropolitan France and French Guiana, which borders Brazil and Suriname. The Kingdom of the Netherlands’ Caribbean connection is scope-dependent and is never a wrong quiz answer. The continent badge describes metropolitan France.",
     "gb":"The list uses the United Kingdom itself, not every British Overseas Territory. Ireland is its land neighbor.",
     "us":"The list includes Alaska’s border with Canada. Water crossings and maritime boundaries do not count as land borders.",
     "es":"Spain also has land borders in North Africa through Ceuta and Melilla.",
-    "nl":"The source includes the Kingdom’s border with France on the Caribbean island of Saint Martin.",
+    "nl":"The displayed list is for the Netherlands: Belgium and Germany. The wider Kingdom also includes Caribbean countries; its Saint Martin connection with France is scope-dependent and is never used as a wrong quiz answer.",
     "ps":"Borders and territorial status are disputed. Connections here describe the source’s geographic adjacency, not a political endorsement.",
     "il":"Some boundaries and territorial claims are disputed. These connections are geographic adjacency, not a political endorsement.",
     "xk":"Kosovo’s recognition is disputed. The atlas lists geographic neighbors without taking a position on recognition.",
     "in":"Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line.",
     "cn":"Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line."
   },
+  "extraBorders": [["fr","br"],["fr","sr"]],
+  "uncertainBorders": [["fr","nl"],["in","af"],["gb","es"]],
   "storySummaries": {
     "jp":"Japan’s red disc represents the sun. The flag is often called Hinomaru, meaning a circle of the sun. The cherry comparison is only our memory trick—not the flag’s meaning.",
     "ca":"The maple leaf had represented Canada long before this flag was adopted in 1965. One bold leaf made a simple, recognizable symbol for the whole country.",

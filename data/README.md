@@ -8,13 +8,13 @@ npm run data:build   # derives catalog and provenance
 npm run test:unit    # validates cross-record and learning invariants
 ```
 
-Sources are linked on country profiles. The archived World Factbook text is public domain and pinned to commit `144d6977b2b01ac1cbd220de754c0a005616760b` of `factbook/factbook.json`. Country metadata is from mledoze/countries (ODbL; license in assets/licenses). Civil time-zone identifiers are from IANA tzdb 2026d. Physical continent outlines come from Natural Earth (public domain). Raw fetched caches live in ignored `data/sources/`; compact derived data is committed for offline builds.
+Sources are linked on country profiles. The archived World Factbook text is public domain and pinned to commit `144d6977b2b01ac1cbd220de754c0a005616760b` of `factbook/factbook.json`. Country metadata is pinned to mledoze/countries commit `c8015eebdd94c533358406b0d709f441389e1f2e` (ODbL; license in assets/licenses). Civil time-zone identifiers are from IANA tzdb 2026d. Physical continent and country outlines are pinned to Natural Earth commit `ca96624a56bd078437bca8184e78163e5039ad19` (public domain). Raw fetched caches live in ignored `data/sources/`; compact derived data is committed for offline builds. Derived country metadata in the catalog remains subject to the Open Database License; the included ODbL notice and pinned upstream source are retained. Other source material keeps its respective attribution and license.
 
 ## Decisions that prevent misleading lessons
 
 - Türkiye, Russia, Kazakhstan and Egypt span continents; Indonesia's western New Guinea territory is included in Oceania. Regions are arrays, not a forced single answer.
 - Cyprus and Caucasus classifications can vary by convention. Explicit `regionMode: convention` is distinct from physically spanning an agreed boundary. Their valid alternative grouping must never be a wrong answer.
-- Continent badges describe core/mainland territories; overseas exceptions are explained separately. Border profiles can include overseas land connections, such as France–Brazil.
+- Continent badges describe core/mainland territories; overseas exceptions are explained separately. France–Brazil and France–Suriname are confirmed via French Guiana in the pinned metadata and added reciprocally. Scope-dependent or claimed links (France–Netherlands, UK–Spain, India–Afghanistan) are never used as wrong neighbor answers.
 - Country statistical groupings must not paint all of Russia as physical Europe; maps use continent geometry rather than blindly filling countries by a single region field.
 - Visual features are reviewed lists, not a regex over prose. “No star” must never classify Mali as a star flag.
 - Band counts include thin background bands, but not emblem detail. Botswana has five; Afghanistan's white flag does not have two.
@@ -23,6 +23,6 @@ Sources are linked on country profiles. The archived World Factbook text is publ
 - The source's one-sided Sri Lanka→India adjacency is excluded, not silently converted into a land border. Adam's Bridge does not create a present-day land border.
 - Religious context lists traditions from a dated source snapshot; percentages are removed rather than represented as current demographic truth. Every person can have a different belief or none. This is not a religion-identification game.
 - Languages are selected source listings, not exhaustive claims about all residents.
-- Time-zone proximity uses actual UTC offsets at an explicit instant, including DST and 15/30/45-minute offsets; it is not inferred from longitude. A multi-zone country may match through any listed zone.
+- Time-zone proximity uses actual UTC offsets at an explicit instant, including DST and 15/30/45-minute offsets; it is not inferred from longitude. A multi-zone country may match through any listed zone. If the device cannot resolve one of a country’s zones, clock questions leave it out rather than infer a falsely certain answer from partial data.
 
 Future geography topics should add sourced content and domain-specific relations to shared contracts and registries, not copy a country screen and invent data to fill it.

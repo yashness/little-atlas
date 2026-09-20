@@ -1,6 +1,7 @@
 {
   "retrievedAt": "2026-09-20",
   "factbookCommit": "144d6977b2b01ac1cbd220de754c0a005616760b",
+  "countryCommit": "c8015eebdd94c533358406b0d709f441389e1f2e",
   "timeZoneVersion": "2026d",
   "entries": 197,
   "flagStories": 197,
@@ -14,8 +15,8 @@
   "sources": [
     {
       "label": "mledoze country metadata",
-      "url": "https://github.com/mledoze/countries",
-      "snapshot": "2026-09-20"
+      "url": "https://github.com/mledoze/countries/blob/c8015eebdd94c533358406b0d709f441389e1f2e/countries.json",
+      "snapshot": "pinned c8015eebdd94, retrieved 2026-09-20"
     },
     {
       "label": "IANA Time Zone Database",

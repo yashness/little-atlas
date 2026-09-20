@@ -1,4 +1,7 @@
-export function shuffled<T>(items: readonly T[], random: () => number = Math.random): T[] {
+export function shuffled<T>(
+  items: readonly T[],
+  random: () => number = Math.random,
+): T[] {
   const result = [...items];
   for (let i = result.length - 1; i > 0; i--) {
     const j = Math.floor(random() * (i + 1));
@@ -6,7 +9,12 @@ export function shuffled<T>(items: readonly T[], random: () => number = Math.ran
   }
   return result;
 }
-export function unique<T>(items: readonly T[]): T[] { return [...new Set(items)]; }
+export function unique<T>(items: readonly T[]): T[] {
+  return [...new Set(items)];
+}
 export function normalized(text: string): string {
-  return text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('en');
+  return text
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase("en");
 }

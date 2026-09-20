@@ -1,11 +1,41 @@
 /** Shared vocabulary. No browser, storage, or source-provider dependencies. */
-export const REGIONS = ['North America', 'South America', 'Europe', 'Africa', 'Asia', 'Oceania'] as const;
-export type Region = typeof REGIONS[number];
-export type RegionMode = 'single' | 'spans' | 'convention';
-export type Feature = 'circle' | 'stars' | 'cross' | 'vertical' | 'horizontal' | 'crescent' | 'sun' | 'animal' | 'text' | 'triangle' | 'tree';
-export interface Source { label: string; url: string; snapshot: string }
-export interface Language { code: string; name: string }
-export interface FlagStory { summary: string; detail: string; source: Source; note?: string }
+export const REGIONS = [
+  "North America",
+  "South America",
+  "Europe",
+  "Africa",
+  "Asia",
+  "Oceania",
+] as const;
+export type Region = (typeof REGIONS)[number];
+export type RegionMode = "single" | "spans" | "convention";
+export type Feature =
+  | "circle"
+  | "stars"
+  | "cross"
+  | "vertical"
+  | "horizontal"
+  | "crescent"
+  | "sun"
+  | "animal"
+  | "text"
+  | "triangle"
+  | "tree";
+export interface Source {
+  label: string;
+  url: string;
+  snapshot: string;
+}
+export interface Language {
+  code: string;
+  name: string;
+}
+export interface FlagStory {
+  summary: string;
+  detail: string;
+  source: Source;
+  note?: string;
+}
 export interface Country {
   code: string;
   name: string;
@@ -23,40 +53,96 @@ export interface Country {
   mnemonic: string; // explicitly not flag history
   clue: string;
   compareWith: string;
-  scope: 'member' | 'observer' | 'additional';
+  scope: "member" | "observer" | "additional";
   story: FlagStory;
   languages: Language[];
   borderCodes: string[];
+  uncertainBorderCodes: string[]; // scope-dependent/claimed links: never use as a wrong answer
   borderNote: string;
   timeZones: string[];
   beliefs: { text: string; note: string; source: Source } | null;
   sources: Source[];
 }
-export type Axis = 'first-steps' | 'alphabetical' | 'continent' | 'colors' | 'patterns' | 'bands' | 'similarity' | 'neighbors' | 'languages' | 'clocks' | 'unvisited';
+export type Axis =
+  | "first-steps"
+  | "alphabetical"
+  | "continent"
+  | "colors"
+  | "patterns"
+  | "bands"
+  | "similarity"
+  | "neighbors"
+  | "languages"
+  | "clocks"
+  | "unvisited";
 export interface ExplorerOptions {
   axis: Axis;
-  region: Region | 'all';
+  region: Region | "all";
   color: string;
-  feature: Feature | 'all';
+  feature: Feature | "all";
   bands: string;
   anchor: string;
   language: string;
   clockWindowMinutes: number;
   search: string;
 }
-export interface Selection { countries: Country[]; description: string; emptyReason: string }
-export type GameKind = 'flags' | 'shapes' | 'places' | 'neighbors' | 'clocks' | 'pairs';
-export interface GameOptions { kind: GameKind; rounds: number; choices: 2 | 3 | 4; clues: boolean }
-export interface Choice { id: string; label: string; correct: boolean; countryCode?: string; regions?: Region[] }
+export interface Selection {
+  countries: Country[];
+  description: string;
+  emptyReason: string;
+}
+export type GameKind =
+  | "flags"
+  | "shapes"
+  | "places"
+  | "neighbors"
+  | "clocks"
+  | "pairs";
+export interface GameOptions {
+  kind: GameKind;
+  rounds: number;
+  choices: 2 | 3 | 4;
+  clues: boolean;
+  order: "shuffle" | "journey";
+}
+export interface Choice {
+  id: string;
+  label: string;
+  correct: boolean;
+  countryCode?: string;
+  regions?: Region[];
+}
 export interface Question {
-  kind: Exclude<GameKind, 'pairs'>;
+  kind: Exclude<GameKind, "pairs">;
   targetCode: string;
   prompt: string;
   clue: string;
   explanation: string;
   choices: Choice[];
+  feature?: Feature;
 }
-export type QuestionResult = { ok: true; question: Question } | { ok: false; reason: string };
-export interface Progress { stars: number; stamps: string[] }
-export type TopicId = 'countries' | 'rivers' | 'deserts' | 'forests' | 'languages' | 'wonders' | 'places';
-export interface Topic { id: TopicId; name: string; available: boolean }
+export type QuestionResult =
+  | { ok: true; question: Question }
+  | { ok: false; reason: string };
+export interface MemoryBoard {
+  readonly cards: readonly string[];
+  readonly faceUp: readonly number[];
+  readonly matched: readonly number[];
+}
+export interface Progress {
+  stars: number;
+  stamps: string[];
+}
+export type TopicId =
+  | "countries"
+  | "rivers"
+  | "deserts"
+  | "forests"
+  | "languages"
+  | "wonders"
+  | "places";
+export interface Topic {
+  id: TopicId;
+  name: string;
+  available: boolean;
+}

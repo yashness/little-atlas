@@ -2,14 +2,15 @@
 
 ## Production
 
-- Live URL: **https://little-atlas-9da.pages.dev/**
-- Cloudflare project: `little-atlas`
+- Canonical live URL: **https://littleatlas.pages.dev/**
+- Cloudflare project: `littleatlas`
+- Previous URL remains available: https://little-atlas-9da.pages.dev/ (`little-atlas` project)
 - Production branch: `main` (direct upload; no Git provider)
 - Release: `1.0.0`
-- Verified deployment: https://bf72b20a.little-atlas-9da.pages.dev
+- Verified clean-URL baseline deployment: https://9b39692d.littleatlas.pages.dev (artifact from Git tag `v1.0.0`, commit `d5ba037`)
 - Initial preview: https://release-check.little-atlas-9da.pages.dev
 
-The domain suffix was assigned by Cloudflare when creating the project. Only this new project was modified.
+`little-atlas.pages.dev` was already taken, so the first project received a suffix. The clean `littleatlas.pages.dev` address was subsequently created and verified against the same release (19 browser tests passed). Future releases target `littleatlas`. Browser-local progress is origin-specific and does not automatically move between the two domains.
 
 ## Reproduce
 
@@ -18,8 +19,8 @@ npm run check
 npm run build
 ATLAS_CDP=http://127.0.0.1:9223 npm test
 npm run deploy
-node scripts/verify-deploy.cjs https://little-atlas-9da.pages.dev
-ATLAS_URL=https://little-atlas-9da.pages.dev \
+npm run verify:deploy -- https://littleatlas.pages.dev
+ATLAS_URL=https://littleatlas.pages.dev \
   ATLAS_CDP=http://127.0.0.1:9223 npm test
 ```
 
@@ -66,7 +67,7 @@ The verified release snapshot is `/tmp/little-atlas-1.0.0-static.tar.gz` on this
 ```sh
 restore=$(mktemp -d /tmp/little-atlas-restore.XXXXXX)
 tar -xzf /tmp/little-atlas-1.0.0-static.tar.gz -C "$restore"
-wrangler pages deploy "$restore" --project-name little-atlas --branch main
+wrangler pages deploy "$restore" --project-name littleatlas --branch main
 ```
 
 For later deployments, Cloudflare Pages also retains the verified deployment above as a rollback target in the dashboard. The initial release had no earlier production version to roll back to.
