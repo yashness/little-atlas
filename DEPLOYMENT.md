@@ -40,6 +40,8 @@ Release 1.1: **197 entries, 627 audio clips, 844 public assets** plus `_headers`
 
 ## Verification record
 
+- **Current production 1.1.1:** https://1469adce.littleatlas.pages.dev, canonical https://littleatlas.pages.dev/; tag `v1.1.1`, merge `e321d47`. Meaning/story is visible in the default lesson. Type/format/ring checks, 13 unit/data tests, 19 preview and production browser tests, and all 844 asset checks pass. See `docs/slices.md` for slice ownership and acceptance.
+
 - 1.0 clean-URL baseline: `9b39692d`, source tag `v1.0.0` / commit `d5ba037`; 19 browser tests passed.
 - 1.1 local: strict types/formatting, 13 unit/data tests, 19 browser tests; 627 MP3s validated with no invalid files.
 - 1.1 preview: https://ac8a035b.littleatlas.pages.dev / branch alias `release-v1-1`; all 19 browser tests and all 844 asset checks passed.
@@ -54,7 +56,7 @@ Cloudflare retains the baseline deployment as a dashboard rollback target. A sou
 
 ```sh
 restore=$(mktemp -d /tmp/little-atlas-restore.XXXXXX)
-git archive v1.0.0 | tar -x -C "$restore"
+git archive v1.1.0 | tar -x -C "$restore"
 (cd "$restore" && npm ci && npm run build && \
   wrangler pages deploy dist --project-name littleatlas --branch main)
 ```
