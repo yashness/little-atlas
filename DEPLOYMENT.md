@@ -43,7 +43,8 @@ Release 1.1: **197 entries, 627 audio clips, 844 public assets** plus `_headers`
 - 1.0 clean-URL baseline: `9b39692d`, source tag `v1.0.0` / commit `d5ba037`; 19 browser tests passed.
 - 1.1 local: strict types/formatting, 13 unit/data tests, 19 browser tests; 627 MP3s validated with no invalid files.
 - 1.1 preview: https://ac8a035b.littleatlas.pages.dev / branch alias `release-v1-1`; all 19 browser tests and all 844 asset checks passed.
-- Current live verification is recorded in the release entry below after production promotion.
+- **1.1 production:** https://6d283966.littleatlas.pages.dev, served at https://littleatlas.pages.dev/; source tag `v1.1.0`, merge commit `a7c13b6`. All 19 production browser tests passed, including every country journey, audio, configurable games, and mobile layouts. All 844 public assets and deployed entrypoint hashes verified; private paths return 404.
+- Main was rechecked after merging: strict types/formatting, runtime ring/cycle checks, 13 unit/data tests, and the allowlisted build all pass.
 
 Detailed local proof is in ignored `evidence/`; CI results remain visible on GitHub. Canonical version lives in `package.json`.
 
