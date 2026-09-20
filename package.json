@@ -6,13 +6,20 @@
   "scripts": {
     "dev": "PORTLESS_PORT=1355 PORTLESS_HTTPS=0 portless little-atlas python3 serve.py",
     "dev:app": "python3 serve.py",
-    "check": "node --check app.js && node --check scripts/build.cjs",
+    "check": "npm run typecheck && node --check app.js && node --check scripts/build.cjs",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "esbuild src/lib/atlas.test.ts --bundle --platform=node --format=esm --outfile=.cache/atlas.test.mjs && node --test .cache/atlas.test.mjs",
+    "data:fetch": "python3 scripts/fetch-knowledge.py",
+    "data:build": "python3 scripts/build-knowledge.py",
     "build": "node scripts/build.cjs",
     "deploy": "npm run build && wrangler pages deploy dist --project-name little-atlas --branch main",
     "test": "playwright test"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",
-    "portless": "0.15.6"
+    "@types/node": "26.6.2",
+    "esbuild": "0.28.2",
+    "portless": "0.15.6",
+    "typescript": "7.0.2"
   }
 }

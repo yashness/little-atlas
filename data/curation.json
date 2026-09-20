@@ -1,0 +1,67 @@
+{
+  "regions": {
+    "tr": {"regions":["Asia","Europe"],"mode":"spans","note":"Most of Türkiye is in Asia; Eastern Thrace is in Europe. The Bosporus separates the two parts. Both are correct—not competing answers."},
+    "ru": {"regions":["Europe","Asia"],"mode":"spans","note":"Russia stretches across eastern Europe and northern Asia. Moscow is in Europe; most of the land area lies in Asia."},
+    "kz": {"regions":["Asia","Europe"],"mode":"spans","note":"Most of Kazakhstan is in Central Asia. A smaller area west of the Ural River lies in Europe under the usual river-boundary convention."},
+    "eg": {"regions":["Africa","Asia"],"mode":"spans","note":"Most of Egypt is in Africa. The Sinai Peninsula is in Asia, across the Suez Canal."},
+    "id": {"regions":["Asia","Oceania"],"mode":"spans","note":"Indonesia is commonly grouped with Southeast Asia. Its western New Guinea territory is geographically part of Oceania. Here we show both, rather than marking either as a wrong alternative."},
+    "cy": {"regions":["Asia","Europe"],"mode":"convention","note":"Cyprus is an eastern Mediterranean island. UN statistical geography places it in Western Asia; many political and cultural groupings place it in Europe. This is a convention difference, not a quiz trap."},
+    "ge": {"regions":["Asia","Europe"],"mode":"convention","note":"Georgia is in the Caucasus. Its classification depends on where a map draws the Europe–Asia boundary; both groupings occur."},
+    "az": {"regions":["Asia","Europe"],"mode":"convention","note":"Azerbaijan is in the Caucasus. The Europe–Asia boundary is drawn differently in different conventions, so both groupings are used."}
+  },
+  "features": {
+    "circle":"jp bd br kr la pw ne tn ug bi et dm bz",
+    "stars":"dz ao az au ba br bf bi cm cv cf cl cn km cd cu dj dm et gh gd gw hn il jo xk lr ly my mr fm ma mz mm nr nz kp pk pa pg ph kn ws st sn sg sb so ss sr sy tj tl tg tn tr tm tv us uz ve vn zw",
+    "cross":"ch se fi dk no is gb ge do dm gr mt au nz fj tv",
+    "vertical":"fr it ng mx ie ca be td ro ml gn sn cm ci ad md mn bb vc pe pt dz mt va",
+    "horizontal":"at lv de nl lu ru hu bg ee lt am az in ar bo co ec ve py id mc pl ua sg ht li sm gh et ga sl rw mw mu gm bw ls ke ug sz eg iq ir ye sy ly mr tj th cr kp kh la hn ni sv bz km cv lr us uy cu my tg uz ss mz zw st sr",
+    "crescent":"dz az km ly my mr mv np pk sg tn tr tm uz",
+    "sun":"ar uy kz kg mk mw na rw ki ag ph np tw",
+    "animal":"al bt mx lk ug zm pg ki kz dm zw",
+    "text":"af sa iq ir br",
+    "triangle":"bs ba cu cz dj er gq gy jo mz np ph ps st sd ss tl vu zw",
+    "tree":"ca lb cy"
+  },
+  "bands": {
+    "2":"dz id mc pl ua sg ht li sm mt va pt bh qa",
+    "3":"at lv de nl lu ru hu bg ee lt am az in ar bo co ec ve py gh et ga sl rw mw ls eg iq ir ye sy ly mr tj kh la hn ni sv bz st fr it ng mx ie ca be td ro ml gn sn cm ci ad md mn bb vc pe hr rs sk si es gq jo ps sd",
+    "4":"mu km",
+    "5":"gm ke sz th cr kp cu sr uz cv tg il bw ss mz",
+    "6":"ug",
+    "7":"zw",
+    "9":"gr uy",
+    "11":"lr",
+    "13":"us",
+    "14":"my"
+  },
+  "borderNotes": {
+    "fr":"France also includes French Guiana in South America, so its full land-border list includes Brazil and Suriname. The continent badge describes metropolitan France.",
+    "gb":"The list uses the United Kingdom itself, not every British Overseas Territory. Ireland is its land neighbor.",
+    "us":"The list includes Alaska’s border with Canada. Water crossings and maritime boundaries do not count as land borders.",
+    "es":"Spain also has land borders in North Africa through Ceuta and Melilla.",
+    "nl":"The source includes the Kingdom’s border with France on the Caribbean island of Saint Martin.",
+    "ps":"Borders and territorial status are disputed. Connections here describe the source’s geographic adjacency, not a political endorsement.",
+    "il":"Some boundaries and territorial claims are disputed. These connections are geographic adjacency, not a political endorsement.",
+    "xk":"Kosovo’s recognition is disputed. The atlas lists geographic neighbors without taking a position on recognition.",
+    "in":"Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line.",
+    "cn":"Some borders are disputed; the listed adjacency is not a statement about sovereignty or an agreed boundary line."
+  },
+  "storySummaries": {
+    "jp":"Japan’s red disc represents the sun. The flag is often called Hinomaru, meaning a circle of the sun. The cherry comparison is only our memory trick—not the flag’s meaning.",
+    "ca":"The maple leaf had represented Canada long before this flag was adopted in 1965. One bold leaf made a simple, recognizable symbol for the whole country.",
+    "fr":"The blue and red are associated with Paris, while white was associated with the monarchy. The tricolor grew out of the French Revolution; today it is a national symbol, not just three decorative stripes.",
+    "in":"The blue Ashoka Chakra is a wheel with 24 spokes, associated with law and movement. It is not Gandhi’s spinning wheel. Saffron, white, and green have meanings linked to courage, peace, and growth.",
+    "za":"South Africa adopted this flag in 1994. Its converging design expresses different parts of society coming together and moving forward; official guidance does not assign a fixed meaning to every separate color.",
+    "tr":"The crescent and star were inherited from Ottoman flag designs. Modern Türkiye kept these familiar symbols. There are legends about their origins, but legends are not the same as documented history.",
+    "gb":"The Union Flag combines crosses associated with St George, St Andrew, and St Patrick. The overlapping shapes connect the histories of the countries in the union.",
+    "au":"The Southern Cross constellation links the flag to the southern sky. The large Commonwealth Star represents Australia’s states and territories, and the Union Jack reflects historical ties with Britain.",
+    "nz":"The four red stars represent the Southern Cross constellation. The Union Jack reflects historical ties with Britain. Australia’s similar flag uses white stars instead.",
+    "np":"Nepal’s two pennants make its shape unique among national flags. The moon and sun express the hope that the country will endure as long as those celestial bodies.",
+    "bd":"The red disc represents the rising sun and the sacrifices connected with independence. The green field is associated with Bangladesh’s lush land. The circle is set slightly toward the flagpole.",
+    "br":"Brazil’s flag kept the green field and yellow diamond of its earlier imperial flag, replacing the central imperial arms with a blue globe and stars. Its motto, Ordem e Progresso, means Order and Progress.",
+    "mx":"The eagle, snake, and cactus recall the Mexica tradition about founding Tenochtitlan, where Mexico City now stands. A story can be culturally important without being a literal historical record.",
+    "ie":"Green and orange represent different traditions in Ireland. White between them expresses a hope for lasting peace and unity—not that everyone belongs to only two groups.",
+    "us":"The 13 stripes recall the original colonies. The 50 stars represent the 50 states. A flag can tell a story with numbers as well as colors.",
+    "ch":"The white cross has a long history as a Swiss identifying symbol. The national flag is square; the similar-looking Red Cross emblem reverses its colors and is a different symbol."
+  }
+}
