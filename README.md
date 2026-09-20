@@ -4,6 +4,8 @@
 
 **[Open the app](https://littleatlas.pages.dev/)** · **[Architecture](ARCHITECTURE.md)** · **[Data sources & conventions](data/README.md)**
 
+![Little Atlas: small flags, big adventures](docs/images/overview.png)
+
 ## Run
 
 Node 24+ and Python 3.9+:

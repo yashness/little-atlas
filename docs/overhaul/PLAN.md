@@ -29,4 +29,6 @@ Version 1.0.0 is preserved in Git tag `v1.0.0`; its verified clean-URL deploymen
 - Complete: shared learning paths, ordered journeys, six configurable games, larger text, region banners, and source-story/context views.
 - Complete: 627 verified local narration contracts; superseded code/data globals and 56 old clips retired.
 - Local verification: 13 unit/data invariants and 19 browser journeys pass, including every country and all game types.
-- Remaining release gate: push the atomic UI migration, verify Pages preview, merge/tag, publish production, and record live evidence.
+- Complete: atomic UI migration committed/pushed as `3f51a5a`; GitHub CI passes.
+- Complete: Pages preview `ac8a035b` passes all 19 browser journeys and verification of all 844 public assets.
+- Remaining release gate: merge/tag, publish production to the clean URL, and record live evidence.
