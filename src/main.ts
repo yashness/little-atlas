@@ -7,11 +7,12 @@ import {
   type GameOptions,
   type Country,
 } from "./contracts/atlas";
-import type {
-  Session,
-  RoundSession,
-  LessonTab,
-  AnswerState,
+import {
+  LESSON_TABS,
+  type Session,
+  type RoundSession,
+  type LessonTab,
+  type AnswerState,
 } from "./contracts/session";
 import { COUNTRIES, BY_CODE, country } from "./platform/catalog";
 import { loadProgress, saveProgress } from "./platform/browser/progress";
@@ -26,7 +27,7 @@ import { eligibleTargets, makeQuestion } from "./library/atlas/questions";
 import { countryCue, questionCues } from "./library/atlas/narration";
 import { createBoard, resetTurn, turnCard } from "./library/atlas/memory";
 import { shuffled } from "./utils/collections";
-import { element } from "./utils/html";
+import { element, escapeHtml } from "./utils/html";
 import { icon } from "./shared/ui/art";
 import { emptyState } from "./shared/ui/components";
 import { home } from "./features/explore/home";
@@ -67,15 +68,17 @@ const dialog = element<HTMLDialogElement>("#adventure");
 const announce = (text: string) => {
   element("#announcement").textContent = text;
 };
-const narrator = createNarrator((playing) => {
+const narrator = createNarrator((playing, channel) => {
   document
     .querySelectorAll<HTMLButtonElement>('[data-action="listen"]')
     .forEach((button) => {
-      button.setAttribute("aria-pressed", String(playing));
+      const selected =
+        playing && (button.dataset["cue"] ?? "session") === channel;
+      button.setAttribute("aria-pressed", String(selected));
       const label = button.dataset["label"] ?? "Hear Pip’s clue";
       button.innerHTML =
         icon("sound") +
-        `<span>${playing ? "Pip is speaking · Stop" : label}</span>`;
+        `<span>${escapeHtml(selected ? "Pip is speaking · Stop" : label)}</span>`;
     });
 }, announce);
 function counters(): void {
@@ -169,8 +172,7 @@ function activeCues(hint = false): string[] {
   if (active.stage === "complete")
     return [active.type === "visit" ? "stamp" : "complete-game"];
   const c = active.countries[active.index]!;
-  if (active.stage === "learn")
-    return [countryCue(c, active.tab === "story" ? "story" : "learn")];
+  if (active.stage === "learn") return [countryCue(c, "learn")];
   return active.question
     ? questionCues(
         active.question,
@@ -529,10 +531,13 @@ document.addEventListener("click", (event) => {
     case "twins":
       goWorld({ axis: "similarity", anchor: "fr" });
       break;
-    case "listen":
-      if (narrator.isPlaying()) narrator.stop();
+    case "listen": {
+      const cue = data["cue"];
+      if (narrator.isPlaying(cue ?? "session")) narrator.stop();
+      else if (cue) narrator.play([cue], cue);
       else playActive(true);
       break;
+    }
     case "practice":
       if (active && (active.type === "visit" || active.type === "quiz")) {
         active.stage = "question";
@@ -625,15 +630,15 @@ document.addEventListener("keydown", (event) => {
     (active.type === "visit" || active.type === "quiz")
   ) {
     event.preventDefault();
-    const tabs: LessonTab[] = ["look", "story", "people"];
-    const i = tabs.indexOf(active.tab);
+    const i = LESSON_TABS.indexOf(active.tab);
     setTab(
-      tabs[
+      LESSON_TABS[
         event.key === "Home"
           ? 0
           : event.key === "End"
-            ? 2
-            : (i + (event.key === "ArrowRight" ? 1 : 2)) % 3
+            ? LESSON_TABS.length - 1
+            : (i + (event.key === "ArrowRight" ? 1 : LESSON_TABS.length - 1)) %
+              LESSON_TABS.length
       ]!,
     );
   }

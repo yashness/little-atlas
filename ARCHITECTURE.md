@@ -73,6 +73,22 @@ Historical interpretations, geography conventions, and invented memory tricks ar
 
 Prefer a table or function to a new hierarchy. No service locator, generic repository, plugin framework, or class per country. Add a utility only when it has real consumers. DRY means one authoritative rule, not clever compression. SOLID means narrow responsibilities and replaceable boundaries, not more files.
 
+## Slices and safe parallel work
+
+Use a small event-modeling-style plan, not an event-sourcing framework:
+
+| Slice contract | Specify |
+|---|---|
+| Intent → outcome | What the learner does and what becomes observably true |
+| Acceptance | A failing behavior test and the important invariants |
+| Ownership | Exact files/modules one worker may change |
+| Dependencies | Shared contracts/primitives required before starting |
+| Reconciliation | Commands, UI evidence, and the owner who integrates |
+
+Keep the active plan in `docs/slices.md`. Finish shared infrastructure and agree contracts first; then independent topic importers or isolated feature views can be parallel slices. Shared session state, routing, schemas, and common UI have one integration owner—do not ask two workers to edit them concurrently. Reconcile passing slices frequently and serially, then run the combined baseline before merging/publishing. A small change touching the same lesson/controller/audio files should stay serial.
+
+Herdr/Pi is optional coordination tooling, not an application dependency. When delegation is justified, use visible, named workers with bounded tasks and isolated branches/worktrees, following the installed orchestration skill. The user prefers GitHub Copilot Astra/Opus-5 models, long context, and high thinking; verify actual model IDs/options before launching and ask before substituting. Do not invent unsupported CLI flags or create an agent framework in this repository.
+
 ## Tests and releases
 
 Unit tests cover meaningful invariants: validated source boundaries, coverage, reciprocal and overseas land neighbors, explicit region ambiguity, fair distractors, filter intersection, time-zone offsets/DST, narration contracts, and memory turns. Browser tests cover complete learning/game paths, accessibility, audio cancellation, and responsive layouts. Avoid tests that duplicate private implementation or snapshot incidental markup.

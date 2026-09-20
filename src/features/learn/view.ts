@@ -15,9 +15,10 @@ import {
   utcOffset,
 } from "../../library/atlas/geography";
 
-import type { LessonTab } from "../../contracts/session";
+import { LESSON_TABS, type LessonTab } from "../../contracts/session";
+import { countryCue } from "../../library/atlas/narration";
 function storyPanel(c: Country): string {
-  return `<div class="story-panel"><div class="story-flag"><img src="${flag(c.code)}" alt="Flag of ${h(c.name)}"></div><div><span class="eyebrow">A FLAG IS MORE THAN ITS COLORS</span><h3>The story behind ${h(c.name)}’s flag</h3><p class="story-summary">${h(c.story.summary)}</p><p class="story-note">${h(c.story.note ?? "Historical interpretations can vary.")}</p><details class="source-details"><summary>Read the source explanation</summary><p>${h(c.story.detail).replace(/\n/g, "<br>")}</p></details><a class="source-link" href="${h(c.story.source.url)}" target="_blank" rel="noopener">${h(c.story.source.label)} ↗</a><p class="source-date">${h(c.story.source.snapshot)}</p></div></div>`;
+  return `<section class="story-panel" aria-label="Flag meaning and history"><span class="eyebrow">A FLAG IS MORE THAN ITS COLORS</span><h3>What this flag means</h3>${listenButton("Hear the flag story", countryCue(c, "story"))}<p class="story-summary">${h(c.story.summary)}</p><p class="story-note">${h(c.story.note ?? "Historical interpretations can vary.")}</p><details class="source-details"><summary>Read the source explanation</summary><p>${h(c.story.detail).replace(/\n/g, "<br>")}</p><p class="source-date">${h(c.story.source.snapshot)}</p></details><a class="source-link" href="${h(c.story.source.url)}" target="_blank" rel="noopener">${h(c.story.source.label)} ↗</a></section>`;
 }
 function peoplePanel(
   c: Country,
@@ -48,7 +49,11 @@ export function lessonView(
     game = false,
   }: { position?: number; total?: number; game?: boolean } = {},
 ): DialogView {
-  const look = `<div class="lesson-grid"><div><div class="flag-theater"><img src="${flag(c.code)}" alt="Flag of ${h(c.name)}"></div><h3 class="look-title">${h(c.visualTitle)}</h3><span class="memory-label">A LITTLE MEMORY TRICK · NOT FLAG HISTORY</span><p class="memory">${h(c.mnemonic)}</p>${colorTags(c)}</div><div><div class="lesson-map"><p>HERE’S ITS HOME</p>${worldMap({ selected: c, regions: c.regions })}</div><div class="location-fact"><h3>Let’s find ${h(c.name)}.</h3><p>${h(c.geography)}</p>${c.scope === "additional" ? '<p class="source-date">Additional entry · not a UN member/observer state</p>' : ""}<button class="text-button" data-lesson-tab="story">What does the flag mean? ${icon("arrow")}</button></div></div></div>`;
+  const look = `<div class="lesson-grid lesson-overview"><div class="flag-theater"><img src="${flag(c.code)}" alt="Flag of ${h(c.name)}"></div>${storyPanel(c)}<div class="lesson-memory"><h3 class="look-title">${h(c.visualTitle)}</h3><span class="memory-label">A LITTLE MEMORY TRICK · NOT FLAG HISTORY</span><p class="memory">${h(c.mnemonic)}</p>${colorTags(c)}</div><div class="lesson-location"><div class="lesson-map"><p>HERE’S ITS HOME</p>${worldMap({ selected: c, regions: c.regions })}</div><div class="location-fact"><h3>Let’s find ${h(c.name)}.</h3><p>${h(c.geography)}</p>${c.scope === "additional" ? '<p class="source-date">Additional entry · not a UN member/observer state</p>' : ""}</div></div></div>`;
+  const labels: Record<LessonTab, string> = {
+    look: "Flag & meaning",
+    people: "People & places",
+  };
   return {
     title: `Hello, ${c.name}!`,
     eyebrow: game
@@ -57,7 +62,7 @@ export function lessonView(
         ? `STOP ${position + 1} OF ${total} · YOUR LEARNING PATH`
         : "A NEW LITTLE FRIEND",
     step: 0,
-    body: `${regionBanner(c)}<div class="lesson-tabs" role="tablist" aria-label="Explore this country">${(["look", "story", "people"] as const).map((id, i) => `<button id="tab-${id}" role="tab" aria-selected="${tab === id}" aria-controls="lesson-panel" data-lesson-tab="${id}">${["Look & remember", "Flag story", "People & places"][i]}</button>`).join("")}</div><div id="lesson-panel" role="tabpanel" aria-labelledby="tab-${tab}">${tab === "look" ? look : tab === "story" ? storyPanel(c) : peoplePanel(c, catalog, at)}</div>`,
-    actions: `${listenButton(tab === "story" ? "Hear the flag story" : "Hear Pip’s introduction")}<div class="lesson-actions">${!game && total > 1 ? actionButton("browse-next", "Next stop", false) : ""}${actionButton("practice", game ? "Find its home" : "Try this flag")}</div>`,
+    body: `${regionBanner(c)}<div class="lesson-tabs" role="tablist" aria-label="Explore this country">${LESSON_TABS.map((id) => `<button id="tab-${id}" role="tab" aria-selected="${tab === id}" aria-controls="lesson-panel" data-lesson-tab="${id}">${labels[id]}</button>`).join("")}</div><div id="lesson-panel" role="tabpanel" aria-labelledby="tab-${tab}">${tab === "look" ? look : peoplePanel(c, catalog, at)}</div>`,
+    actions: `${listenButton("Hear Pip’s introduction")}<div class="lesson-actions">${!game && total > 1 ? actionButton("browse-next", "Next stop", false) : ""}${actionButton("practice", game ? "Find its home" : "Try this flag")}</div>`,
   };
 }

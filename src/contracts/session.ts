@@ -1,5 +1,6 @@
 import type { Country, GameOptions, MemoryBoard, Question } from "./atlas";
-export type LessonTab = "look" | "story" | "people";
+export const LESSON_TABS = ["look", "people"] as const;
+export type LessonTab = (typeof LESSON_TABS)[number];
 export interface AnswerState {
   selected: number | null;
   answered: boolean;

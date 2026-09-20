@@ -14,6 +14,11 @@ Build in this order: **infrastructure → layer contracts → shared library →
 
 Keep dependencies acyclic. Define a shared contract before adding a second consumer, not a second implementation.
 
+## Work in distinct slices
+- Plan a slice as **intent → observable outcome**, with acceptance tests, owned files, dependencies, and an integration gate. Track active slices in `docs/slices.md`.
+- Establish shared infra/contracts first. Parallelize only disjoint consumers after those contracts are agreed; one owner integrates shared files and reconciles tested slices serially.
+- Prefer serial work for small, coupled changes. If using Herdr/Pi, verify availability first; use the user’s GitHub Copilot Astra/Opus-5, long-context, high-thinking preferences where supported—never silently substitute.
+
 ## Coding conventions
 - Strict TypeScript for new application code. Validate external data at the boundary; use `unknown`, not `any`.
 - Prefer small functions, explicit state, composition, and immutable inputs. Use classes only when they simplify real state/lifecycle ownership.

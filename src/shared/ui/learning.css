@@ -1,4 +1,7 @@
 /* Shared learning primitives: paths, facts, regions, and game boards. */
+dialog {
+  scroll-padding-bottom: 160px;
+}
 :root {
   --small: 14px;
   --body: 17px;
@@ -404,25 +407,41 @@ button:disabled {
   gap: 10px;
   justify-content: flex-end;
 }
-.story-panel {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 27px;
-  padding: 28px;
+.lesson-overview {
+  grid-template-areas: "flag story" "memory story" "location location";
+  grid-template-rows: 216px auto auto;
   align-items: start;
 }
-.story-flag {
-  background: #f4e3c7;
-  min-height: 220px;
-  padding: 25px;
-  border-radius: 17px;
-  display: grid;
-  place-items: center;
+.lesson-overview > .flag-theater {
+  grid-area: flag;
 }
-.story-flag img {
-  width: 100%;
-  max-height: 190px;
-  object-fit: contain;
+.lesson-memory {
+  grid-area: memory;
+}
+.lesson-memory .look-title {
+  margin-top: 0;
+}
+.lesson-location {
+  grid-area: location;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.story-panel {
+  grid-area: story;
+  background: #f6f0df;
+  border: 1px solid #e4ddc6;
+  border-radius: 17px;
+  padding: 23px;
+  min-width: 0;
+}
+.story-panel .listen-button {
+  max-width: none;
+  margin: 0 0 12px;
+  padding: 7px 0;
 }
 .story-panel .eyebrow {
   font-size: 11px;
@@ -893,16 +912,19 @@ button:disabled {
     padding: 6px 10px;
     min-height: 36px;
   }
-  .story-panel {
+  .lesson-overview {
+    grid-template-areas: "flag" "story" "memory" "location";
+    grid-template-rows: auto;
+  }
+  .lesson-location {
     grid-template-columns: 1fr;
-    gap: 21px;
+    gap: 12px;
+  }
+  .story-panel {
     padding: 20px;
   }
-  .story-flag {
-    min-height: 140px;
-  }
-  .story-flag img {
-    max-height: 115px;
+  .story-panel .listen-button {
+    font-size: 15px;
   }
   .story-summary {
     font-size: 18px;
