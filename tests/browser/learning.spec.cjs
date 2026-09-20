@@ -7,7 +7,8 @@ test("Türkiye keeps both continents visible in its lesson, story, and quiz answ
   await page.locator('.country-tile[data-country="tr"]').click();
   await expect(page.locator(".region-banner")).toContainText("Asia");
   await expect(page.locator(".region-banner")).toContainText("Europe");
-  await page.getByRole("tab", { name: "Flag story" }).click();
+  await expect(page.getByRole("tab", { name: "Flag story" })).toHaveCount(0);
+  await expect(page.locator(".story-summary")).toBeVisible();
   await expect(page.locator(".story-panel")).toContainText("Ottoman");
   await page.getByRole("tab", { name: "People & places" }).click();
   await expect(page.locator(".people-panel")).toContainText("Turkish");

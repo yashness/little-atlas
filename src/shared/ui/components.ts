@@ -40,8 +40,8 @@ export function countryCard(
 export function colorTags(country: Country): string {
   return `<div class="color-dots">${country.colors.map((color) => `<span class="color-tag"><i style="background:${COLORS[color] ?? "#777"}"></i>${h(color)}</span>`).join("")}</div>`;
 }
-export function listenButton(label = "Hear Pip’s clue"): string {
-  return `<button class="listen-button" data-action="listen" data-label="${h(label)}" aria-pressed="false">${icon("sound")} <span>${h(label)}</span></button>`;
+export function listenButton(label = "Hear Pip’s clue", cue?: string): string {
+  return `<button class="listen-button" data-action="listen" data-label="${h(label)}" ${cue ? `data-cue="${h(cue)}"` : ""} aria-pressed="false">${icon("sound")} <span>${h(label)}</span></button>`;
 }
 export function actionButton(
   action: string,

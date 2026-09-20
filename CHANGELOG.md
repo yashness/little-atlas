@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — Flag meaning without an extra tap
+
+- The default learning view now combines the flag, visible meaning/story, memory trick, and location. The redundant story tab and duplicate flag image are removed.
+- Separate introduction/story controls share one narrator; switching takes one click, only the active control shows Stop, and tab changes or closing cancel playback.
+- Shared tab vocabulary drives both rendering and keyboard navigation. Mobile keeps the story directly after the flag, with no extra disclosure needed for its summary.
+- Documented intent/outcome slices, shared-contract gates, file ownership, and safe optional parallel delegation without adding runtime orchestration machinery.
+
 ## 1.1.0 — Learn through connections
 
 - Strict TypeScript, explicit contracts, shared atlas rules/UI, isolated browser adapters, and focused feature folders; no client framework dependency.

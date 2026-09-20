@@ -63,6 +63,8 @@ test("all 197 journeys award one stamp each, use the shared region labels, and s
     await page.locator(`.country-tile[data-country="${c.code}"]`).click();
     for (const region of c.regions)
       await expect(page.locator(".region-banner")).toContainText(region);
+    await expect(page.locator(".story-summary")).toHaveText(c.story.summary);
+    await expect(page.locator(".story-summary")).toBeVisible();
     await page.getByRole("button", { name: "Try this flag" }).click();
     await chooseFlag(page, c.code);
     await next(page);
@@ -198,15 +200,29 @@ test("recorded introduction and story play, cancel on tab change, and stop on cl
   expect(await page.evaluate(() => window.__testMedia.currentSrc)).toContain(
     "/learn-jp.mp3",
   );
-  await page.getByRole("tab", { name: "Flag story" }).click();
-  expect(await page.evaluate(() => window.__testMedia.paused)).toBe(true);
   await page.getByRole("button", { name: "Hear the flag story" }).click();
+  await expect(
+    page.getByRole("button", { name: "Hear Pip’s introduction" }),
+  ).toHaveAttribute("aria-pressed", "false");
+  await expect(
+    page.locator('.story-panel [data-action="listen"]'),
+  ).toHaveAttribute("aria-pressed", "true");
   await expect
     .poll(() => page.evaluate(() => window.__testMedia.currentTime))
     .toBeGreaterThan(0);
   expect(await page.evaluate(() => window.__testMedia.currentSrc)).toContain(
     "/story-jp.mp3",
   );
+  await page.getByRole("tab", { name: "People & places" }).click();
+  expect(await page.evaluate(() => window.__testMedia.paused)).toBe(true);
+  await page.getByRole("tab", { name: "Flag & meaning" }).click();
+  await page.getByRole("button", { name: "Hear the flag story" }).click();
+  await expect
+    .poll(() => page.evaluate(() => window.__testMedia.paused))
+    .toBe(false);
+  await page.getByRole("button", { name: "Pip is speaking · Stop" }).click();
+  expect(await page.evaluate(() => window.__testMedia.paused)).toBe(true);
+  await page.getByRole("button", { name: "Hear the flag story" }).click();
   await page.getByRole("button", { name: "Close adventure" }).click();
   expect(await page.evaluate(() => window.__testMedia.paused)).toBe(true);
 });
@@ -220,15 +236,14 @@ test("keyboard controls and focus targets work without restoring the page-sized 
   await expect(
     page.getByRole("heading", { name: "Hello, Japan!" }),
   ).toBeVisible();
-  await page.getByRole("tab", { name: "Look & remember" }).focus();
+  await page.getByRole("tab", { name: "Flag & meaning" }).focus();
   await page.keyboard.press("ArrowRight");
-  await expect(page.getByRole("tab", { name: "Flag story" })).toHaveAttribute(
-    "aria-selected",
-    "true",
-  );
+  await expect(
+    page.getByRole("tab", { name: "People & places" }),
+  ).toHaveAttribute("aria-selected", "true");
   expect(
     await page
-      .getByRole("tab", { name: "Flag story" })
+      .getByRole("tab", { name: "People & places" })
       .evaluate((el) => getComputedStyle(el).outlineWidth),
   ).toBe("3px");
   await page.keyboard.press("Escape");
