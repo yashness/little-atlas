@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 — Clear details and game review
+
+- Large, sticky country names and shared Back/Forward controls across lessons and every game, including completed rounds and memory turns.
+- Restores the same choices, answers and cards; revisiting a step does not duplicate stars or stamps. Immutable country data is shared rather than copied into each history entry.
+- Belief information is visible immediately, without an expander or repeated explanatory text. Sources are unique reference links instead of duplicate flag descriptions.
+- Locked answer cards retain their original flag colors while reviewing.
+
 ## 1.1.1 — Flag meaning without an extra tap
 
 - The default learning view now combines the flag, visible meaning/story, memory trick, and location. The redundant story tab and duplicate flag image are removed.

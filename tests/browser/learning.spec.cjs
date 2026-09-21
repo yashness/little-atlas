@@ -37,11 +37,11 @@ test("A–Z is a real ordered learning journey, not just a sorted grid", async (
   await page.locator("#learn-axis").selectOption("alphabetical");
   await page.getByRole("button", { name: "Start this journey" }).click();
   await expect(
-    page.getByRole("heading", { name: "Hello, Afghanistan!" }),
+    page.getByRole("heading", { name: "Afghanistan", exact: true }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Next stop" }).click();
   await expect(
-    page.getByRole("heading", { name: "Hello, Albania!" }),
+    page.getByRole("heading", { name: "Albania", exact: true }),
   ).toBeVisible();
 });
 

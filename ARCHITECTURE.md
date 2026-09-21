@@ -60,6 +60,7 @@ assets/                      # source art, fonts, recorded narration
 - **One question engine:** only eligible, unambiguous questions; a small/empty pool is explained, not silently broadened.
 - **One region model:** arrays plus `single`, `spans`, or `convention`. Türkiye's Asia and Europe cannot become competing right/wrong answers.
 - **One narrator/player and one progress adapter:** no screen-specific storage keys or overlapping audio players.
+- **One review history:** `library/atlas/navigation.ts` retains the last 200 view transitions, sharing immutable catalog/question/card data. Back/Forward restore answers and order; natural Next reuses a saved forward step. Reward claims live outside snapshots, so reviewing or replaying an undone move cannot earn twice. An explicit new game gets a new session identity.
 
 Historical interpretations, geography conventions, and invented memory tricks are different kinds of information. Keep their labels and sources. Civil time uses IANA offsets at an explicit instant, not longitude. Faith/language notes describe diverse communities, never every individual.
 

@@ -50,7 +50,7 @@ test("home loads only local assets, and the offline HTML bundle works", async ({
   await page.goto(pathToFileURL(resolve("index.html")).href);
   await page.getByRole("button", { name: "Let’s go exploring" }).click();
   await expect(
-    page.getByRole("heading", { name: "Hello, Japan!" }),
+    page.getByRole("heading", { name: "Japan", exact: true }),
   ).toBeVisible();
 });
 
@@ -234,7 +234,7 @@ test("keyboard controls and focus targets work without restoring the page-sized 
   await page.locator('g[data-country="jp"]').focus();
   await page.keyboard.press("Enter");
   await expect(
-    page.getByRole("heading", { name: "Hello, Japan!" }),
+    page.getByRole("heading", { name: "Japan", exact: true }),
   ).toBeVisible();
   await page.getByRole("tab", { name: "Flag & meaning" }).focus();
   await page.keyboard.press("ArrowRight");

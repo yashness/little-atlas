@@ -2,6 +2,18 @@
 
 Small, behavior-first plans; this is not an event bus or a second task system.
 
+## Clear details and review navigation — release 1.2.0
+
+**Intents → outcomes:** open/scroll a country → its name stays prominent; open people/place facts → belief information is already visible; use Back/Forward in a game → prior choices, answers, or cards are restored without new rewards.
+
+| Slice | Ownership / contract | Acceptance | Status |
+|---|---|---|---|
+| Navigation foundation | Session IDs, bounded snapshots, forward reuse, reward claims in `library/atlas/navigation.ts` | Same question/order/answer returns; memory matches cannot earn twice | Unit checks green |
+| Details presentation | Shared dialog header, learning view and CSS | Sticky large country name, one source link per URL, no duplicate story/source text or belief expander | Focused browser checks green |
+| Integration | Controller navigation boundaries and full game journeys | All five quizzes and memory support review through completion; audio stops on navigation; existing progress survives | Local verification complete: 15 unit/data and 27 browser tests pass; screenshots inspected. Preview/production gates pending. |
+
+**Execution:** serial, because the header, controller and shared session contract are coupled. One small history mechanism—not separate back stacks per game. Country data is shared, not deep-copied. Navigation reviews history; it does not undo earned stars. Keep v1.1.1 as the rollback baseline.
+
 ## Inline flag meaning — release 1.1.1
 
 **Intent → outcome:** open a country → its flag, memory clue, factual meaning, and location are available on the default learning view without selecting a story tab.

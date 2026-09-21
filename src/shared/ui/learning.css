@@ -1,6 +1,63 @@
 /* Shared learning primitives: paths, facts, regions, and game boards. */
 dialog {
+  scroll-padding-top: 180px;
   scroll-padding-bottom: 160px;
+}
+.dialog-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: var(--cream);
+}
+.dialog-navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.history-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px 12px;
+  background: #e9eddf;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.history-button .icon {
+  width: 18px;
+  height: 18px;
+}
+.back-arrow {
+  transform: rotate(180deg);
+}
+.dialog-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.dialog-title-row > div {
+  min-width: 0;
+}
+.dialog-header h2 {
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.7px;
+  overflow-wrap: anywhere;
+}
+.dialog-header .eyebrow {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.review-note {
+  font-size: 13px;
+  color: #52674d;
+  margin-top: 10px;
 }
 :root {
   --small: 14px;
@@ -456,28 +513,15 @@ button:disabled {
   font-size: 19px;
   line-height: 1.8;
 }
-.story-note {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #627365;
-  margin-top: 17px;
-}
-.source-details,
 .fact-panel details {
   margin-top: 20px;
   border-top: 1px solid #d7ddcd;
   padding-top: 15px;
 }
-.source-details summary,
 .fact-panel summary {
   cursor: pointer;
   font-weight: 600;
   min-height: 40px;
-}
-.source-details p {
-  font-size: 16px;
-  line-height: 1.8;
-  margin-top: 12px;
 }
 .source-link {
   display: block;
@@ -654,6 +698,11 @@ button:disabled {
 .answer {
   min-width: 0;
 }
+/* Review must preserve real flag colors, even when answered choices are locked. */
+.answer:disabled,
+.answer:disabled:not(.correct) {
+  opacity: 1;
+}
 .feedback {
   font-size: 18px;
   line-height: 1.6;
@@ -744,6 +793,22 @@ button:disabled {
   }
 }
 @media (max-width: 760px) {
+  .dialog-header {
+    padding: 12px 16px;
+  }
+  .dialog-header h2 {
+    font-size: 30px;
+  }
+  .dialog-navigation {
+    margin-bottom: 10px;
+  }
+  .history-button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .review-note {
+    font-size: 12px;
+  }
   .reference-country {
     padding: 18px;
     gap: 14px;

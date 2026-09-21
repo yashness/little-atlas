@@ -18,6 +18,11 @@ import { COUNTRIES, BY_CODE, country } from "./platform/catalog";
 import { loadProgress, saveProgress } from "./platform/browser/progress";
 import { createNarrator } from "./platform/browser/audio";
 import { showDialog } from "./platform/browser/dialog";
+import type { DialogView } from "./contracts/ui";
+import {
+  captureSession,
+  createSessionHistory,
+} from "./library/atlas/navigation";
 import {
   DEFAULT_EXPLORER,
   AXES,
@@ -46,6 +51,11 @@ type Page = "explore" | "world" | "games" | "passport";
 let page: Page = "explore";
 let sound = false;
 let active: Session | null = null;
+let sessionId = 0;
+const history = createSessionHistory();
+const beforeNavigation = () => (active ? captureSession(active) : null);
+const present = (view: DialogView) =>
+  showDialog({ ...view, canForward: history.canForward() });
 let learn: ExplorerOptions = { ...DEFAULT_EXPLORER };
 let gameSelection: ExplorerOptions = {
   ...DEFAULT_EXPLORER,
@@ -94,6 +104,7 @@ function persist(): void {
 }
 function close(): void {
   narrator.stop();
+  history.clear();
   active = null;
   dialog.close();
 }
@@ -188,11 +199,11 @@ function renderSession(narrate = false): void {
   if (!active) return;
   narrator.stop();
   if (active.type === "guide") {
-    showDialog(guideView());
+    present(guideView());
     return;
   }
   if (active.type === "memory") {
-    showDialog(
+    present(
       active.complete
         ? completionView(active.countries, false)
         : memoryView(active.board, COUNTRIES, active.feedback),
@@ -203,14 +214,14 @@ function renderSession(narrate = false): void {
   const s = active,
     c = s.countries[s.index]!;
   if (s.stage === "complete")
-    showDialog(
+    present(
       completionView(
         s.type === "visit" ? [c] : s.countries,
         s.type === "visit",
       ),
     );
   else if (s.stage === "learn")
-    showDialog(
+    present(
       lessonView(c, COUNTRIES, s.tab, s.at, {
         position: s.index,
         total: s.countries.length,
@@ -228,7 +239,7 @@ function renderSession(narrate = false): void {
           : s.options;
       const result = makeQuestion(c, s.pool, options, s.at);
       if (!result.ok) {
-        showDialog({
+        present({
           title: "Try another little connection",
           eyebrow: "NO GUESSING GAMES HERE",
           body: emptyState(result.reason),
@@ -239,7 +250,7 @@ function renderSession(narrate = false): void {
       }
       s.question = result.question;
     }
-    showDialog(
+    present(
       questionView(s.question, COUNTRIES, s.options, s.answer, {
         index: s.index,
         total: s.countries.length,
@@ -250,11 +261,17 @@ function renderSession(narrate = false): void {
   }
   if (narrate) playActive();
 }
-function startCountry(code: string, queue: Country[] = selected(learn)): void {
+function startCountry(
+  code: string,
+  queue: Country[] = selected(learn),
+  id = ++sessionId,
+): void {
+  const before = beforeNavigation();
   const c = country(code);
   if (!queue.some((item) => item.code === code)) queue = [c];
   active = {
     type: "visit",
+    id,
     countries: queue,
     pool: COUNTRIES,
     index: queue.findIndex((item) => item.code === code),
@@ -266,6 +283,7 @@ function startCountry(code: string, queue: Country[] = selected(learn)): void {
     options: { ...game, kind: "flags", choices: 2, clues: true },
     at: new Date(),
   };
+  active = history.move(before, active);
   renderSession(true);
 }
 function startGame(kind: GameKind): void {
@@ -278,10 +296,13 @@ function startGame(kind: GameKind): void {
     return;
   }
   const ordered = game.order === "shuffle" ? shuffled(eligible) : eligible;
+  const before = beforeNavigation(),
+    id = ++sessionId;
   if (kind === "pairs") {
     const countries = ordered.slice(0, game.choices + 1);
     active = {
       type: "memory",
+      id,
       countries,
       board: createBoard(countries.map((c) => c.code)),
       feedback: "Turn over two postcards. Take your time.",
@@ -290,6 +311,7 @@ function startGame(kind: GameKind): void {
   } else {
     active = {
       type: "quiz",
+      id,
       countries: Array.from(
         { length: game.rounds },
         (_, i) => ordered[i % ordered.length]!,
@@ -305,6 +327,7 @@ function startGame(kind: GameKind): void {
       at,
     };
   }
+  active = history.move(before, active);
   renderSession(true);
 }
 function answer(index: number): void {
@@ -324,7 +347,10 @@ function answer(index: number): void {
     attempted: true,
     answered: choice.correct,
   };
-  if (choice.correct) {
+  if (
+    choice.correct &&
+    history.claimReward(`${active.id}:answer:${active.index}:${active.step}`)
+  ) {
     progress.stars++;
     persist();
   }
@@ -340,7 +366,8 @@ function answer(index: number): void {
   }
 }
 function advance(s: RoundSession): void {
-  if (!s.answer.answered) return;
+  if (!s.answer.answered || s.stage !== "question") return;
+  const before = captureSession(s);
   if (s.type === "visit") {
     if (s.step === 1) {
       s.step = 2;
@@ -361,6 +388,7 @@ function advance(s: RoundSession): void {
     s.answer = freshAnswer();
     s.tab = "look";
   }
+  active = history.move(before, s);
   renderSession(true);
 }
 function chooseAxis(owner: "learn" | "game", axis: Axis): void {
@@ -436,7 +464,9 @@ function setTab(tab: LessonTab): void {
     (active.type === "visit" || active.type === "quiz") &&
     active.stage === "learn"
   ) {
+    const before = captureSession(active);
     active.tab = tab;
+    active = history.move(before, active);
     renderSession();
     element(`#tab-${tab}`).focus({ preventScroll: true });
   }
@@ -483,17 +513,23 @@ document.addEventListener("click", (event) => {
   if (data["card"] !== undefined && active?.type === "memory") {
     const index = Number(data["card"]),
       result = turnCard(active.board, index);
+    if (result.board === active.board) return;
+    const before = captureSession(active);
     active.board = result.board;
     if (result.matchedCode) {
       const c = country(result.matchedCode);
       active.feedback = `A pair! Hello, ${c.name}!`;
-      progress.stars++;
-      persist();
+      if (history.claimReward(`${active.id}:pair:${c.code}`)) {
+        progress.stars++;
+        persist();
+      }
     } else
       active.feedback =
         active.board.faceUp.length === 2
           ? "Two different postcards. Take a look, then turn them back."
           : "Who has the matching flag?";
+    active = history.move(before, active);
+    if (active.type !== "memory") return;
     renderSession();
     const focus =
       active.board.matched.length === active.board.cards.length
@@ -508,6 +544,24 @@ document.addEventListener("click", (event) => {
     return;
   }
   switch (data["action"]) {
+    case "back":
+      if (active) {
+        const previous = history.back(active);
+        if (previous) {
+          active = previous;
+          renderSession();
+        } else close();
+      }
+      break;
+    case "forward":
+      if (active) {
+        const next = history.forward(active);
+        if (next) {
+          active = next;
+          renderSession();
+        }
+      }
+      break;
     case "close":
       close();
       break;
@@ -540,9 +594,11 @@ document.addEventListener("click", (event) => {
     }
     case "practice":
       if (active && (active.type === "visit" || active.type === "quiz")) {
+        const before = captureSession(active);
         active.stage = "question";
         active.question = null;
         active.answer = freshAnswer();
+        active = history.move(before, active);
         renderSession(true);
       }
       break;
@@ -555,13 +611,19 @@ document.addEventListener("click", (event) => {
         const queue = active.countries;
         if (queue.length === 1) goWorld({ axis: "alphabetical" });
         else
-          startCountry(queue[(active.index + 1) % queue.length]!.code, queue);
+          startCountry(
+            queue[(active.index + 1) % queue.length]!.code,
+            queue,
+            active.id,
+          );
       }
       break;
     case "turn-back":
       if (active?.type === "memory") {
+        const before = captureSession(active);
         active.board = resetTurn(active.board);
         active.feedback = "A fresh little try. What do you remember?";
+        active = history.move(before, active);
         renderSession();
       }
       break;
@@ -570,7 +632,9 @@ document.addEventListener("click", (event) => {
         active?.type === "memory" &&
         active.board.matched.length === active.board.cards.length
       ) {
+        const before = captureSession(active);
         active.complete = true;
+        active = history.move(before, active);
         renderSession(true);
       }
       break;
@@ -655,13 +719,14 @@ element("#sound").addEventListener("click", () => {
   else narrator.stop();
 });
 element("#grownups").addEventListener("click", () => {
-  active = { type: "guide" };
+  active = history.move(beforeNavigation(), { type: "guide" });
   renderSession();
 });
 dialog.addEventListener("cancel", () => narrator.stop());
 dialog.addEventListener("close", () => {
   if (!dialog.open) {
     narrator.stop();
+    history.clear();
     active = null;
     renderPage();
   }
