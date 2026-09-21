@@ -4,4 +4,5 @@ export interface DialogView {
   body: string;
   actions: string;
   step?: number;
+  canForward?: boolean;
 }

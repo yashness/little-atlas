@@ -8,6 +8,7 @@ export interface AnswerState {
 }
 export interface RoundSession {
   type: "visit" | "quiz";
+  id: number;
   countries: Country[];
   pool: Country[];
   index: number;
@@ -21,6 +22,7 @@ export interface RoundSession {
 }
 export interface MemorySession {
   type: "memory";
+  id: number;
   countries: Country[];
   board: MemoryBoard;
   feedback: string;

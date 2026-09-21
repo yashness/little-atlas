@@ -24,7 +24,7 @@ The site uses local flags, maps, fonts, and recorded narration. No runtime accou
 - Flag meaning and story visible beside the visual clue in the default lesson—no extra story tab—plus country locations, gentle practice, and passport stamps.
 - Sourced flag stories, language and belief context, land neighbors, and time zones for the full atlas.
 - 11 learning paths: A–Z, continents, colors, shapes, bands, look-alikes, neighbors, languages, clocks, first steps, and unvisited places.
-- Six configurable games, including neighbor hops, clock buddies, and memory postcards.
+- Six configurable games, including neighbor hops, clock buddies, and memory postcards—with Back/Forward review that preserves answers and earned rewards.
 - Explicit transcontinental/convention handling—Türkiye’s Asia and Europe are never opposing quiz answers.
 - 627 local narration clips, including the flag stories; larger text and prominent region badges.
 

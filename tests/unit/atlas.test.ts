@@ -1,4 +1,9 @@
 import test from "node:test";
+import {
+  createSessionHistory,
+  captureSession,
+} from "../../src/library/atlas/navigation";
+import type { RoundSession } from "../../src/contracts/session";
 import assert from "node:assert/strict";
 import { COUNTRIES, country, parseCatalog } from "../../src/platform/catalog";
 import {
@@ -353,6 +358,80 @@ test("all narration contracts match current facts and locally available recordin
   for (const c of COUNTRIES)
     for (const feature of c.features)
       assert(entries[`feature-${feature}`], feature);
+});
+
+test("navigation restores the same answer/order and forward state without duplicating rewards", () => {
+  const history = createSessionHistory();
+  const result = makeQuestion(country("jp"), COUNTRIES, flags, now);
+  assert(result.ok);
+  const first: RoundSession = {
+    type: "quiz",
+    id: 1,
+    countries: [country("jp"), country("fr")],
+    pool: COUNTRIES,
+    index: 0,
+    stage: "question",
+    tab: "look",
+    step: 1,
+    question: result.question,
+    answer: { selected: 0, answered: true, attempted: true },
+    options: flags,
+    at: now,
+  };
+  history.move(null, first);
+  assert(history.claimReward("1:answer:0:1"));
+  const next = {
+    ...first,
+    index: 1,
+    question: null,
+    answer: { selected: null, answered: false, attempted: false },
+  };
+  history.move(first, next);
+  first.answer.selected = 1; // stored history is not an alias of mutable UI state
+  const back = history.back(next);
+  assert(back && back.type === "quiz");
+  assert.equal(back.answer.selected, 0);
+  assert.equal(back.question, result.question);
+  assert(!history.claimReward("1:answer:0:1"));
+  const resumed = history.move(captureSession(back), {
+    ...back,
+    index: 1,
+    question: null,
+  });
+  assert(resumed.type === "quiz");
+  assert.equal(resumed.answer.answered, false);
+  assert.equal(history.canForward(), false);
+  assert(history.claimReward("1:answer:1:1"));
+});
+
+test("memory history retains cards while previously earned pair rewards stay claimed", () => {
+  const history = createSessionHistory();
+  const base = {
+    type: "memory" as const,
+    id: 2,
+    countries: [country("jp"), country("fr")],
+    board: createBoard(["jp", "fr"], () => 0.5),
+    feedback: "start",
+    complete: false,
+  };
+  history.move(null, base);
+  const first = { ...base, board: turnCard(base.board, 0).board };
+  history.move(base, first);
+  const partner = base.board.cards.findIndex(
+    (code, i) => i !== 0 && code === base.board.cards[0],
+  );
+  const result = turnCard(first.board, partner);
+  assert(result.matchedCode);
+  const matched = { ...first, board: result.board };
+  history.move(first, matched);
+  assert(history.claimReward(`2:pair:${result.matchedCode}`));
+  const back = history.back(matched);
+  assert(back && back.type === "memory");
+  assert.deepEqual(back.board.faceUp, [0]);
+  assert(!history.claimReward(`2:pair:${result.matchedCode}`));
+  const forward = history.forward(back);
+  assert(forward && forward.type === "memory");
+  assert.deepEqual(forward.board, matched.board);
 });
 
 test("regional map answers never pretend Oceania is a country", () => {

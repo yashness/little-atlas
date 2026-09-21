@@ -18,13 +18,21 @@ import {
 import { LESSON_TABS, type LessonTab } from "../../contracts/session";
 import { countryCue } from "../../library/atlas/narration";
 function storyPanel(c: Country): string {
-  return `<section class="story-panel" aria-label="Flag meaning and history"><span class="eyebrow">A FLAG IS MORE THAN ITS COLORS</span><h3>What this flag means</h3>${listenButton("Hear the flag story", countryCue(c, "story"))}<p class="story-summary">${h(c.story.summary)}</p><p class="story-note">${h(c.story.note ?? "Historical interpretations can vary.")}</p><details class="source-details"><summary>Read the source explanation</summary><p>${h(c.story.detail).replace(/\n/g, "<br>")}</p><p class="source-date">${h(c.story.source.snapshot)}</p></details><a class="source-link" href="${h(c.story.source.url)}" target="_blank" rel="noopener">${h(c.story.source.label)} ↗</a></section>`;
+  return `<section class="story-panel" aria-label="Flag meaning and history"><span class="eyebrow">A FLAG IS MORE THAN ITS COLORS</span><h3>What this flag means</h3>${listenButton("Hear the flag story", countryCue(c, "story"))}<p class="story-summary">${h(c.story.summary)}</p><a class="source-link" href="${h(c.story.source.url)}" title="${h(c.story.source.snapshot)}" target="_blank" rel="noopener">${h(c.story.source.label)} ↗</a></section>`;
 }
 function peoplePanel(
   c: Country,
   catalog: readonly Country[],
   at: Date,
 ): string {
+  const sources = [
+    ...new Map(
+      [...c.sources, ...(c.beliefs ? [c.beliefs.source] : [])].map((source) => [
+        source.url,
+        source,
+      ]),
+    ).values(),
+  ];
   const borders = c.borderCodes
     .map((code) => catalog.find((item) => item.code === code))
     .filter((item): item is Country => Boolean(item));
@@ -36,7 +44,7 @@ function peoplePanel(
     })
     .join(
       "",
-    )}</div>${c.timeZones.length > 4 ? `<details><summary>All ${c.timeZones.length} listed zones</summary><p>${c.timeZones.map(h).join(" · ")}</p></details>` : ""}<p>Snapshot: ${h(at.toLocaleString("en", { dateStyle: "medium", timeStyle: "short", timeZone: "UTC" }))} UTC. Seasonal clock changes are included; some countries have several zones.</p><button class="text-button" data-clock-country="${c.code}">Find nearby clocks ${icon("arrow")}</button></article><article class="fact-panel"><span class="eyebrow">PEOPLE ARE NOT ALL THE SAME</span><h3>Faith & belief traditions</h3><p>People in one country can follow many traditions—or none. This is context to explore with a grown-up, not a label for a person.</p>${c.beliefs ? `<details><summary>See the source’s community notes</summary><p>${h(c.beliefs.text)}</p><p>${h(c.beliefs.note)}</p><a class="source-link" href="${h(c.beliefs.source.url)}" target="_blank" rel="noopener">Read the archived source ↗</a><p class="source-date">${h(c.beliefs.source.snapshot)}</p></details>` : "<p>We have not added a verified country-wide source note here yet, rather than guess.</p>"}</article></div><div class="profile-sources"><b>Where these facts come from</b>${c.sources.map((source) => `<a href="${h(source.url)}" target="_blank" rel="noopener">${h(source.label)} ↗</a>`).join("")}<p>Flag history, map conventions, language listings and demographic snapshots are different kinds of evidence. Estimates can be older than the source snapshot.</p></div>`;
+    )}</div>${c.timeZones.length > 4 ? `<details><summary>All ${c.timeZones.length} listed zones</summary><p>${c.timeZones.map(h).join(" · ")}</p></details>` : ""}<p>Snapshot: ${h(at.toLocaleString("en", { dateStyle: "medium", timeStyle: "short", timeZone: "UTC" }))} UTC. Seasonal clock changes are included; some countries have several zones.</p><button class="text-button" data-clock-country="${c.code}">Find nearby clocks ${icon("arrow")}</button></article><article class="fact-panel beliefs-panel"><span class="eyebrow">ARCHIVED SOURCE</span><h3>Religions & beliefs</h3><p class="beliefs-text">${h(c.beliefs?.text ?? "No country-wide source available.")}</p></article></div><div class="profile-sources"><b>Sources</b>${sources.map((source) => `<a href="${h(source.url)}" title="${h(source.snapshot)}" target="_blank" rel="noopener">${h(source.label)} ↗</a>`).join("")}</div>`;
 }
 export function lessonView(
   c: Country,
@@ -55,7 +63,7 @@ export function lessonView(
     people: "People & places",
   };
   return {
-    title: `Hello, ${c.name}!`,
+    title: c.name,
     eyebrow: game
       ? "A LITTLE MAP LESSON BEFORE WE PLAY"
       : total > 1
