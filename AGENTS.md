@@ -36,6 +36,7 @@ Keep dependencies acyclic. Define a shared contract before adding a second consu
 ## Verify and ship
 - TDD: write a failing behavior/regression test first, then the smallest implementation. Test invariants and journeys, not private functions or incidental markup.
 - Run typecheck, data audit, unit tests, browser tests, and the allowlisted production build before publishing.
+- Automated tests must launch an isolated **headless** browser. Never attach a suite/loop to the user's foreground Chrome or CDP. Reserve foreground DevTools for a bounded one-off visual check; never close/restart the user's browser.
 - Inspect desktop/mobile screenshots and verify the deployed URL, including audio and missing/private paths.
 - Make focused conventional commits and push meaningful milestones. Never commit `.env*`, dependency folders, caches, or test recordings.
 - Keep main releasable; document source changes and rollback targets. Preserve existing user work.

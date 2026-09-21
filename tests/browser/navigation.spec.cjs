@@ -1,4 +1,4 @@
-const { test, expect } = require("./fixtures.cjs");
+const { test, expect } = require("@playwright/test");
 const catalog = require("../../data/catalog.json");
 
 async function solve(page) {

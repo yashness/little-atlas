@@ -14,19 +14,17 @@
 npm ci
 npm run check
 npm run test:unit
-ATLAS_CDP=http://127.0.0.1:9223 npm test  # omit ATLAS_CDP for normal Playwright
+npm test  # isolated headless browser; never the user's foreground instance
 npm run build
 wrangler pages deploy dist --project-name littleatlas --branch release-check
 
 # Verify the preview before promoting the identical code.
-ATLAS_URL=https://release-check.littleatlas.pages.dev \
-  ATLAS_CDP=http://127.0.0.1:9223 npm test
+ATLAS_URL=https://release-check.littleatlas.pages.dev npm test
 npm run verify:deploy -- https://release-check.littleatlas.pages.dev
 
 # Merge tested work to main, tag the canonical package version, then publish.
 npm run deploy
-ATLAS_URL=https://littleatlas.pages.dev \
-  ATLAS_CDP=http://127.0.0.1:9223 npm test
+ATLAS_URL=https://littleatlas.pages.dev npm test
 npm run verify:deploy -- https://littleatlas.pages.dev
 ```
 
@@ -39,6 +37,8 @@ Only the allowlisted `dist/` output: compiled JS/CSS, HTML, original-proportion 
 Release 1.1: **197 entries, 627 audio clips, 844 public assets** plus `_headers`. Audio is loaded on demand; the whole audio library is not downloaded when opening the page. Complete-file HTTP 200 audio responses are valid; the verifier checks their content hash and browser tests check actual playback.
 
 ## Verification record
+
+- **Current production 1.2.0:** https://a97ec380.littleatlas.pages.dev, canonical https://littleatlas.pages.dev/; tag `v1.2.0`, merge `026a1a2`. Larger sticky country titles, direct belief information, compact sources, and Back/Forward review across all games. All 15 unit/data checks, all 844 asset checks, and all 27 production browser tests pass. The final browser run used a separate headless Canary instance; CDP attachment is no longer supported by the suite.
 
 - **Current production 1.1.1:** https://1469adce.littleatlas.pages.dev, canonical https://littleatlas.pages.dev/; tag `v1.1.1`, merge `e321d47`. Meaning/story is visible in the default lesson. Type/format/ring checks, 13 unit/data tests, 19 preview and production browser tests, and all 844 asset checks pass. See `docs/slices.md` for slice ownership and acceptance.
 
@@ -56,7 +56,7 @@ Cloudflare retains the baseline deployment as a dashboard rollback target. A sou
 
 ```sh
 restore=$(mktemp -d /tmp/little-atlas-restore.XXXXXX)
-git archive v1.1.0 | tar -x -C "$restore"
+git archive v1.1.1 | tar -x -C "$restore"
 (cd "$restore" && npm ci && npm run build && \
   wrangler pages deploy dist --project-name littleatlas --branch main)
 ```
