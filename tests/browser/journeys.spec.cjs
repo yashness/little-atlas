@@ -1,4 +1,4 @@
-const { test, expect } = require("./fixtures.cjs");
+const { test, expect } = require("@playwright/test");
 const catalog = require("../../data/catalog.json");
 const { pathToFileURL } = require("node:url");
 const { resolve } = require("node:path");
@@ -26,6 +26,10 @@ test("home loads only local assets, and the offline HTML bundle works", async ({
     if (r.url().startsWith("http") && !r.url().startsWith(baseURL))
       external.push(r.url());
   });
+  expect(
+    await page.evaluate(() => navigator.userAgent),
+    "Automated suites must use an isolated headless browser",
+  ).toContain("HeadlessChrome");
   await page.goto("/");
   await expect(
     page.getByRole("heading", { name: "Small flags. BIG adventures." }),

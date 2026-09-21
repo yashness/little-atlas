@@ -10,9 +10,11 @@ Small, behavior-first plans; this is not an event bus or a second task system.
 |---|---|---|---|
 | Navigation foundation | Session IDs, bounded snapshots, forward reuse, reward claims in `library/atlas/navigation.ts` | Same question/order/answer returns; memory matches cannot earn twice | Unit checks green |
 | Details presentation | Shared dialog header, learning view and CSS | Sticky large country name, one source link per URL, no duplicate story/source text or belief expander | Focused browser checks green |
-| Integration | Controller navigation boundaries and full game journeys | All five quizzes and memory support review through completion; audio stops on navigation; existing progress survives | Local verification complete: 15 unit/data and 27 browser tests pass; screenshots inspected. Preview/production gates pending. |
+| Integration | Controller navigation boundaries and full game journeys | All five quizzes and memory support review through completion; audio stops on navigation; existing progress survives | Complete: 15 unit/data checks and 27 browser journeys pass, including the final production run in an isolated headless browser. All 844 deployed assets verified. |
 
 **Execution:** serial, because the header, controller and shared session contract are coupled. One small history mechanism—not separate back stacks per game. Country data is shared, not deep-copied. Navigation reviews history; it does not undo earned stars. Keep v1.1.1 as the rollback baseline.
+
+**Released:** `v1.2.0`, merge `026a1a2`, production deployment `a97ec380` at https://littleatlas.pages.dev/. Initial production checks hit foreground CDP connection timeouts before two tests started. The CDP fixture was removed, and all 27 tests then passed in a dedicated headless Canary process. Future suites never attach to the user's browser; only bounded one-off visual checks may use foreground DevTools.
 
 ## Inline flag meaning — release 1.1.1
 

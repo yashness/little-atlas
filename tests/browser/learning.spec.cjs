@@ -1,4 +1,4 @@
-const { test, expect } = require("./fixtures.cjs");
+const { test, expect } = require("@playwright/test");
 
 test("Türkiye keeps both continents visible in its lesson, story, and quiz answer", async ({
   page,

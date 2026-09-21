@@ -37,11 +37,7 @@ npm test            # browser journeys; install Playwright Chromium first
 npm run build       # allowlisted static release in dist/
 ```
 
-If this Mac cannot launch a test Chromium instance, use an already-running test browser:
-
-```sh
-ATLAS_CDP=http://127.0.0.1:9223 npm test
-```
+Tests always launch an isolated **headless** browser with a temporary profile—never your visible browser. On macOS, an installed Chrome Canary is preferred for its startup-crash fix; otherwise Playwright’s bundled Chromium is used. To select another executable, set `ATLAS_TEST_BROWSER=/path/to/browser`. Foreground DevTools is reserved for one-off visual checks.
 
 Read **[AGENTS.md](AGENTS.md)** and **[ARCHITECTURE.md](ARCHITECTURE.md)** before adding features. Work ring-first, test behavior first, and prefer a shared function over another implementation.
 

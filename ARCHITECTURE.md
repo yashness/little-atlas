@@ -94,6 +94,8 @@ Herdr/Pi is optional coordination tooling, not an application dependency. When d
 
 Unit tests cover meaningful invariants: validated source boundaries, coverage, reciprocal and overseas land neighbors, explicit region ambiguity, fair distractors, filter intersection, time-zone offsets/DST, narration contracts, and memory turns. Browser tests cover complete learning/game paths, accessibility, audio cancellation, and responsive layouts. Avoid tests that duplicate private implementation or snapshot incidental markup.
 
+Automated browser journeys launch a separate **headless** process and temporary profile. There is no CDP attachment fixture: routine tests must not touch the user's foreground browser. Foreground DevTools is limited to bounded, one-off visual checks. On macOS the configuration prefers the installed patched Canary executable; `ATLAS_TEST_BROWSER` can override the executable, never the profile or a live CDP connection.
+
 GitHub CI runs formatting/type checks, the unit/data suite, the static build, and browser journeys. The production builder allowlists public files. Never deploy the checkout, `.env*`, test output, source caches, or development dependencies. Verify a Pages preview before promoting production, then check the live URL and audio. See `DEPLOYMENT.md` for commands and rollback. Do not call an unfinished migration a release.
 
 ## Next topics
